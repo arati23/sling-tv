@@ -1,0 +1,32 @@
+<div data-sly-test="${wcmmode.edit}">Click here to configure Matchup Banner</div>
+
+<div id="${matchupBanner.matchupBannerId}"  data-sly-use.matchupBanner="com.sling.tv.core.models.MatchUpBannerModel" class="matchup-banner-container">
+  <div class="matchup-info">
+    <div class="matchup-title">${matchupBanner.matchupTitle}</div>
+    <div class="matchup-matchup">
+      <div class="matchup-team">${matchupBanner.matchupTeam1}</div>
+      <div class="matchup-team-divider">
+        <hr class="matchup-team-divider-left"/>
+        <span class="matchup-separator">${matchupBanner.matchupSeparator}</span>
+        <hr class="matchup-team-divider-right"/>
+      </div>
+      <div class="matchup-team">${matchupBanner.matchupTeam2}</div>
+    </div>
+  </div>
+  <div class="matchup-banner_countdown">
+
+    <div data-sly-resource="${ @path='matchupCountdown', resourceType='sling-tv/components/content/general/countdown-clock'}" data-sly-unwrap></div>
+
+  </div>
+  <div class="matchup-text">
+    <div class="matchup-rte">
+      <div data-sly-resource="${ @path='matchup-header', resourceType='sling-tv/components/core/rich-text'}"></div>
+    </div>
+    <div class="matchup-cta">
+      <div data-sly-resource="${ @path='matchupCTA', resourceType='sling-tv/components/core/cta'}" data-sly-unwrap></div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+</div>
+
+

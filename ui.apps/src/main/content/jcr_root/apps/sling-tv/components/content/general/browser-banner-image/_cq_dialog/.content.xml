@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Browser Banner Image Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+			<tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image/Carousel"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <maxWidth
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="% of container (viewport if mobile)"
+                                fieldLabel="Width (%)"
+                                value="100"
+                                name="./width"/>
+                            <alacarteImages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                class="full-width"
+                                composite="{Boolean}true"
+                                fieldLabel="Browser Banner Image Items">
+                                    <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                        name="./browserBannerImage">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                            method="absolute"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+														<imagePath
+															jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+															fieldLabel="Image path"
+															name="./imagePath"
+															rootPath="/content/dam/sling-tv"/>
+					                                    <alt
+					                                        jcr:primaryType="nt:unstructured"
+					                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                        fieldDescription="Provide alt text for image"
+					                                        fieldLabel="Alt text"
+					                                        name="./alt"/>
+                                                        <imageUrl
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldDescription="Provide URL for image"
+                                                                fieldLabel="Image URL"
+                                                                name="./imageUrl"/>
+                                                    </items>
+                                            </column>
+                                        </items>
+                                    </field>
+                            </alacarteImages>							
+					    </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <browserBannerImageId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                    fieldLabel="Component ID"
+                                    name="./browserBannerImageId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+        </items>
+    </content>
+</jcr:root>

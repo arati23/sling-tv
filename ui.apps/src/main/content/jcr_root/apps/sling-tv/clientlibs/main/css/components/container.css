@@ -1,0 +1,15 @@
+/* Container Component */
+
+/* These two classes move the anchor above the component, so that the top of the component is visible */
+.container--anchor-hack-parent {
+  position: relative;
+}
+.container--anchor-hack-child {
+  position: absolute;
+  top: -114px;
+}
+
+.container--max-width {
+  max-width: 1440px;
+  margin: auto;
+}

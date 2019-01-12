@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Parallax component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Desktop"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <desktopHeight
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="in pixels. (Container does not expand to fit content)"
+                                fieldLabel="Container Height for Desktop"
+                                name="./desktopHeight"/>
+                            <parallax-container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                class="full-width" 
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add field' to add a new parallax items"
+                                fieldLabel="Parallax Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./parallaxItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imageWidth
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Image size as % of container (or device width if no container)"
+                                                    fieldLabel="Image Width"
+                                                    name="./imageWidth"/>
+                                                <imagePath
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Image Path"
+                                                    name="./imagePath"
+                                                    rootPath="/content/dam"/>
+                                                <startX
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of -20, Start Y of 50, End X of 50, End Y of 50 will begin centered vertically off screen to the left, it will move right and end centered horizontally as well."
+                                                    fieldLabel="Start X"
+                                                    name="./startX"/>
+                                                <startY
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of 50, Start Y of 120, End X of 50, End Y of 50 will begin centered horizontally off screen to the bottom, it will move up and end centered vertically as well."
+                                                    fieldLabel="Start Y"
+                                                    name="./startY"/>
+                                                <endX
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of -20, Start Y of 50, End X of 50, End Y of 50 will begin centered vertically off screen to the left, it will move right and end centered horizontally as well."
+                                                    fieldLabel="End X"
+                                                    name="./endX"/>
+                                                <endY
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of 50, Start Y of 120, End X of 50, End Y of 50 will begin centered horizontally off screen to the bottom, it will move up and end centered vertically as well."
+                                                    fieldLabel="End Y"
+                                                    name="./endY"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </parallax-container>
+                        </items>
+                    </column>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Mobile"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <mobileHeight
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="in pixels. (Container does not expand to fit content)"
+                                fieldLabel="Container Height for Mobile"
+                                name="./mobileHeight"/>
+                            <parallax-container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                class="full-width"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add field' to add a new parallax items"
+                                fieldLabel="Parallax Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./parallaxItemsMobile">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imageWidth
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Image size as % of container (or device width if no container)"
+                                                    fieldLabel="Image Width"
+                                                    name="./imageWidthMobile"/>
+                                                <imagePath
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Image Path"
+                                                    name="./imagePathMobile"
+                                                    rootPath="/content/dam"/>
+                                                <startX
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of -20, Start Y of 50, End X of 50, End Y of 50 will begin centered vertically off screen to the left, it will move right and end centered horizontally as well."
+                                                    fieldLabel="Start X"
+                                                    name="./startXMobile"/>
+                                                <startY
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of 50, Start Y of 120, End X of 50, End Y of 50 will begin centered horizontally off screen to the bottom, it will move up and end centered vertically as well."
+                                                    fieldLabel="Start Y"
+                                                    name="./startYMobile"/>
+                                                <endX
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of -20, Start Y of 50, End X of 50, End Y of 50 will begin centered vertically off screen to the left, it will move right and end centered horizontally as well."
+                                                    fieldLabel="End X"
+                                                    name="./endXMobile"/>
+                                                <endY
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Positions are % of the height/width of the container, starting at the top left.  Negative #s are off screen to the top/left. #s > 100 are off screen to the bottom/right.  Speed can be increased by starting further off screen.  Ex: Start X of 50, Start Y of 120, End X of 50, End Y of 50 will begin centered horizontally off screen to the bottom, it will move up and end centered vertically as well."
+                                                    fieldLabel="End Y"
+                                                    name="./endYMobile"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </parallax-container>
+                        </items>
+                    </column>
+                </items>
+            </tab2>
+            <tracking
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    allowBlank="false"
+                                    fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                    fieldLabel="Component ID"
+                                    name="./parallaxId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tracking>
+        </items>
+    </content>
+</jcr:root>

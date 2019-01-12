@@ -1,0 +1,102 @@
+.cq-RichText {
+    overflow: auto;
+}
+
+.cq-RichText-editable {
+    min-height: 2.75rem;
+    border-radius: 4px;
+    padding: 15px;
+    &.is-edited {
+        outline: none;
+        box-shadow: 0 0 3px #326ec8;
+        border: 1px solid #326ec8;
+    }
+}
+
+.cq-Dialog {
+    &:not([fullscreen]) {
+        .cq-RichText-editable.is-edited, .rte-sourceEditor {
+            .cq-RichText-hiddenHeader--editing {
+                background-color: rgb(85,85,85);
+            }
+            table {
+                border: 1px solid #777777;
+            }
+        }
+        .cq-RichText-editable {
+            height: 13.2rem;
+        }
+        .rte-sourceEditor {
+            height: 12.8rem;
+        }
+        .rte-ui {
+            .rte-dialog--find coral-checkbox {
+                margin-left: 0px;
+                width: 95px;
+            }
+        }
+    }
+}
+
+.scaffold-host-wizard, .cq-Dialog[fullscreen] {
+    .cq-RichText-FixedColumn-column {
+        width: 68.36%;
+    }
+    .cq-RichText {
+        .cq-RichText-editable, .rte-sourceEditor {
+            height: 35rem;
+            .cq-RichText-hiddenHeader--editing {
+                background-color: rgb(215,215,215);
+            }
+        }
+        .coral-Form-fielderror {
+            position: relative;
+        }
+    }
+}
+
+.scaffold-host-wizard, .cq-dialog {
+    .rte-toolbar {
+        background-color: transparent;
+        position: relative;
+        box-shadow: none;
+    }
+    .cq-RichText-editable, .rte-sourceEditor {
+        overflow-y: auto;
+    }
+
+    .rte-sourceEditor {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.coral--dark {
+    .cq-RichText-editable {
+        &.is-edited {
+            box-shadow: 0 0 3px #87beff;
+            border-color: #87beff;
+        }
+    }
+}
+
+.cq-dialog:not(.cq-dialog-fullscreen) .richtext-container .coral-RichText.is-edited{
+background-color:#ffffff;
+
+}
+.cq-Dialog[fullscreen] .cq-RichText .cq-RichText-editable{
+height:18rem;
+}
+
+.rte-ui .rte-popover coral-buttonlist{
+    height: 15rem;
+    overflow-x: hidden;
+
+}
+.cq-RichText-editable{
+
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+}
+

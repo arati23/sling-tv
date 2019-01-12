@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Container Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Theme"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container-component
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <themeColor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        fieldLabel="Theme Selection"
+                                        name="./containerTheme">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Light Theme (default)"
+                                                value="light-theme"/>
+                                            <gray-theme
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Gray Theme"
+                                                value="gray-theme"/>
+                                            <dark-theme
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Dark Theme"
+                                                value="dark-theme"/>
+                                            <light-gradient
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Light Gradient"
+                                                value="lg-theme"/>
+                                            <noise-gradient
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Noisy Gradient"
+                                                value="ng-theme"/>
+                                            <medium-gradient
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Medium Gradient"
+                                                value="mg-theme"/>
+                                            <dark-gradient
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Dark Gradient"
+                                                value="dg-theme"/>
+                                        </items>
+                                    </themeColor>
+                                    <border
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Adds border to top and bottom of container"
+                                        name="./border"
+                                        text="Border"
+                                        value="true"/>
+                                    <mobileContent
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./mobileContent"
+                                        text="Mobile Specific Content"
+                                        value="true"/>
+                                </items>
+                            </container-component>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Layout"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container-component
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <maxWidthOptions
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Max Width Options"
+                                        name="./maxWidthOptions">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Max Width 1440 (default)"
+                                                value="container--max-width"/>
+                                            <maxWidth1920
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Max Width 1920"
+                                                value="max-width"/>
+                                            <None
+                                                jcr:primaryType="nt:unstructured"
+                                                text="None"
+                                                value=""/>
+                                        </items>
+                                    </maxWidthOptions>
+                                    <fullWidthOptions
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        cq-dialog-dropdown-showhide-target=".width-details-hide-show"
+                                        fieldLabel="Full Width Options"
+                                        name="./fullWidthOptions">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <standardWidth
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Standard Width"
+                                                value="container-fluid"/>
+                                            <fullWidthLayout
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Full Width"
+                                                value="container-fluid--full"/>
+                                            <narrowWidth
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Narrow Width"
+                                                value="container-fluid--narrow"/>
+                                            <customWidth
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Custom Width"
+                                                value="custom"/>
+                                        </items>
+                                    </fullWidthOptions>
+                                    <width-details
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="hide width-details-hide-show"
+                                        showhidetargetvalue="custom">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <padding-left
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Padding Left For Desktop"
+                                                name="./paddingLeft"/>
+                                            <padding-right
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Padding Right For Desktop"
+                                                name="./paddingRight"/>
+                                            <padding-left-mobile
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Padding Left For Mobile"
+                                                name="./paddingLeftMobile"/>
+                                            <padding-right-mobile
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Padding Right For Mobile"
+                                                name="./paddingRightMobile"/>
+                                        </items>
+                                    </width-details>
+                                </items>
+                            </container-component>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+            <tracking
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tracking"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                allowBlank="false"
+                                fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                fieldLabel="Component ID"
+                                name="./containerCmpId"/>
+                            <anchorTag
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                fieldLabel="Anchor Tag ID"
+                                name="./anchorTag"/>
+                        </items>
+                    </columns>
+                </items>
+            </tracking>
+        </items>
+    </content>
+</jcr:root>

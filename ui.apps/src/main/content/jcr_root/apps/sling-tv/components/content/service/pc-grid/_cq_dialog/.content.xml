@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container"
+            ctCls="wk-callout-dialog-container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="General"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <general
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <defaulttab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container"
+                                            fieldLabel="Default Tab">
+                                        <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <defaulttab jcr:primaryType="nt:unstructured"
+                                                        name="./defaultTab"
+                                                        text="Default Tab"
+                                                        vertical="true"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radiogroup">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tabone jcr:primaryType="nt:unstructured"
+                                                            text="Tab 1"
+                                                            value="defaultTab1"
+                                                            sling:resourceType="granite/ui/components/foundation/form/radio"/>
+                                                    <tabtwo jcr:primaryType="nt:unstructured"
+                                                            text="Tab 2"
+                                                            value="defaultTab2"
+                                                            sling:resourceType="granite/ui/components/foundation/form/radio"/>
+                                                    <tabthree jcr:primaryType="nt:unstructured"
+                                                              text="Tab 3"
+                                                              value="defaultTab3"
+                                                              sling:resourceType="granite/ui/components/foundation/form/radio"/>
+                                                </items>
+                                            </defaulttab>
+                                        </items>
+                                    </defaulttab>
+                                    <logopath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container"
+                                            fieldLabel="Logo Path">
+                                        <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <logopath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Select channel logo path"
+                                                    name="./channelLogoPath"
+                                                    rootPath="/content/dam">
+                                            </logopath>
+                                        </items>
+                                    </logopath>
+                                    <stickytabs
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container"
+                                            fieldLabel="Sticky Tabs">
+                                        <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <stickyTabs
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    checked="false"
+                                                    name="./stickyTabs"
+                                                    text="Sticky Tabs for Desktop"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                            <stickyTabsMobile
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    checked="false"
+                                                    name="./stickyTabsMobile"
+                                                    text="Sticky Tabs for Mobile"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+
+                                        </items>
+                                    </stickytabs>
+                                </items>
+                            </general>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <tab1
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tab 1"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <classificationone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Classification One">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <classificationone
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="classificationOne-class"
+                                            fieldLabel="Classification One"
+                                            name="./classificationOne">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/classifications"/>
+                                    </classificationone>
+                                </items>
+                            </classificationone>
+                            <planone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Plan One">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan One Title"
+                                            name="./planOneTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan One Subtitle"
+                                            name="./planOneSubTitle"/>
+                                    <plans
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="planOne-class"
+                                            fieldLabel="Plan One"
+                                            name="./planOne">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/plans"/>
+                                    </plans>
+                                </items>
+                            </planone>
+                            <packageone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Title"
+                                            name="./planOnePackageOneTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Subtitle"
+                                            name="./planOnePackageOneSubTitle"/>
+                                    <package-one-one
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package One"
+                                            name="./planOnePackageOne">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-one-one>
+                                </items>
+                            </packageone>
+                            <packagetwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Title"
+                                            name="./planOnePackageTwoTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Sub Title"
+                                            name="./planOnePackageTwoSubTitle"/>
+                                    <package-one-two
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Two"
+                                            name="./planOnePackageTwo">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-one-two>
+                                </items>
+                            </packagetwo>
+                            <packagethree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Title"
+                                            name="./planOnePackageThreeTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Three Sub Title"
+                                            name="./planOnePackageThreeSubTitle"/>
+                                    <package-one-three
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Three"
+                                            name="./planOnePackageThree">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-one-three>
+                                </items>
+                            </packagethree>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tab 2"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <classificationtwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Classification Two">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <classificationtwo
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="classificationTwo-class"
+                                            fieldLabel="Classification Two"
+                                            name="./classificationTwo">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/classifications"/>
+                                    </classificationtwo>
+                                </items>
+                            </classificationtwo>
+                            <plantwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Plan Two">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan Two Title"
+                                            name="./planTwoTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan Two Sub Title"
+                                            name="./planTwoSubTitle"/>
+                                    <plans
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="planTwo-class"
+                                            fieldLabel="Plan Two"
+                                            name="./planTwo">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/plans"/>
+                                    </plans>
+                                </items>
+                            </plantwo>
+                            <packageone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Title"
+                                            name="./planTwoPackageOneTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Sub Title"
+                                            name="./planTwoPackageOneSubTitle"/>
+                                    <package-two-one
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package One"
+                                            name="./planTwoPackageOne">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-two-one>
+                                </items>
+                            </packageone>
+                            <packagetwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Title"
+                                            name="./planTwoPackageTwoTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Sub Title"
+                                            name="./planTwoPackageTwoSubTitle"/>
+                                    <package-two-two
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Two"
+                                            name="./planTwoPackageTwo">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-two-two>
+                                </items>
+                            </packagetwo>
+                            <packagethree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Three Title"
+                                            name="./planTwoPackageThreeTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Three Sub Title"
+                                            name="./planTwoPackageThreeSubTitle"/>
+                                    <package-two-three
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Three"
+                                            name="./planTwoPackageThree">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-two-three>
+                                </items>
+                            </packagethree>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+            <tab3
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tab 3"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <classificationthree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Classification Three">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <classificationthree
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="classificationThree-class"
+                                            fieldLabel="Classification Three"
+                                            name="./classificationThree">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/classifications"/>
+                                    </classificationthree>
+                                </items>
+                            </classificationthree>
+                            <planthree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    fieldLabel="Plan Three">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan Three Title"
+                                            name="./planThreeTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Plan Three Sub Title"
+                                            name="./planThreeSubTitle"/>
+                                    <plans
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="planThree-class"
+                                            fieldLabel="Plan Three"
+                                            name="./planThree">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/plans"/>
+                                    </plans>
+                                </items>
+                            </planthree>
+                            <packageone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Title"
+                                            name="./planThreePackageOneTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package One Sub Title"
+                                            name="./planThreePackageOneSubTitle"/>
+                                    <package-three-one
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package One"
+                                            name="./planThreePackageOne">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-three-one>
+                                </items>
+                            </packageone>
+                            <packagetwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Title"
+                                            name="./planThreePackageTwoTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Two Sub Title"
+                                            name="./planThreePackageTwoSubTitle"/>
+                                    <package-three-two
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Two"
+                                            name="./planThreePackageTwo">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-three-two>
+                                </items>
+                            </packagetwo>
+                            <packagethree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Three Title"
+                                            name="./planThreePackageThreeTitle"/>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Package Three Sub Title"
+                                            name="./planThreePackageThreeSubTitle"/>
+                                    <package-three-three
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Package Three"
+                                            name="./planThreePackageThree">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/sling-tv/components/content/service/pc-grid/packages"/>
+                                    </package-three-three>
+                                </items>
+                            </packagethree>
+                        </items>
+                    </columns>
+                </items>
+            </tab3>
+            <tab4
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                    fieldLabel="Component ID"
+                                    name="./pcGridID"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab4>
+        </items>
+    </content>
+</jcr:root>

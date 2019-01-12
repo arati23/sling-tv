@@ -1,0 +1,48 @@
+/* International Carousel */
+
+.international-carousel-video {
+    width: 100%;
+}
+
+.international-carousel-message {
+    display: none;
+
+    /* overflow:hidden forces height to include floating children */
+    overflow: hidden;
+}
+
+.international-carousel-message.active {
+    display: block;
+}
+
+/* Rotating Marquee*/
+
+.rotating-marquee-video {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .international-carousel-message {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .international-carousel-message {
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .international-carousel-message {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .international-carousel-rte {
+        padding: 0;
+    }
+}

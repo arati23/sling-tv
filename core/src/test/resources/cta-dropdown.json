@@ -1,0 +1,21 @@
+{  
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "jcr:created":"Wed Jul 25 2018 10:03:25 GMT-0500",
+   "dynamicCtaDropdownId":"2000",
+   "jcr:lastModified":"Wed Jul 25 2018 10:36:05 GMT-0500",
+   "sling:resourceType":"sling-tv/components/content/general/cta-dropdown",
+   "dropDownLogo":"/content/dam/sling-tv/misc/new-home-page-videos/extra-icons/BroadcastExtra.svg",
+   "ctaPathSet":{  
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{  
+         "jcr:primaryType":"nt:unstructured",
+         "ctaLogo":"/content/dam/sling-tv/channels/Language-Logos/caribe.png",
+         "ctaPath":"/content/sling-tv/en/shared-components/latino_ctas/jcr:content/par/cta_component"
+      },
+      "item1":{  
+         "jcr:primaryType":"nt:unstructured"
+      }
+   }
+}

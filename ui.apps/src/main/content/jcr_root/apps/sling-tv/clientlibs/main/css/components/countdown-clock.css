@@ -1,0 +1,238 @@
+/* Countdown Clock */
+
+.countdown-clock-_-not-started {
+  display: none;
+}
+
+
+.countdown-clock--container {
+  text-align: center;
+  width: 100%;
+}
+
+
+.countdown-clock--header {
+  margin-bottom: 15px;
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--header,
+.countdown-clock-_-finished .countdown-clock--header {
+  display: none;
+}
+
+
+.countdown-clock--header-logo {
+  max-width: 100px;
+  max-height: 100%;
+  display: inline;
+  vertical-align: -7px;
+}
+@media (min-width: 1024px) {
+  .countdown-clock--header-logo {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .countdown-clock--header-logo {
+    margin-bottom: 16px;
+  }
+}
+
+
+.countdown-clock--header-message {
+  display: inline;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+}
+@media (min-width: 1024px) {
+  .countdown-clock--header-message {
+    display: inline;
+  }
+}
+@media (max-width: 1023px) {
+  .countdown-clock--header-message {
+    display: none;
+  }
+}
+
+
+.countdown-clock--clock {
+  font-weight: bold;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .countdown-clock--clock {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 767px) {
+  .countdown-clock--clock {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--clock {
+  display: none;
+}
+
+.countdown-clock-_-finished .countdown-clock--clock {
+  display: none;
+}
+
+
+.countdown-clock--inner {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+@media (max-width: 767px) {
+  .countdown-clock--counter {
+    width: 50px;
+    padding: 0;
+  }
+}
+
+
+.countdown-clock--units {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .countdown-clock--units {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .countdown-clock--units {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+
+.countdown-clock--start {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .countdown-clock--start {
+    margin-top: 25px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .countdown-clock--start {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--start {
+  font-weight: bold;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .countdown-clock-_-datetime-only .countdown-clock--start {
+    font-size: 36px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+}
+@media (min-width:450px) and (max-width: 767px) {
+  .countdown-clock-_-datetime-only .countdown-clock--start,
+  .countdown-clock-_-finished .countdown-clock--end {
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+}
+@media (min-width:360px) and (max-width: 449px) {
+  .countdown-clock-_-datetime-only .countdown-clock--start,
+  .countdown-clock-_-finished .countdown-clock--end {
+    font-size: 24px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 359px) {
+  .countdown-clock-_-datetime-only .countdown-clock--start,
+  .countdown-clock-_-finished .countdown-clock--end {
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+}
+
+.countdown-clock-_-finished .countdown-clock--start {
+  display: none;
+}
+
+.countdown-clock--start-_-no {
+  display: none;
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--start-_-no {
+  display: block;
+}
+
+
+.countdown-clock--start-br {
+  display: none;
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--start-br {
+  display: block;
+}
+
+
+.countdown-clock-_-datetime-only .countdown-clock--start-at {
+  display: none;
+}
+
+
+.countdown-clock--end {
+  display: none;
+}
+
+.countdown-clock-_-finished .countdown-clock--end {
+  display: inline-block;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .countdown-clock-_-finished .countdown-clock--end {
+    font-size: 36px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+}
+
+
+.countdown-clock--lower-logo {
+  display: none;
+  margin: 59px auto 0 auto;
+  max-width: 200px;
+}
+
+.countdown-clock-_-datetime-only .countdown-clock--lower-logo,
+.countdown-clock-_-finished .countdown-clock--lower-logo {
+  display: block;
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .countdown-clock--header {
+    display: inline-flex;
+  }
+}

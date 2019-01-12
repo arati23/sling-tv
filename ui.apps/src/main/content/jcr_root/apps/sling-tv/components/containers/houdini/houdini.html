@@ -1,0 +1,16 @@
+<div data-sly-use.houdini="com.sling.tv.core.models.HoudiniModel" data-sly-unwrap />
+<sly data-sly-test="${wcmmode.edit}"><p>Click here to author Houdini component</p></sly>
+
+<div id="${houdini.houdiniCompId}" class="js-houdini-parent">
+
+    <div class="js-houdini-container" data-sly-resource="${ @path='par', resourceType='wcm/foundation/components/responsivegrid'}"></div>
+
+    <div class="houdini--see-text container--max-width">
+        <span class="js-houdini-see-all hidden-on-load">
+            <a>${houdini.showText} <!-- Don't Remove This Space! --> <span class="fa fa-chevron-down extra-bold"></span></a>
+        </span>
+        <span class="js-houdini-see-less hidden-on-load">
+            <a>${houdini.hideText} <!-- Don't Remove This Space! --> <span class="fa fa-chevron-up extra-bold"></span></a>
+        </span>
+    </div>
+</div>

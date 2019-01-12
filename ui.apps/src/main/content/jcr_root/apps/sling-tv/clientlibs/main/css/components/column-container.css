@@ -1,0 +1,186 @@
+/* Column Control */
+
+@media (min-width: 992px) {
+  .column-control {
+    /* This probably doesn't belong here either */
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .column-control {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5%;
+  }
+}
+
+
+.column-control-separated {
+  border-right: 1px solid #cfcfcf;
+}
+
+.column-control-separated:last-child {
+  border-right: 0;
+}
+
+@media (min-width: 1200px) {
+  .column-control-separated {
+    padding: 0 8%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .column-control-separated {
+    padding: 20px;
+  }
+}
+
+
+
+/* Five Columns */
+
+.sling-col-xs-15,
+.sling-col-sm-15,
+.sling-col-md-15,
+.sling-col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.sling-col-xs-15 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .sling-col-sm-3 {
+    width: 20%;
+    float: left;
+  }
+}
+
+
+/* Column Carousel */
+
+@media (max-width: 767px) {
+  .column-carousel {
+    padding: 0;
+    position: relative;
+  }
+
+
+  .column-carousel_fade {
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+  }
+
+
+  .column-carousel_fade-left {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    left: 0;
+    width: 10%;
+  }
+  .light-theme .column-carousel_fade-left,
+  .gray-theme .column-carousel_fade-left,
+  .lg-theme .column-carousel_fade-left,
+  .ng-theme .column-carousel_fade-left {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #FFFFFF 100%);
+  }
+
+
+  .column-carousel_fade-right {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    right: 0;
+    width: 10%;
+  }
+  .light-theme .column-carousel_fade-right,
+  .gray-theme .column-carousel_fade-right,
+  .lg-theme .column-carousel_fade-right,
+  .ng-theme .column-carousel_fade-right {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #FFFFFF 100%);
+  }
+
+
+  .column-carousel_outer {
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+
+  .column-carousel_inner {
+    margin: auto;
+    position: absolute;
+    width: 80%;
+  }
+
+
+  .column-carousel_indicators .carousel-indicators {
+    bottom: 0;
+  }
+
+  .column-carousel_indicators .carousel-indicator {
+    background-color: #4a4a4a;
+    border: none;
+  }
+
+  .column-carousel_indicators .carousel-indicator.active {
+    background-color: #14ABE0;
+  }
+}
+
+
+/* Flex columns */
+
+@media (min-width: 991px) {
+  .flex-column-container, .flex-column--container {
+    height: 100%;
+  }
+}
+
+.flex-col-16 {
+  width: 16%;
+}
+.flex-col-20 {
+  width: 20%;
+}
+.flex-col-25 {
+  width: 25%;
+}
+.flex-col-33 {
+  width: 33%;
+}
+.flex-col-50 {
+  width: 50%;
+}
+.flex-col-67 {
+  width: 67%;
+}
+.flex-col-75 {
+  width: 75%;
+}
+@media (max-width: 767px) {
+  .flex-col-16, .flex-col-20, .flex-col-25, .flex-col-33, .flex-col-50, .flex-col-67, .flex-col-75 {
+    width: 100%;
+  }
+
+  .column-carousel .flex-col-16,
+  .column-carousel .flex-col-20,
+  .column-carousel .flex-col-25,
+  .column-carousel .flex-col-33,
+  .column-carousel .flex-col-50,
+  .column-carousel .flex-col-67,
+  .column-carousel .flex-col-75 {
+    width: 80%;
+  }
+}
+
+.column-control-_-separated-flex {
+  border-right: 1px solid #cfcfcf;
+  padding: 0 20px;
+}
+
+.column-control-_-separated-flex:last-child {
+  border-right: 0;
+}

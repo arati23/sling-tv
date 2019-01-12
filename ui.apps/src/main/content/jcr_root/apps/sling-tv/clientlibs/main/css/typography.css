@@ -1,0 +1,77 @@
+/******************************************************************************
+
+typography.css
+
+For global weights, line heights, sizes, and styles for headings and body text
+
+******************************************************************************/
+
+
+/* Font Sizes & Line Heights */
+
+html, body {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  html, body {
+    font-size: 13px;
+  }
+}
+
+h1 {
+  font-size: 2.027em;
+}
+
+h2 {
+  font-size: 1.802em;
+}
+
+h3 {
+  font-size: 1.602em;
+}
+
+h4 {
+  font-size: 1.424em;
+}
+
+h5 {
+  font-size: 1.266em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+p,
+a,
+li,
+span,
+button {
+  font-size: 1em;
+}
+
+/* Font Weights */
+
+body {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+
+/* Remove margin-top for h* */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}

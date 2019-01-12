@@ -1,0 +1,292 @@
+/* ===== Color CSS Starts Here ====== */
+
+.butter {
+    color: #fcbf38;
+}
+
+.fire, .orange {
+    color: #faa21b;
+}
+
+.blue, .water {
+    color: #14abe0;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.charcoal {
+    color: #353535;
+}
+
+.ash {
+    color: #252525;
+}
+
+.coal {
+    color: #1f1f1f;
+}
+
+.slate {
+    color: #4a4a4a;
+}
+
+.gravel {
+  color: #cfcfcf;
+}
+
+.apple-green, .green {
+    color: #7ed321;
+}
+
+.danger-red {
+    color: #ff2100;
+}
+
+.title-hr {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin: 8px 0;
+}
+.title-hr::before,
+.title-hr::after {
+  content: "";
+  flex-grow: 1;
+  background: #4a4a4a;
+  height: 2px;
+  font-size: 0;
+  line-height: 0;
+}
+.title-hr::before,
+.title-hr::after {
+  margin: 0 2.5%;
+}
+
+.inverse-water {
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #14ABE0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.gold-ribbon {
+  background: linear-gradient(315deg, #FDD040 0%, #FAA31E 100%);
+  color: #252525;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: .75;
+  margin: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+}
+
+.blue-ribbon {
+  background:#14abe0;
+  color: #FFFFFF;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: .75;
+  margin: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+}
+
+/* ===== Color CSS Ends Here ====== */
+
+/* ===== Font Size CSS Starts Here ====== */
+.sg-huge {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+}
+
+.sg-large-xx {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 900;
+}
+
+.sg-large-x {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 900;
+}
+
+.sg-large {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+
+.sg-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+.sg-small-x {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+a.sg-small-x, .sg-small-x a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.sg-small-xx {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.sg-tiny {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  font-weight: bold;
+}
+
+.giant {
+        font-size: 8.2vw;
+        line-height: 8.2vw;
+    }
+.giant-1 {
+    font-size: 7.3vw;
+    line-height: 7.3vw;
+}
+.giant-2 {
+    font-size: 6.5vw;
+    line-height: 6.5vw;
+}
+.giant-3 {
+    font-size: 5.8vw;
+    line-height: 5.8vw;
+}
+.jumbo {
+    font-size: 5.2vw;
+    line-height: 5.2vw;
+}
+.jumbo-1 {
+    font-size: 4.6vw;
+    line-height: 4.6vw;
+}
+.jumbo-2 {
+    font-size: 4.1vw;
+    line-height: 4.1vw;
+}
+.large {
+    font-size: 3.6vw;
+    line-height: 3.6vw;
+}
+.large-1 {
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+}
+.large-2 {
+    font-size: 2.9vw;
+    line-height: 2.9vw;
+}
+
+.sg-leading-tight {
+  margin: 0;
+  line-height: .8;
+  display: inline-block;
+}
+
+.sg-leading-normal {
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
+}
+
+.sg-leading-wide {
+  margin: 0;
+  line-height: 1.25;
+  display: inline-block;
+}
+
+.sg-leading-wider {
+  margin: 0;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.sg-leading-widest {
+  margin: 0;
+  line-height: 2;
+  display: inline-block;
+}
+
+/* ===== Font Size CSS Ends Here ====== */
+
+/* ===== Font Weight CSS Starts Here ====== */
+
+.extra-bold {
+    font-weight: 800 !important
+}
+.bold {
+    font-weight: 700 !important
+}
+.semi-bold {
+    font-weight: 600 !important
+}
+.normal-weight {
+    font-weight: 400 !important;
+}
+.light {
+    font-weight: 300 !important;
+}
+
+/* ===== Font Weight CSS Ends Here ====== */
+
+/* ===== Special Character CSS Starts Here ====== */
+.register-mark:after {
+  position: relative;
+  content: '®';
+  font-size: 0.5em;
+  top: -4px;
+}
+
+.trade-mark:after {
+  position: relative;
+  content: '™';
+  font-size: 0.5em;
+  top: -4px;
+}
+/* ===== Special Character CSS Ends Here ====== */
+
+.fine-print {
+  color: inherit;
+  font-size: 0.833em;
+  margin: 0;
+}
+
+.strike-through {
+   text-decoration: line-through;
+}
+
+.offset-center {
+    margin-left: 25%;
+}
+
+@media (max-width: 767px) {
+    .offset-center {
+       margin-left: 16.6666666667%;
+   }
+}
+
+.italic {
+    font-style: italic;
+}

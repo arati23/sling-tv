@@ -1,0 +1,21 @@
+<div data-sly-use.browserBannerImageModel="com.sling.tv.core.models.BrowserBannerImageModel" data-sly-unwrap/>
+
+<div data-sly-test="${wcmmode.edit && !browserBannerImageModel.browserBannerImage}">Click here to configure Browser Banner Image</div>
+
+<div id="${browserBannerImageModel.browserBannerImageId}" class="js-image-carousel image-carousel slide" data-ride="carousel">
+  <div class="${browserBannerImageModel.browserBannerImage.size != 1 ? 'image-carousel--inner-padding' : ''} carousel-inner" role="listbox">
+      <sly data-sly-list="${browserBannerImageModel.browserBannerImage}">
+      <div class="item text-center ${itemList.index==0 && 'active'}">
+        <a data-sly-test="${item.imageUrl}" x-cq-linkchecker="skip" href="${item.imageUrl}">
+        <img class="image-carousel--image" src="${item.imagePath}" alt="${item.alt}"
+             style="width: ${browserBannerImageModel.width==null ? '100' : browserBannerImageModel.width @ context='styleString'}%;padding:${browserBannerImageModel.width==null || browserBannerImageModel.width=='100' ? '' : '0' @ context='styleString'};"
+             />
+        </a>
+        <img data-sly-test="${!item.imageUrl}" class="image-carousel--image"
+             src="${item.imagePath}" alt="${item.alt}"
+             style="width: ${browserBannerImageModel.width==null ? '100' : browserBannerImageModel.width @ context='styleString'}%;padding:${browserBannerImageModel.width==null || browserBannerImageModel.width=='100' ? '' : '0' @ context='styleString'};"
+              />
+      </div>
+      </sly>
+  </div>
+</div>

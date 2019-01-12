@@ -1,0 +1,27 @@
+<div data-sly-use.card="com.sling.tv.core.models.CardModel" data-sly-unwrap/>
+<div data-sly-test="${wcmmode.edit}">Click here to configure Card Component</div>
+
+<div id="${card.cardId}" class="card--container">
+
+  <div data-sly-test="${card.cardType == 'textCard'}" data-sly-list="${card.textCardItems}" data-sly-unwrap>
+    <div class="flex-col-50">
+      <div class="card--text-container">
+        <div class="card--header">${item.textCardTitle}</div>
+        <p class="card--package">${item.textCardPackage}</p>
+        <p class="card--text-description">${item.textCardDesc}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-sly-test="${card.cardType == 'logoCard'}" data-sly-list="${card.logoCardItems}" data-sly-unwrap>
+    <div class="flex-col-33 card--col">
+      <div class="card--logo-container js-card-logo-container">
+        <div class="card--header">${item.logoCardTitle}</div>
+        <p class="card--package">${item.logoCardPackage}</p>
+        <div data-sly-resource="${item.referencePath @ resourceType='sling-tv/components/content/general/channel-logos'}" data-sly-unwrap></div>
+      </div>
+    </div>
+  </div>
+
+</div>

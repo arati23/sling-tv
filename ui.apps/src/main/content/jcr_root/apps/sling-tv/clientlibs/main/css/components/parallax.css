@@ -1,0 +1,12 @@
+/* Parallax Component */
+
+.parallax_container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.parallax_image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

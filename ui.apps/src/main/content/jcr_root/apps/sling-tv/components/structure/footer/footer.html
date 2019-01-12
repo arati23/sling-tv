@@ -1,0 +1,79 @@
+<!-- Footer Starts Here: -->
+
+<footer data-sly-use.navigationComponent="com.sling.tv.core.models.NavigationComponentModel" id="${navigationComponent.footerId}" class="${navigationComponent.themeType == 'dark-theme' ? 'dark-theme' : 'light-theme'}" >
+  <div data-sly-test="${wcmmode.edit && !navigationComponent.footer.children}">
+    Click here to configure Footer Component
+  </div>
+  <div class="footer_main container-fluid">
+    <sly data-sly-repeat="${ navigationComponent.footer.children }">
+      <div data-sly-test=${itemList.count==7} class="clearfix"></div>
+      <div class="col-sm-3 col-xs-12 footer--column">
+        <h6 class="footer--column-header ${item.hideInDesktopNav && 'hidden-lg hidden-md hidden-sm'} ${item.hideInMobileNav && 'hidden-xs'}">
+          ${item.title}
+        </h6>
+
+        <ul data-sly-repeat="${ item.children }">
+          <li data-sly-test="${! item.children }" class="${item.hideInMobileNav && 'hidden-xs'}
+                                                         ${item.hideInDesktopNav && 'hidden-lg hidden-md hidden-sm'}">
+            <a x-cq-linkchecker="skip" class="footer_link js-footer-link" href="${item.link}" target="${item.windowSelection}"
+               >
+              ${item.title}
+            </a>
+          </li>
+
+          <span class="btn-group" data-sly-test="${ item.children }">
+
+            <a x-cq-linkchecker="skip" data-toggle="dropdown" target="${item.windowSelection}" href="#"
+               class="footer--dropdown footer_link dropdown-toggle ${item.hideInMobileNav && 'hidden-xs'}
+                      ${item.hideInDesktopNav && 'hidden-lg hidden-md hidden-sm'}">
+              ${item.title}
+              <span class="caret ${item.hideInMobileNav && 'hidden-xs'} ${item.hideInDesktopNav && 'hidden-lg hidden-md hidden-sm'}"></span>
+            </a>
+
+            <ul class="footer_dropdown-list dropdown-menu ${item.uniqueId} ${item.hideInMobileNav && 'hidden-xs'}
+                       ${item.hideInDesktopNav && 'hidden-lg hidden-md hidden-sm'}">
+              <li class="footer--dropdown-header">${item.subtitle}
+                <span class="pull-right footer--dropdown-close">x</span>
+              </li>
+              <li data-sly-repeat="${ item.children }">
+                <a x-cq-linkchecker="skip" class="${item.hideInMobileNav && 'hidden-xs'}"
+                   href="${item.link}" target="${item.windowSelection}">
+                  ${item.title}
+                </a>
+              </li>
+            </ul>
+
+          </span>
+        </ul>
+      </div>
+    </sly>
+
+    <div class="footer_terms">
+      <div data-sly-resource="${ @path='terms', resourceType='sling-tv/components/core/rich-text'}" data-sly-unwrap></div>
+    </div>
+  </div>
+
+<sly data-sly-test="${pageProperties.showReferAFriend}">
+    <div class="${!wcmmode.edit ? 'js-refer-a-friend refer-a-friend hidden-on-load' : ''} container-fluid">
+      <div class="clear-both" data-sly-resource="${'textimage' @ resourceType='wcm/foundation/components/textimage'}"></div>
+      <div class="${!wcmmode.edit ? 'refer-a-friend_sticky' : ''}">
+        <sly data-sly-resource="${'image' @ resourceType='wcm/foundation/components/image'}"></sly>
+      </div>
+    </div>
+  </sly>
+
+  <div class="footer_sub-footer container-fluid ${navigationComponent.themeType == 'light-theme' ? '' : 'max-width'}">
+    <div class="footer--questions pull-right"
+         data-sly-resource="${ @path='questionsPar', resourceType='sling-tv/components/core/rich-text'}">
+    </div>
+    <div class="footer_sub-footer-left">
+      <div data-sly-test="${ navigationComponent.socialLinkComponent }" data-sly-unwrap
+           data-sly-resource="${ @path='socialMediaLinks', resourceType='sling-tv/components/embedded/social-media'}">
+      </div>
+      <div class="footer--copyright-text" data-sly-resource="${ @path='copyPar', resourceType='sling-tv/components/core/rich-text'}">
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- Footer Ends Here: -->

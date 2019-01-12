@@ -1,0 +1,308 @@
+/******************************************************************************
+
+brandon-font.css
+
+Define Brandon font-face rules
+
+******************************************************************************/
+
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_thin-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_thin-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_thin-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_thin-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin-webfont.svg#brandon_textthin") format("svg");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_light-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_light-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_light-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_light-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_light-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_light-webfont.svg#brandon_textlight") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_reg-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_reg-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_reg-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_reg-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg-webfont.svg#brandon_text_regularregular") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_med-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_med-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_med-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_med-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_med-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_med-webfont.svg#brandon_textmedium") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_bld-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_bld-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_bld-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_bld-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld-webfont.svg#brandon_textbold") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_blk-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_blk-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_blk-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_blk-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk-webfont.svg#brandon_textblack") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* Italic */
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it-webfont.svg#brandon_textthin_italic") format("svg");
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it-webfont.svg#brandon_textlight_italic") format("svg");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it-webfont.svg#brandon_textregular_italic") format("svg");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it-webfont.svg#brandon_textmedium_italic") format("svg");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it-webfont.svg#brandon_textbold_italic") format("svg");
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it-webfont.svg#brandon_textblack_italic") format("svg");
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* Spanish Normal */
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_es-webfont.svg#brandon_textthin") format("svg");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_es-webfont.svg#brandon_textlight") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_es-webfont.svg#brandon_text_regularregular") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_es-webfont.svg#brandon_textmedium") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_es-webfont.svg#brandon_textbold") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_es-webfont.svg#brandon_textblack") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* Spanish Italic */
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_thin_it_es-webfont.svg#brandon_textthin_italic") format("svg");
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_light_it_es-webfont.svg#brandon_textlight_italic") format("svg");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_reg_it_es-webfont.svg#brandon_textregular_italic") format("svg");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_med_it_es-webfont.svg#brandon_textmedium_italic") format("svg");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_bld_it_es-webfont.svg#brandon_textbold_italic") format("svg");
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Brandon_es";
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.eot");
+  src: url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.woff2") format("woff2"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.woff") format("woff"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.ttf") format("truetype"),
+  url("../resources/fonts/brandon/Brandon_txt_blk_it_es-webfont.svg#brandon_textblack_italic") format("svg");
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+
+body {
+  font-family: "Brandon", sans-serif;
+}

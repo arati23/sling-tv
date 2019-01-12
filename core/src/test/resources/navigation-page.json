@@ -1,0 +1,68 @@
+    {
+        "cq:template": "/apps/sling-tv/templates/navigation-page",
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:title": "Domestic Header",
+        "hideInDesktopNav": "false",
+        "hideInMobileNav": "false",
+        "hideInMobileNav_x0040_DefaultValue": "false",
+        "hideInMobileNav_x0040_UseDefaultWhenMissing": "true",
+        "windowSelection": "_self",
+        "pricing": {
+
+            "jcr:title": "PRICING",
+            "hideInDesktopNav": "false",
+            "hideInMobileNav": "false",
+            "redirectTarget": "/service",
+            "windowSelection": "_self"
+
+        },
+        "whats-on": {
+
+            "jcr:title": "WHAT'S ON",
+            "hideInDesktopNav": "false",
+            "hideInMobileNav": "false",
+            "redirectTarget": "/programming",
+            "windowSelection": "_self"
+        },
+        "devices": {
+
+            "jcr:title": "DEVICES",
+            "hideInDesktopNav": "false",
+            "hideInMobileNav": "false",
+            "redirectTarget": "/devices",
+            "windowSelection": "_self",
+
+            "device-offers": {
+                "jcr:title": "DEVICE OFFERS",
+                "hideInDesktopNav": "false",
+                "hideInDesktopNav_x0040_DefaultValue": "false",
+                "hideInDesktopNav_x0040_UseDefaultWhenMissing": "true",
+                "hideInMobileNav": "false",
+                "hideInMobileNav_x0040_DefaultValue": "false",
+                "hideInMobileNav_x0040_UseDefaultWhenMissing": "true",
+                "redirectTarget": "/devices/offers",
+                "windowSelection": "_self"
+
+            },
+            "device-offers1": {
+                "jcr:title": "DEVICES",
+                "hideInDesktopNav": "false",
+                "hideInDesktopNav_x0040_DefaultValue": "false",
+                "hideInDesktopNav_x0040_UseDefaultWhenMissing": "true",
+                "hideInMobileNav": "false",
+                "hideInMobileNav_x0040_DefaultValue": "false",
+                "hideInMobileNav_x0040_UseDefaultWhenMissing": "true",
+                "redirectTarget": "/devices",
+                "windowSelection": "_self"
+            }
+        },
+        "why-we-are-better": {
+            
+             "jcr:title":"WHY WE'RE BETTER",
+        "hideInDesktopNav":"false",
+        "hideInMobileNav":"false",
+        "redirectTarget":"/why-we-are-better",
+        "windowSelection":"_self"
+            
+        }
+    }

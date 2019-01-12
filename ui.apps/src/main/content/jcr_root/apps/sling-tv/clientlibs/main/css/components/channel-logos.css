@@ -1,0 +1,53 @@
+
+.logos--container {
+  display: none;
+}
+
+
+.logos--carousel-slide, .logos--container {
+  justify-content: space-around;
+  min-height: 37px;
+  padding: 0 30px;
+}
+
+
+.logos--carousel-slide {
+  display: flex;
+}
+
+
+.logos--image {
+  max-height: 32px;
+  max-width: 42px;
+}
+
+
+.logos--next-chevron, .logos--prev-chevron {
+  bottom: 25px;
+  margin: 0 20px;
+  position: relative;
+}
+
+
+.logos--carousel-dot {
+  background-color: #cfcfcf;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 5px;
+  transition: background-color 0.6s ease;
+  width: 10px;
+}
+
+.logos--carousel-dot.active {
+  background-color: #14ABE0;
+}
+
+
+.logos--dots-container {
+  min-height: 27px;
+  text-align: center;
+}
+

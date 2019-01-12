@@ -1,0 +1,726 @@
+{  
+   "planId":"monthly",
+   "packages":[  
+      {  
+         "package":"domestic",
+         "channels":[  
+            {  
+               "name":"ESPN",
+               "image_name":"ESPNHD"
+            },
+            {  
+               "name":"ESPN2",
+               "image_name":"ESPN2HD"
+            },
+            {  
+               "name":"AMC",
+               "image_name":"AMCSTR"
+            },
+            {  
+               "name":"CNN",
+               "image_name":"CNNHD"
+            },
+            {  
+               "name":"Cheddar Big News",
+               "image_name":"CHEDBN"
+            },
+            {  
+               "name":"HGTV",
+               "image_name":"HGTVD"
+            },
+            {  
+               "name":"Comedy Central",
+               "image_name":"COMEDY"
+            },
+            {  
+               "name":"Cartoon Network",
+               "image_name":"TOONHD"
+            },
+            {  
+               "name":"History Channel",
+               "image_name":"HISSTR"
+            },
+            {  
+               "name":"Disney Channel",
+               "image_name":"DISNHD"
+            },
+            {  
+               "name":"ESPN3",
+               "image_name":"ESPN3"
+            },
+            {  
+               "name":"TNT",
+               "image_name":"TNTHD"
+            },
+            {  
+               "name":"ACC Network Extra",
+               "image_name":"ACCNET"
+            },
+            {  
+               "name":"Food Network",
+               "image_name":"FOODHD"
+            },
+            {  
+               "name":"TBS",
+               "image_name":"TBSHD"
+            },
+            {  
+               "name":"BBC America",
+               "image_name":"BBCAHD"
+            },
+            {  
+               "name":"Freeform",
+               "image_name":"ABCFHD"
+            },
+            {  
+               "name":"IFC",
+               "image_name":"IFCSTR"
+            },
+            {  
+               "name":"EPIX Drive-In",
+               "image_name":"EPDVN"
+            },
+            {  
+               "name":"Tribeca Shortlist",
+               "image_name":"TSL"
+            },
+            {  
+               "name":"A&E",
+               "image_name":"AESTR"
+            },
+            {  
+               "name":"Viceland",
+               "image_name":"VICEHD"
+            },
+            {  
+               "name":"Lifetime",
+               "image_name":"LIFESTR"
+            },
+            {  
+               "name":"Travel Channel",
+               "image_name":"TRAVHD"
+            },
+            {  
+               "name":"AXS TV",
+               "image_name":"AXSTV"
+            },
+            {  
+               "name":"Fuse",
+               "image_name":"FUSEHD"
+            },
+            {  
+               "name":"Newsy",
+               "image_name":"NEWSY"
+            },
+            {  
+               "name":"Cheddar",
+               "image_name":"CHEDSTR"
+            },
+            {  
+               "name":"Bloomberg Television",
+               "image_name":"BLOOMHD"
+            },
+            {  
+               "name":"Local Now",
+               "image_name":"LONOW"
+            }
+         ]
+      },
+      {  
+         "package":"sling-mss",
+         "channels":[  
+            {  
+               "name":"FOX",
+               "image_name":"FOXGN"
+            },
+            {  
+               "name":"Bravo",
+               "image_name":"BRAVOHD"
+            },
+            {  
+               "name":"NBC",
+               "image_name":"NBCGN"
+            },
+            {  
+               "name":"FOX RSNs",
+               "image_name":"FOXRSN"
+            },
+            {  
+               "name":"NBC RSNs",
+               "image_name":"NBCRSN"
+            },
+            {  
+               "name":"NFL Network",
+               "image_name":"NFLHD"
+            },
+            {  
+               "name":"AMC",
+               "image_name":"AMCSTR-M"
+            },
+            {  
+               "name":"FX",
+               "image_name":"FXHD"
+            },
+            {  
+               "name":"CNN",
+               "image_name":"CNNHD-M"
+            },
+            {  
+               "name":"HGTV",
+               "image_name":"HGTVD-M"
+            },
+            {  
+               "name":"Comedy Central",
+               "image_name":"COMEDY-M"
+            },
+            {  
+               "name":"USA",
+               "image_name":"USAHD"
+            },
+            {  
+               "name":"Cartoon Network",
+               "image_name":"TOONHD-M"
+            },
+            {  
+               "name":"History Channel",
+               "image_name":"HISSTR-M"
+            },
+            {  
+               "name":"TNT",
+               "image_name":"TNTHD-M"
+            },
+            {  
+               "name":"Food Network",
+               "image_name":"FOODHD-M"
+            },
+            {  
+               "name":"FOX Sports 1",
+               "image_name":"FS1HD"
+            },
+            {  
+               "name":"FOX Sports 2",
+               "image_name":"FS2HD"
+            },
+            {  
+               "name":"NBC Sports Network",
+               "image_name":"NBCSNHD"
+            },
+            {  
+               "name":"TBS",
+               "image_name":"TBSHD-M"
+            },
+            {  
+               "name":"BBC America",
+               "image_name":"BBCAHD-M"
+            },
+            {  
+               "name":"FXX",
+               "image_name":"FXXHD"
+            },
+            {  
+               "name":"SYFY",
+               "image_name":"SYFYHD"
+            },
+            {  
+               "name":"Nick Jr.",
+               "image_name":"NICJRHD-M"
+            },
+            {  
+               "name":"IFC",
+               "image_name":"IFCSTR-M"
+            },
+            {  
+               "name":"EPIX Drive-In",
+               "image_name":"EPDVN-M"
+            },
+            {  
+               "name":"Tribeca Shortlist",
+               "image_name":"TSL-M"
+            },
+            {  
+               "name":"A&E",
+               "image_name":"AESTR-M"
+            },
+            {  
+               "name":"Viceland",
+               "image_name":"VICEHD-M"
+            },
+            {  
+               "name":"truTV",
+               "image_name":"TRUTVHD-M"
+            },
+            {  
+               "name":"Lifetime",
+               "image_name":"LIFESTR-M"
+            },
+            {  
+               "name":"Travel Channel",
+               "image_name":"TRAVHD-M"
+            },
+            {  
+               "name":"AXS TV",
+               "image_name":"AXSTV-M"
+            },
+            {  
+               "name":"Fuse",
+               "image_name":"FUSEHD-M"
+            },
+            {  
+               "name":"BET",
+               "image_name":"BET-M"
+            },
+            {  
+               "name":"National Geographic",
+               "image_name":"NGCHD"
+            },
+            {  
+               "name":"Nat Geo Wild",
+               "image_name":"NGWIHD"
+            },
+            {  
+               "name":"Newsy",
+               "image_name":"NEWSY-M"
+            },
+            {  
+               "name":"Cheddar",
+               "image_name":"CHEDSTR-M"
+            },
+            {  
+               "name":"Cheddar Big News",
+               "image_name":"CHEDBN-M"
+            },
+            {  
+               "name":"Bloomberg Television",
+               "image_name":"BLOOMHD-M"
+            },
+            {  
+               "name":"Local Now",
+               "image_name":"LONOW-M"
+            }
+         ]
+      },
+      {  
+         "package":"sling-combo",
+         "channels":[  
+            {  
+               "name":"FOX",
+               "image_name":"FOXGN"
+            },
+            {  
+               "name":"NBC",
+               "image_name":"NBCGN"
+            },
+            {  
+               "name":"FOX RSNs",
+               "image_name":"FOXRSN"
+            },
+            {  
+               "name":"NBC RSNs",
+               "image_name":"NBCRSN"
+            },
+            {  
+               "name":"NFL Network",
+               "image_name":"NFLHD"
+            },
+            {  
+               "name":"FX",
+               "image_name":"FXHD"
+            },
+            {  
+               "name":"USA",
+               "image_name":"USAHD"
+            },
+            {  
+               "name":"Bravo",
+               "image_name":"BRAVOHD"
+            },
+            {  
+               "name":"FOX Sports 1",
+               "image_name":"FS1HD"
+            },
+            {  
+               "name":"FOX Sports 2",
+               "image_name":"FS2HD"
+            },
+            {  
+               "name":"NBC Sports Network",
+               "image_name":"NBCSNHD"
+            },
+            {  
+               "name":"FXX",
+               "image_name":"FXXHD"
+            },
+            {  
+               "name":"SYFY",
+               "image_name":"SYFYHD"
+            },
+            {  
+               "name":"Nick Jr.",
+               "image_name":"NICJRHD-M"
+            },
+            {  
+               "name":"EPIX Drive-In",
+               "image_name":"EPDVN-M"
+            },
+            {  
+               "name":"truTV",
+               "image_name":"TRUTVHD-M"
+            },
+            {  
+               "name":"BET",
+               "image_name":"BET-M"
+            },
+            {  
+               "name":"National Geographic",
+               "image_name":"NGCHD"
+            },
+            {  
+               "name":"Nat Geo Wild",
+               "image_name":"NGWIHD"
+            },
+            {  
+               "name":"Fuse",
+               "image_name":"FUSEHD-M"
+            },
+            {  
+               "name":"Cheddar Big News",
+               "image_name":"CHEDBN-M"
+            },
+            {  
+               "name":"ESPN",
+               "image_name":"ESPNHD"
+            },
+            {  
+               "name":"AMC",
+               "image_name":"AMCSTR"
+            },
+            {  
+               "name":"CNN",
+               "image_name":"CNNHD"
+            },
+            {  
+               "name":"HGTV",
+               "image_name":"HGTVD"
+            },
+            {  
+               "name":"ACC Network Extra",
+               "image_name":"ACCNET"
+            },
+            {  
+               "name":"Comedy Central",
+               "image_name":"COMEDY"
+            },
+            {  
+               "name":"Cartoon Network",
+               "image_name":"TOONHD"
+            },
+            {  
+               "name":"History Channel",
+               "image_name":"HISSTR"
+            },
+            {  
+               "name":"Disney Channel",
+               "image_name":"DISNHD"
+            },
+            {  
+               "name":"ESPN2",
+               "image_name":"ESPN2HD"
+            },
+            {  
+               "name":"ESPN3",
+               "image_name":"ESPN3"
+            },
+            {  
+               "name":"TNT",
+               "image_name":"TNTHD"
+            },
+            {  
+               "name":"Food Network",
+               "image_name":"FOODHD"
+            },
+            {  
+               "name":"TBS",
+               "image_name":"TBSHD"
+            },
+            {  
+               "name":"BBC America",
+               "image_name":"BBCAHD"
+            },
+            {  
+               "name":"Freeform",
+               "image_name":"ABCFHD"
+            },
+            {  
+               "name":"IFC",
+               "image_name":"IFCSTR"
+            },
+            {  
+               "name":"EPIX Drive-In",
+               "image_name":"EPDVN"
+            },
+            {  
+               "name":"Tribeca Shortlist",
+               "image_name":"TSL"
+            },
+            {  
+               "name":"A&E",
+               "image_name":"AESTR"
+            },
+            {  
+               "name":"Viceland",
+               "image_name":"VICEHD"
+            },
+            {  
+               "name":"Lifetime",
+               "image_name":"LIFESTR"
+            },
+            {  
+               "name":"Travel Channel",
+               "image_name":"TRAVHD"
+            },
+            {  
+               "name":"AXS TV",
+               "image_name":"AXSTV"
+            },
+            {  
+               "name":"Newsy",
+               "image_name":"NEWSY"
+            },
+            {  
+               "name":"Cheddar",
+               "image_name":"CHEDSTR"
+            },
+            {  
+               "name":"Bloomberg Television",
+               "image_name":"BLOOMHD"
+            },
+            {  
+               "name":"Local Now",
+               "image_name":"LONOW"
+            }
+         ]
+      },
+      {  
+         "package":"zvod",
+         "channels":[  
+            {  
+               "name":"ZVOD",
+               "image_name":"ZEEVOD"
+            }
+         ]
+      },
+      {  
+         "package":"malayalam-pack-2",
+         "channels":[  
+            {  
+               "name":"Kairali TV",
+               "image_name":"KAIRALI"
+            },
+            {  
+               "name":"Kairali We",
+               "image_name":"KAIRWE"
+            },
+            {  
+               "name":"Kiran TV",
+               "image_name":"KIRAN"
+            },
+            {  
+               "name":"Mazhavil Manorama",
+               "image_name":"MNRMA"
+            },
+            {  
+               "name":"People",
+               "image_name":"PEOPL"
+            },
+            {  
+               "name":"Surya TV",
+               "image_name":"SURYA"
+            },
+            {  
+               "name":"Willow Cricket",
+               "image_name":"WLLOHD"
+            },
+            {  
+               "name":"Willow Extra",
+               "image_name":"WILXTRA"
+            }
+         ]
+      },
+      {  
+         "package":"asianet-pack",
+         "channels":[  
+            {  
+               "name":"Asianet",
+               "image_name":"ASIANT"
+            },
+            {  
+               "name":"Asianet Plus",
+               "image_name":"ASNPL"
+            },
+            {  
+               "name":"Asianet Movies",
+               "image_name":"ASNMV"
+            },
+            {  
+               "name":"Asianet News",
+               "image_name":"ASNNW"
+            }
+         ]
+      },
+      {  
+         "package":"malayalam-mega",
+         "channels":[  
+            {  
+               "name":"Surya TV",
+               "image_name":"SURYA"
+            },
+            {  
+               "name":"Kairali TV",
+               "image_name":"KAIRALI"
+            },
+            {  
+               "name":"Mazhavil Manorama",
+               "image_name":"MNRMA"
+            },
+            {  
+               "name":"News18 Kerala",
+               "image_name":"N18KLA"
+            },
+            {  
+               "name":"Asianet",
+               "image_name":"ASIANT"
+            },
+            {  
+               "name":"Asianet Plus",
+               "image_name":"ASNPL"
+            },
+            {  
+               "name":"Asianet Movies",
+               "image_name":"ASNMV"
+            },
+            {  
+               "name":"Asianet News",
+               "image_name":"ASNNW"
+            },
+            {  
+               "name":"Kairali We",
+               "image_name":"KAIRWE"
+            },
+            {  
+               "name":"People",
+               "image_name":"PEOPL"
+            },
+            {  
+               "name":"Kiran TV",
+               "image_name":"KIRAN"
+            },
+            {  
+               "name":"Willow Cricket",
+               "image_name":"WLLOHD"
+            },
+            {  
+               "name":"Willow Extra",
+               "image_name":"WILXTRA"
+            },
+            {  
+               "name":"Outside Television",
+               "image_name":"OUTSIDE"
+            },
+            {  
+               "name":"TRACE Sport Stars",
+               "image_name":"TRCSPSI"
+            },
+            {  
+               "name":"Nautical Channel",
+               "image_name":"NATCL"
+            },
+            {  
+               "name":"Motorsport TV",
+               "image_name":"MOTORNA"
+            }
+         ]
+      },
+      {  
+         "package":"hindi-pack",
+         "channels":[  
+            {  
+               "name":"SET",
+               "image_name":"SETHHD"
+            },
+            {  
+               "name":"Aapka Colors",
+               "image_name":"CLRS"
+            },
+            {  
+               "name":"Zee TV HD",
+               "image_name":"ZEETVH"
+            },
+            {  
+               "name":"&TV",
+               "image_name":"ANDTV"
+            },
+            {  
+               "name":"Star India Plus",
+               "image_name":"SPLUS"
+            },
+            {  
+               "name":"Aaj Tak",
+               "image_name":"AAJTK"
+            },
+            {  
+               "name":"Willow Cricket",
+               "image_name":"WLLOHD"
+            },
+            {  
+               "name":"Willow Extra",
+               "image_name":"WILXTRA"
+            },
+            {  
+               "name":"SAB TV",
+               "image_name":"SAB"
+            },
+            {  
+               "name":"Sony Mix",
+               "image_name":"SONYM"
+            },
+            {  
+               "name":"India Today",
+               "image_name":"INDTODAY"
+            }
+         ]
+      },
+      {  
+         "package":"tamil-pack-2",
+         "channels":[  
+            {  
+               "name":"Jaya TV",
+               "image_name":"JAYATV"
+            },
+            {  
+               "name":"KTV",
+               "image_name":"KTV1"
+            },
+            {  
+               "name":"SUN TV",
+               "image_name":"SUNTV"
+            },
+            {  
+               "name":"Star Vijay\r\n",
+               "image_name":"SVJAY"
+            },
+            {  
+               "name":"Willow Cricket",
+               "image_name":"WLLOHD"
+            },
+            {  
+               "name":"Willow Extra",
+               "image_name":"WILXTRA"
+            },
+            {  
+               "name":"Zee Tamil",
+               "image_name":"ZEETAML"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,19 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Krishna Gunturu",
+	"jcr:created": "Mon Jul 08 2018 04:13:01 GMT-0500",
+	"jcr:lastModified": "Mon Jul 09 2018 10:46:28 GMT-0600",
+	"sling:resourceType": "sling-tv/components/content/general/channel-logos",
+	"channelId": "component Id",
+	"channelLogos": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"altName": "image1",
+			"channelImage": "/content/dam/sling-tv/devices/device-logos/Roku - Black.png"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	}
+}

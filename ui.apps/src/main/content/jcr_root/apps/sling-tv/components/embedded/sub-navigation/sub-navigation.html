@@ -1,0 +1,13 @@
+<div data-sly-use.navigationModel="com.sling.tv.core.models.SubNavigationModel"  data-sly-unwrap />
+
+<div class="header_in-page-nav" >
+     	
+  <div data-sly-list="${navigationModel.subNavItems}" data-sly-unwrap>
+    <a class="header_in-page-nav-link" href="#${item.targetId}">${item.subNavTitle}</a>
+  </div>
+
+</div>
+
+<span data-sly-test="${wcmmode.edit && navigationModel.subNavItems.size == 0}">Configure Sub Navigation Component</span>
+
+<div class="clear-both"></div>

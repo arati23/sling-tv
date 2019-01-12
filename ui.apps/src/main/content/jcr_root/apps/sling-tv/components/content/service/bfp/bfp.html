@@ -1,0 +1,41 @@
+<sly data-sly-test="${wcmmode.edit}"><p>Click here to configure BFP Component</p></sly>
+<sly data-sly-use.bfpModel="com.sling.tv.core.models.BFPModel">
+<div class="bfp--container container-fluid--narrow js-bfp-container" id="${bfpModel.bfpId}"
+     data-sling-bfp-preview-id="${bfpModel.previewId}" data-sling-bfp-channel-id="${bfpModel.channelId}"
+     data-sling-bfp-register-time="${bfpModel.registerTime}" data-sling-bfp-cart-time="${bfpModel.cartTime}"
+     data-sling-bfp-cta-url="${bfpModel.ctaUrl}">
+    <div class="container-fluid--narrow">
+        <div class="bfp--overlay-wrapper">
+            <img class="bfp--overlay js-bfp-poster" src="${bfpModel.posterImage}"/>
+            <img class="bfp--overlay js-bfp-overlay hidden-on-load" src="${bfpModel.overlayImage}"/>
+        </div>
+        <div class="js-bfp-click-jack bfp--invisible-button pointer"></div>
+        <iframe class="bfp--frame js-bfp" allow="encrypted-media *;">
+        </iframe>
+        <div class="bfp--message bold sg-large js-bfp-message">
+            ${bfpModel.bfpMessage}
+        </div>
+        <div class="bfp--error bold sg-large hidden-on-load js-bfp-error">
+            ${bfpModel.bfpDefaultError}
+        </div>
+    </div>
+    <div class="bfp--form flex-row">
+        <div class="bfp--form-element">
+            <label class="bfp--user-label bfp--label" for="bfp-email">${bfpModel.email}</label>
+            <input class="bfp--user-input bfp--input js-bfp-email" id="bfp-email" placeholder="${bfpModel.bfpEmail}"/>
+            <div class="bfp--input-error hidden-on-load js-bfp-user-error">${bfpModel.errorEmailText}</div>
+        </div>
+        <div class="bfp--form-element">
+            <label class="bfp--pass-label bfp--label" for="bfp-password">${bfpModel.password}</label>
+            <input class="bfp--pass-input bfp--input js-bfp-pass" id="bfp-password" type="password" placeholder="${bfpModel.bfpPassword}"/>
+            <div class="bfp--input-error hidden-on-load js-bfp-pass-error">${bfpModel.errorPasswordText}</div>
+        </div>
+        <div class="bfp--cta-container">
+            <button class="bfp--cta btn cta-button--solid js-bfp-register">
+                <span class="extra-bold">${bfpModel.buttonText} </span>
+                <span class="fa fa-chevron-right"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</sly>

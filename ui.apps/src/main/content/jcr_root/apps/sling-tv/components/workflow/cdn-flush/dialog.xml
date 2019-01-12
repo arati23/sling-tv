@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="AND Split Properties"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <common
+                    jcr:primaryType="cq:Widget"
+                    title="Common"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <branches
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select number of branches"
+                            fieldLabel="Branches"
+                            name="./branches"
+                            type="radio"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <_x0032_
+                                    jcr:primaryType="nt:unstructured"
+                                    text="2 Branches"
+                                    value="{Long}2"/>
+                                <_x0033_
+                                    jcr:primaryType="nt:unstructured"
+                                    text="3 Branches"
+                                    value="{Long}3"/>
+                                <_x0034_
+                                    jcr:primaryType="nt:unstructured"
+                                    text="4 Branches"
+                                    value="{Long}4"/>
+                                <_x0035_
+                                    jcr:primaryType="nt:unstructured"
+                                    text="5 Branches"
+                                    value="{Long}5"/>
+                            </options>
+                        </branches>
+                    </items>
+                </common>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

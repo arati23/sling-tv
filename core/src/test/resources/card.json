@@ -1,0 +1,34 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "ganesh",
+	"jcr:lastModifiedBy": "ganesh",
+	"jcr:created": "Thu Jul 12 2018 09:44:40 GMT-0600",
+	"cardId": "09151991",
+	"cardType": "someRandomType",
+	"jcr:lastModified": "Thu Jul 12 2018 09:45:20 GMT-0600",
+	"sling:resourceType": "sling-tv/components/content/layouts/card",
+	"textCardItems": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"textCardTitle": "TestTextTitle",
+			"textCardPackage": "TestTextPackage",
+			"textCardDesc": "TestTextDescription"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	},
+	"logoCardItems": {
+		"jcr:primaryType": "nt:unstructured",
+		"item2": {
+			"jcr:primaryType": "nt:unstructured",
+			"logoCardTitle": "TestLogoTitle",
+			"logoCardPackage": "TestLogoPackage",
+			"referencePath": "TestLogoReferencePath"
+		},
+		"item3": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	}
+}

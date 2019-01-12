@@ -1,0 +1,40 @@
+{  
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "jcr:created":"Thu Jul 26 2018 17:11:17 GMT-0500",
+   "programRibbonId":"12345",
+   "jcr:lastModified":"Fri Jul 27 2018 13:57:47 GMT-0500",
+   "sling:resourceType":"sling-tv/components/content/media/program-ribbon",
+   "allImagePaths":{  
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/Screen Shot 2017-05-30 at 3.14.31 PM.png"
+      },
+      "item1":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/misc/Desi Video Image.png"
+      },
+      "item2":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/Screen Shot 2017-05-30 at 3.15.10 PM.png"
+      },
+      "item3":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/marquees/domestic/device-lps/BRA0175_GetPicky_DeviceMarquees_640x251_LG_V3.jpg"
+      },
+      "item4":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/Screen Shot 2017-05-30 at 3.13.20 PM.png"
+      },
+      "item5":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/Screen Shot 2017-05-30 at 3.13.56 PM.png"
+      },
+      "item6":{  
+         "jcr:primaryType":"nt:unstructured",
+         "imagePath":"/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/Screen Shot 2017-05-30 at 3.15.52 PM.png"
+      }
+   }
+}

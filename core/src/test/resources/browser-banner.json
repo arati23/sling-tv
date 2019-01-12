@@ -1,0 +1,15 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Nithya Nair",
+	"jcr:lastModifiedBy": "Nithya Nair",
+	"jcr:created": "Mon Jun 25 2018 11:05:02 GMT-0500",
+	"alt": "Sample Alt Text",
+	"bannerText": "This is the Message",
+	"imagePath": "/content/dam/sling-tv/devices/device-ui-screenshot/dvr-ui/abc.jpg",
+	"browserSpecificComponentId": "200",
+	"jcr:lastModified": "Mon Jun 25 2018 11:05:02 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/general/browser-banner"
+}
+
+
+		

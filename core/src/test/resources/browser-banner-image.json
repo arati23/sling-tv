@@ -1,0 +1,23 @@
+
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Thu Jun 28 2018 15:41:29 GMT-0600",
+  "width": "40",
+  "browserBannerImageId": "Component ID",
+  "jcr:lastModified": "Fri Jun 29 2018 10:51:14 GMT-0600",
+  "sling:resourceType": "sling-tv/components/content/general/browser-banner-image",
+  "browserBannerImage": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "imagePath": "/content/dam/sling-tv/devices/device-logos/Android TV White.png",
+      "imageUrl": "https://www.google.com",
+      "alt": "gvk"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured"
+    }
+  }
+}

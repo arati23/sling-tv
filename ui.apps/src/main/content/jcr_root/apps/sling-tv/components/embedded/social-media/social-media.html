@@ -1,0 +1,18 @@
+<sly data-sly-use.socialMedia="com.sling.tv.core.models.SocialMediaModel">
+<div data-sly-test="${wcmmode.edit && !socialMedia.socialMediaLinks}">Click here to configure Social Media Links</div>
+  <ul id="${socialMedia.socialMediaLinksId}" class="list-inline social">
+    <sly data-sly-list="${socialMedia.socialMediaLinks}" >
+      <li class="social-list-item">
+        <a x-cq-linkchecker="skip" class="social_icon js-social-media-icons" href="${item.socialMediaLink}" target="_blank">
+        <span class="${item.socialMediaIcon}"></span>
+        </a>
+      </li>
+    </sly>
+  </ul>
+</sly>
+
+
+
+
+
+                                        

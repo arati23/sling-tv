@@ -1,0 +1,229 @@
+<div data-sly-use.navigationComponent="com.sling.tv.core.models.NavigationComponentModel" data-sly-unwrap/>
+
+<div  id="${navigationComponent.newHeaderId}" data-sly-test="${!navigationComponent.headerType || navigationComponent.headerType == 'newHeader' }">
+  <header class="header--main-only ng-theme">
+    <div class="navbar navbar-fixed-top text-uppercase header_main" role="navigation">
+      <div data-sly-test="${wcmmode.edit && !navigationComponent.logoImageNew}">Click here to configure Light Theme Header Component</div>
+
+      <div class="hidden-xs header_link-container js-preheader">
+        <ul class="header_navigation">
+          <li class="hidden-on-load js-header-link" data-sly-test="${navigationComponent.regionTextLinksListNew}"
+              data-sly-repeat="${navigationComponent.regionTextLinksListNew}">
+            <a x-cq-linkchecker="skip" class="header_link header_link-w-border" href="${item.regionLinkNew}"
+            >
+              <span>${item.regionNameNew}</span>
+            </a>
+          </li>
+
+          <li data-sly-test="${navigationComponent.signInTextNew}" class="js-sign-in hidden-on-load">
+            <a x-cq-linkchecker="skip" class="header_link" href="${navigationComponent.signInLinkNew}"
+            >
+              ${navigationComponent.signInTextNew}
+            </a>
+          </li>
+
+          <li data-sly-test="${navigationComponent.myAccountLabelTextNew}" class="js-my-account header--my-account hidden-on-load">
+            <a x-cq-linkchecker="skip" href="${navigationComponent.myAccountLinkNew}" class="header_link header_link-w-border"
+            >
+              ${navigationComponent.myAccountLabelTextNew}
+              <span class="fa fa-user"></span>
+            </a>
+          </li>
+
+          <li class="js-sign-out hidden-on-load" data-sly-test="${navigationComponent.signOutTextNew}" >
+            <a x-cq-linkchecker="skip" href="${navigationComponent.signOutLinkNew}" class="header_link"
+            >
+              ${navigationComponent.signOutTextNew}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-left" >
+        <a x-cq-linkchecker="skip" href="${navigationComponent.logoLinkNew}">
+          <img class="header_logo" src="${navigationComponent.logoImageNew}" alt="${navigationComponent.logoAltTextNew}"/>
+        </a>
+
+        <button type="button" class="navbar-toggle header_hamburger" data-toggle="collapse" data-target="#header-collapse">
+          <span class="fa fa-bars"></span>
+        </button>
+      </div>
+
+      <div class="hidden-xs hidden-sm hidden-md" data-sly-test="${navigationComponent.includeSubNavComponent}"
+           data-sly-resource="${ @path='subNav', resourceType='sling-tv/components/embedded/sub-navigation'}">
+      </div>
+
+      <div class="visible-xs">
+        <div class="collapse navbar-collapse header_link-container" id="header-collapse">
+          <ul class="header_navigation">
+            <li class="hidden-on-load js-header-link" data-sly-test="${navigationComponent.regionTextLinksListNew}"
+                data-sly-repeat="${navigationComponent.regionTextLinksListNew}">
+              <a x-cq-linkchecker="skip" class="header_link header_link-w-border" href="${item.regionLinkNew}"
+              >
+                <span>${item.regionNameNew}</span>
+              </a>
+            </li>
+
+            <li class="js-sign-in hidden-on-load">
+              <a x-cq-linkchecker="skip" class="header_link" href="${navigationComponent.signInLinkNew}"
+              >
+                ${navigationComponent.signInTextNew}
+              </a>
+            </li>
+
+            <li class="js-my-account header--my-account hidden-on-load">
+              <a x-cq-linkchecker="skip" href="${navigationComponent.myAccountLinkNew}" class="header_link header_link-w-border"
+              >
+                ${navigationComponent.myAccountLabelTextNew}
+                <span class="fa fa-user"></span>
+              </a>
+            </li>
+
+            <li class="js-sign-out hidden-on-load">
+              <a x-cq-linkchecker="skip" href="${navigationComponent.signOutLinkNew}" class="header_link"
+              >
+                ${navigationComponent.signOutTextNew}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-mask"></div>
+  </header>
+</div>
+
+<div id="${navigationComponent.headerId}" data-sly-test="${navigationComponent.headerType == 'header' }">
+<header class="${navigationComponent.hideHeaderNav ? 'header--main-only' : ''}">
+  
+  <div class="navbar navbar-fixed-top text-uppercase header_main" role="navigation">
+  <div data-sly-test="${wcmmode.edit && !navigationComponent.headerText}" style="color: white;">Click here to configure Dark Theme Header Component</div>
+    <div class="container-fluid navbar-left" >
+      <a x-cq-linkchecker="skip" href="${navigationComponent.logoLink}">
+        <img class="header_logo" src="${navigationComponent.logoImage}" alt="${navigationComponent.logoAltText}" />
+      </a>
+
+      <button type="button" class="navbar-toggle header_hamburger" data-toggle="collapse" data-target="#header-collapse">
+        <span class="fa fa-bars"></span>
+      </button>
+
+      <a x-cq-linkchecker="skip" class="visible-xs header--navbar-image" href="${item.regionLink}"
+         data-sly-test="${navigationComponent.regionLogoLinksList}" data-sly-repeat="${navigationComponent.regionLogoLinksList}"
+         >
+        <img data-sling-src="${item.regionLogo}"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+      </a>
+
+      <p class="header--text">${navigationComponent.headerText}</p>
+    </div>
+    <div class="collapse navbar-collapse header_link-container" id="header-collapse">
+      <ul class="header_navigation">
+        <li data-sly-repeat="${ navigationComponent.header.children }" class="visible-xs">
+          <a data-sly-test="${!item.children}" x-cq-linkchecker="skip" class="${item.hideInMobileNav && 'hidden-xs'} header_link"
+             title="${item.title}" href="${item.link}" target="${item.windowSelection}"
+             >
+            ${item.title}
+          </a>
+          <sly data-sly-test="${item.children}">
+            <a x-cq-linkchecker="skip" href="#" class="${item.hideInMobileNav && 'hidden-xs'} dropdown-toggle header--dropdown-toggle" data-toggle="dropdown">
+              <span class="header--dropdown-title">${item.title}</span>
+              <span class="fa fa-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu header--dropdown">
+              <li data-sly-repeat="${item.children}">
+                <a x-cq-linkchecker="skip" class="${item.hideInMobileNav && 'hidden-xs'} header--dropdown-link" href="${item.link}" target="${item.windowSelection}"
+                   >
+                  ${item.title}
+                </a>
+              </li>
+            </ul>
+          </sly>
+        </li>
+
+        <sly data-sly-test="${!navigationComponent.hideLanguageSel}" data-sly-use.languageComponent="com.sling.tv.core.models.LanguageComponentModel">
+          <sly data-sly-test="${languageComponent.languageList}">
+            <li class="dropdown language-toggle">
+              <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle header--dropdown-toggle" data-toggle="dropdown" onclick="s_objectID='header-dropdown-main-language-link';" >
+                <span class="header--dropdown-title">${navigationComponent.languageTitle}</span>
+                <span class="fa fa-chevron-down"></span>
+              </a>
+              <div class="dropdown-menu header--dropdown">
+                <ul>
+                  <li data-sly-list.language="${languageComponent.languageList}">
+                    <a x-cq-linkchecker="skip" class="header--language-link" href="${language.langLink}"
+                       onclick="s_objectID='header-dropdown-${language.langTitle @ context='scriptString'}-language-link';"  >
+                      ${language.languageName}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </sly>
+        </sly>
+
+        <li class="hidden-on-load js-header-link"
+            data-sly-test="${navigationComponent.regionTextLinksList}" data-sly-repeat="${navigationComponent.regionTextLinksList}">
+          <a x-cq-linkchecker="skip" class="header_link" href="${item.regionLink}"
+             >
+            <span>${item.regionText}</span>
+          </a>
+        </li>
+
+        <li class="hidden-on-load hidden-xs js-header-link"
+            data-sly-test="${navigationComponent.regionLogoLinksList}" data-sly-repeat="${navigationComponent.regionLogoLinksList}">
+          <a x-cq-linkchecker="skip" class="header_link header--navbar-image" href="${item.regionLink}"
+             >
+            <img data-sling-src="${item.regionLogo}"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+          </a>
+        </li>
+
+        <li class="js-sign-in hidden-on-load">
+          <a x-cq-linkchecker="skip" class="light header_link" href="${navigationComponent.signInLink}"
+             >
+            ${navigationComponent.memberText}
+            <span class="semi-bold">${navigationComponent.signInText}</span>
+          </a>
+        </li>
+
+        <li class="js-my-account header--my-account hidden-on-load">
+          <a x-cq-linkchecker="skip" href="${navigationComponent.myAccountLink}" class="header_link"
+             >
+            <span class="fa fa-user"></span>
+          </a>
+        </li>
+
+        <li class="js-sign-out hidden-on-load">
+          <a x-cq-linkchecker="skip" href="${navigationComponent.signOutLink}" class="header_link"
+             >
+            ${navigationComponent.signOutText}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub-header container-fluid max-width hidden-xs ${navigationComponent.hideHeaderNav && 'hidden-lg hidden-md hidden-sm'}">
+    <sly data-sly-repeat="${ navigationComponent.header.children }">
+      <sly data-sly-test="${! item.children }">
+        <div class="col-xs-3 sub-header--item">
+          <a x-cq-linkchecker="skip" class="sub-header--link"  
+          href="${item.link}" target="${item.windowSelection}">${item.title}</a>
+        </div>
+      </sly>
+      <div data-sly-test="${ item.children }" class="col-xs-3 text-uppercase text-center dropdown sub-header--dropdown sub-header--item">
+        <a x-cq-linkchecker="skip" class="sub-header--link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${item.title}</a>
+        <ul class="dropdown-menu sub-header--dropdown-list">
+          <li class="sub-header--dropdown-item" data-sly-repeat="${item.children}">
+            <a x-cq-linkchecker="skip" class="sub-header--dropdown-link" href="${item.link}" target="${item.windowSelection}"
+               >
+              ${item.title}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </sly>
+  </div>
+  <div class="navbar-mask"></div>
+</header>
+</div>

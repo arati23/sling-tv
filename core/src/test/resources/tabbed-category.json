@@ -1,0 +1,13 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Dileep Muraleedharan",
+	"jcr:lastModifiedBy": "Dileep Muraleedharan",
+	"jcr:created": "Fri Jun 29 2018 05:10:08 GMT-0500",
+	"categoryPath": "/content/sling-tv/channel-grids/new_extras",
+	"tabbedCategoryCarouselId":"12345",
+	"jcr:lastModified": "Fri Jun 29 2018 05:10:08 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/media/tabbed-category-carousel"
+}
+
+
+		

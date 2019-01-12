@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="nt:unstructured" jcr:title="Tile Grid"
+	js-comp-identifier="tilegrid"
+	sling:resourceType="cq/gui/components/authoring/dialog"
+	helpPath="en/cq/current/wcm/default_components.html#Image">
+	<content jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/foundation/container">
+		<layout jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+			margin="{Boolean}false" />
+		<items jcr:primaryType="nt:unstructured">
+			<tab1 jcr:primaryType="nt:unstructured" jcr:title="Configure"
+				sling:resourceType="granite/ui/components/foundation/section">
+				<items jcr:primaryType="nt:unstructured">
+					<column jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/container">
+						<items jcr:primaryType="nt:unstructured">
+							<hideBreakout jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+								name="./hideBreakout" text="Hide Breakout" value="true" />
+							<tcd-grid jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+								class="full-width" composite="{Boolean}true"
+								fieldLabel="Tiles">
+								<field jcr:primaryType="nt:unstructured"
+									sling:resourceType="granite/ui/components/coral/foundation/container"
+									name="./tiles">
+									<layout jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+										method="absolute" />
+									<items jcr:primaryType="nt:unstructured">
+										<column jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/container">
+											<items jcr:primaryType="nt:unstructured">
+												<headline jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldLabel="Title" name="./tabTitle" />
+												<tabUrl jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldDescription="Please enter full Url and check hide breakout"
+													fieldLabel="URL" name="./tabUrl" />
+												<icon jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+													fieldLabel="Icon" name="./tabIcon" />
+												<uniqueID jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldLabel="UniqueID" name="./uniqueId" />
+
+											</items>
+										</column>
+									</items>
+								</field>
+							</tcd-grid>
+							<hideBreakout jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+								name="./hideBreakout" text="Hide Breakout" value="true" />
+						</items>
+					</column>
+
+				</items>
+				<layout jcr:primaryType="nt:unstructured"
+					sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+			</tab1>
+			<tracking jcr:primaryType="nt:unstructured"
+				jcr:title="Tracking"
+				sling:resourceType="granite/ui/components/foundation/section">
+				<layout jcr:primaryType="nt:unstructured"
+					sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+				<items jcr:primaryType="nt:unstructured">
+					<columns jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/container">
+						<items jcr:primaryType="nt:unstructured">
+							<componentId jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								allowBlank="false"
+								fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+								fieldLabel="Component ID" name="./tcgGridId" />
+						</items>
+					</columns>
+				</items>
+			</tracking>
+		</items>
+	</content>
+</jcr:root>

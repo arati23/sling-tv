@@ -1,0 +1,21 @@
+{
+
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"paddingLeft": "10",
+	"border": "true",
+	"jcr:lastModifiedBy": "admin",
+	"jcr:created": "Mon Jun 25 2018 14:33:10 GMT-0600",
+	"anchorTag": "container-tag",
+	"paddingLeftMobile": "10",
+	"paddingRight": "10",
+	"containerCmpId": "container-id",
+	"containerTheme": "lg-theme",
+	"jcr:lastModified": "Mon Jun 25 2018 14:34:20 GMT-0600",
+	"mobileContent": "true",
+	"maxWidthOptions": "container--max-width",
+	"paddingRightMobile": "10",
+	"sling:resourceType": "sling-tv/components/containers/container",
+	"fullWidthOptions": "custom"
+
+}

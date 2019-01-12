@@ -1,0 +1,24 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Dileep Muraleedharan",
+	"jcr:lastModifiedBy": "Dileep Muraleedharan",
+	"jcr:created": "Fri Jun 22 2018 08:10:08 GMT-0500",
+	"setup": "two-50-50",
+	"colOverride": "true",
+	"column1Val": "10",
+	"column2Val": "20",
+	"column3Val": "10",
+	"column4Val": "20",
+	"column5Val": "10",
+	"column6Val": "10",
+	"alignment": "flex-start",
+	"colPadding": "true",
+	"fixedContainerCheck": "true",
+	"carouselMode": "true",
+	"flexColumnContainerId":"12345",
+	"jcr:lastModified": "Fri Jun 22 2018 09:18:01 GMT-0500",
+	"sling:resourceType": "sling-tv/components/containers/column-container"
+}
+
+
+		

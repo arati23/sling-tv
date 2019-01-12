@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+	extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration]"    
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <overridefooter
+                     		cq:hideOnEdit="{Boolean}false"
+                             cq:showOnCreate="{Boolean}false"
+                             jcr:primaryType="nt:unstructured"
+                             jcr:title="Header / Footer"
+                             sling:resourceType="granite/ui/components/foundation/section">
+                         <layout
+                                 jcr:primaryType="nt:unstructured"
+                                 sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                 margin="{Boolean}false"/>
+                         <items jcr:primaryType="nt:unstructured">
+                             <column
+                                     jcr:primaryType="nt:unstructured"
+                                     sling:resourceType="granite/ui/components/foundation/container">
+                                 <items jcr:primaryType="nt:unstructured">
+                                 	<override-footer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                allowBulkEdit="{Boolean}true"
+                                                cq-msm-lockable="overrideFooter"
+                                                name="./overridefooter"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Override Footer"
+                                                value="true"/>
+                                   	<override-header
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                allowBulkEdit="{Boolean}true"
+                                                cq-msm-lockable="overrideHeader"
+                                                name="./overrideheader"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Override Header"
+                                                value="true"/>
+									<showReferAFriend
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        allowBulkEdit="{Boolean}true"
+                                        name="./showReferAFriend"
+                                        renderReadOnly="{Boolean}true"
+                                        text="show ReferAFriend"
+                                        value="true"/>
+                                </items>
+                             </column>
+                         </items>
+                    </overridefooter>
+					<seoProperties
+                     		cq:hideOnEdit="{Boolean}false"
+                             cq:showOnCreate="{Boolean}false"
+                             jcr:primaryType="nt:unstructured"
+                             jcr:title="SEO Page Properties"
+                             sling:resourceType="granite/ui/components/foundation/section">
+                         <layout
+                                 jcr:primaryType="nt:unstructured"
+                                 sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                 margin="{Boolean}false"/>
+                         <items jcr:primaryType="nt:unstructured">
+                             <column
+                                     jcr:primaryType="nt:unstructured"
+                                     sling:resourceType="granite/ui/components/foundation/container">
+                                 <items jcr:primaryType="nt:unstructured">
+	                                 <categoryicon
+	                                     jcr:primaryType="nt:unstructured"
+	                                     sling:resourceType="granite/ui/components/foundation/form/select"
+	                                     fieldDescription="Select whether search engine to index page"
+	                                     fieldLabel="SEO Index/NoIndex"
+	                                     name="./seoIndex">
+	                                     <items jcr:primaryType="nt:unstructured">
+	                                         <index
+	                                             jcr:primaryType="nt:unstructured"
+	                                             text="Index"
+	                                             value="index"/>
+	                                         <noindex
+	                                             jcr:primaryType="nt:unstructured"
+	                                             text="No Index"
+	                                             value="noindex"/>
+	                                     </items>
+	                                 </categoryicon>
+									 <canonicalUrl
+											 jcr:primaryType="nt:unstructured"
+											 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											 fieldDescription="Please Enter Full URL with domain name"
+											 fieldLabel="Canonical URL"
+											 name="./canonicalUrl"/>
+									 <hreflang
+											 jcr:primaryType="nt:unstructured"
+											 sling:resourceType="granite/ui/components/foundation/container">
+										 <layout
+												 jcr:primaryType="nt:unstructured"
+												 sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+										 <items jcr:primaryType="nt:unstructured">
+											 <hreflang1
+													 jcr:primaryType="nt:unstructured"
+													 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													 fieldLabel="href lang1"
+													 name="./hreflang1"/>
+											 <href1
+													 jcr:primaryType="nt:unstructured"
+													 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													 fieldLabel="href 1"
+													 name="./href1"/>
+											 <hreflang2
+													 jcr:primaryType="nt:unstructured"
+													 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													 fieldLabel="href lang 2"
+													 name="./hreflang2"/>
+											 <href2
+													 jcr:primaryType="nt:unstructured"
+													 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													 fieldLabel="href 2"
+													 name="./href2"/>
+										 </items>
+									 </hreflang>
+                                </items>
+                             </column>
+                         </items>
+                    </seoProperties>
+                    <socialmedia
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        />                    
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,59 @@
+<div data-sly-use.cta="com.sling.tv.core.models.CTAButtonModel" data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit}" class="cta--configure">Click here to configure CTA</div>
+
+<div id="${cta.ctaId}" data-sly-test="${cta.buttonText}">
+  <div class="${cta.ctaHeaderOptions} ${cta.alignment} ${cta.hideCta && 'hidden-xs'}
+              ${cta.stickyMobile && !wcmmode.edit ? 'cta-_-fixed-mobile' : 'cta-_-padded'}">
+
+    <a x-cq-linkchecker="skip" class="btn btn-primary bold cta-button ${cta.ctaBorder} ${cta.ctaOptions}"
+       role="button" href="${cta.ctaURL}" target="${cta.ctaWindowSelection}">
+      <span class="extra-bold">${cta.buttonText}</span>
+      <span class="${cta.caretOptions}"></span>
+    </a>
+
+    <sly data-sly-test="${cta.overrideOffer == 'yes'}">
+      <div class="sublink">
+        <a x-cq-linkchecker="skip" href="#offer-details-open" class="js-offer-details-open" data-sling-offer-days="${cta.offerDetailsDateAttr}">
+          <span>${cta.offerDetailsLabel}</span>
+        </a>
+      </div>
+
+      <div class="js-offer-details-modal hide">
+        <div class="offer-details-modal">
+          <div class="offer-details-modal--container">
+            <div class="offer-details-modal--header">
+              <h4 class="offer-details-modal--close js-offer-details-close">×</h4>
+              <h5 class="offer-details-modal--header-text">${cta.offerDetailsHeading}</h5>
+              <p class="offer-details-modal--header-date">${cta.offerPublishedDate}</p>
+            </div>
+            <div class="offer-details-modal--body">
+              ${cta.offerDescription @ context ='html'}
+            </div>
+          </div>
+        </div>
+      </div>
+    </sly>
+    <sly data-sly-test="${cta.overrideOffer == 'no'}">
+      <div class="sublink">
+        <a x-cq-linkchecker="skip" href="#offer-details-open" class="js-offer-details-open" data-sling-offer-days="${cta.offerDetailsDateAttr}">
+          <span>${cta.offerDetailsLabel}</span>
+        </a>
+      </div>
+
+      <div class="js-offer-details-modal hide">
+        <div class="offer-details-modal">
+          <div class="offer-details-modal--container">
+            <div class="offer-details-modal--header">
+              <h4 class="offer-details-modal--close js-offer-details-close">×</h4>
+              <h5 class="offer-details-modal--header-text">${cta.offerDetailsHeading}</h5>
+              <p class="offer-details-modal--header-date">${cta.offerPublishedDate}</p>
+            </div>
+            <div class="offer-details-modal--body">
+              ${cta.offerDescription @ context ='html'}
+            </div>
+          </div>
+        </div>
+      </div>
+    </sly>
+  </div>
+</div>

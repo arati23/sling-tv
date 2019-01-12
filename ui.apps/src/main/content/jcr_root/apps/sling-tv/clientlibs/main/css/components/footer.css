@@ -1,0 +1,180 @@
+/* Footer */
+
+.footer_main {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #353535;
+  font-size: small;
+  padding-top: 40px;
+}
+
+
+.footer--column {
+  padding-bottom: 30px;
+}
+
+
+.footer--column-header {
+  color: #4a4a4a;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+
+
+.footer_link {
+  color: #cfcfcf;
+  opacity: 0.7;
+}
+
+.footer_link:hover, .light-theme .footer_link:hover {
+  color: #14abe0;
+}
+
+.footer_link:focus {
+  text-decoration: none;
+}
+
+
+.footer--dropdown {
+  line-height: 28px;
+  vertical-align: top;
+}
+
+
+.footer_dropdown-list {
+  background-color: #1f1f1f;
+  border: 1px solid #4a4a4a;
+  font-size: 12px;
+  max-height: 338px;
+  min-height: 138px;
+  overflow-y: scroll;
+  width: 240px;
+}
+
+/* Starting to really dislike bootstrap */
+.footer_dropdown-list > li > a {
+  color: #cfcfcf;
+}
+
+/* International Class set by author */
+.footer_dropdown-list.international {
+  margin-left: 99px;
+  margin-top: -345px;
+}
+
+/* Latino Class set by author */
+.footer_dropdown-list.latino {
+  margin-left: 56px;
+  margin-top: -146px;
+}
+
+
+.footer--dropdown-header {
+  color: #4a4a4a;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+
+.footer--dropdown-close {
+  color: #4a4a4a;
+  cursor: pointer;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+
+.footer_terms {
+  clear: both;
+  color: #cfcfcf;
+  margin-top: 40px;
+}
+
+.refer-a-friend_sticky {
+  border-bottom: 1px solid #989EA4;
+  border-top: 1px solid #717D85;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index:9999;
+}
+
+
+/* AEM Default Component Class */
+.refer-a-friend > .textimage-left {
+  float: left;
+  margin-right: 2px;
+  width: 25px;
+}
+
+
+/* AEM Default Component Class */
+.refer-a-friend > .textimage-text {
+  display: inline-table;
+  font-size: 0.9em;
+  line-height: 0.9;
+  opacity:0.85;
+}
+
+
+.footer_sub-footer {
+  color: #4a4a4a;
+  font-size: small;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+
+@media (max-width: 767px) {
+  .footer--questions {
+    font-size: 3.65vw;
+  }
+}
+
+
+.footer_sub-footer-left {
+  padding: 0 15px;
+}
+
+
+.footer--copyright-text {
+  margin-top: 30px;
+}
+
+
+/* No laser targeting :( */
+.footer--copyright-text p {
+  margin-bottom: 0;
+}
+
+
+
+
+.light-theme .footer_main, .light-theme .footer_sub-footer {
+  background-color: #cfcfcf;
+  border-bottom: none;
+  color: #353535;
+}
+
+
+.light-theme .footer_link {
+  color: #353535;
+}
+
+
+.light-theme .footer_dropdown-list {
+  background-color: #cfcfcf;
+  border: 1px solid #4a4a4a;
+}
+
+
+.light-theme .footer_dropdown-list > li > a {
+  color: #353535;
+}
+
+
+.light-theme .footer_terms {
+  color: inherit;
+}

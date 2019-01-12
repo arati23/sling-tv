@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="CDN Flush Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/form">
+        <items jcr:primaryType="nt:unstructured">
+            <common
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <basic
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./jcr:title"/>
+                                    <description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:hideResource="{Boolean}true"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldLabel="Description"
+                                        name="./jcr:description"/>
+                                    <stage
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:hideResource="{Boolean}true"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        emptyOption="true"
+                                        fieldLabel="Workflow Stage"
+                                        name="./metaData/workflowStage">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/workflow/components/datasource/stageDataSource"
+                                            addNone="{Boolean}true"/>
+                                    </stage>
+                                </items>
+                            </basic>
+                            <timeout
+                                jcr:primaryType="nt:unstructured"
+                                sling:hideResource="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </common>
+            <process
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Process"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <cdn-uri
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="CDN URI"
+                                name="./metaData/URI"/>
+                            <override-prefix
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Prefix for custom flushes"
+                                name="./metaData/DISCOVERY"/>      
+                                                                                      <arguments
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Flush Paths for Advanced flushes"
+                                name="./metaData/PATHS"/>
+                            <process
+                                granite:id="processSelect"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                emptyOption="true"
+                                fieldDescription="Select process implementation."
+                                fieldLabel="Process"
+                                name="./metaData/PROCESS"
+                                ordered="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/workflow/components/datasource/jsonProcessContent"
+                                    addNone="{Boolean}true"
+                                    src="/libs/cq/workflow/content/console/process.list.json"/>
+                            </process>
+                            <advance
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Check if your handler will advance to the next step."
+                                name="./metaData/PROCESS_AUTO_ADVANCE"
+                                text="Handler Advance"
+                                value="true"/>
+                            <advance-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                name="./metaData/PROCESS_AUTO_ADVANCE@Delete"
+                                value="{Boolean}true"/>
+
+                        </items>
+                    </columns>
+                </items>
+            </process>
+        </items>
+    </content>
+</jcr:root>

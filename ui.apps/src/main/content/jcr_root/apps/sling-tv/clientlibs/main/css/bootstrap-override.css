@@ -1,0 +1,15 @@
+/******************************************************************************
+
+bootstrap-override.css
+
+For styles that only exist to override default bootstrap functionality
+  (This file may go away, TBD)
+
+******************************************************************************/
+
+
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background: none;
+}

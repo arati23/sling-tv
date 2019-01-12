@@ -1,0 +1,43 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Krishna Gunturu",
+	"jcr:lastModifiedBy": "Krishna Gunturu",
+	"jcr:created": "Thu Jul 12 2018 10:57:47 GMT-0600",
+	"desktopHeight": "120",
+	"jcr:lastModified": "Thu Jul 12 2018 11:04:36 GMT-0600",
+	"linkType": "cta",
+	"sling:resourceType": "sling-tv/components/content/general/link-list",
+	"mobileHeight": "200",
+	"tabletHeight": "300",
+	"linkListId": "componentId",
+	"linkListItemsCTA": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"titleCTA": "hindi",
+			"offerId": "gani",
+			"planId": "one-week-promo",
+			"cartFlow": "alacartetv",
+			"cartStep": "0",
+			"extra": "king-ganesh",
+			"linkCTA": "https://www.sling.com",
+			"classification": "us",
+			"deviceType": "roku",
+			"packageId": "sling-combo"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	},
+	"linkListItems": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"link": "https://www.google.com",
+			"title": "arabic"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	}
+}

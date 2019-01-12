@@ -1,0 +1,79 @@
+/* Image/Carousel */
+
+.image-carousel {
+  position: relative;
+}
+
+
+.image-carousel--indicators {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .image-carousel--indicators {
+    bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .image-carousel--indicators {
+    bottom: 5px;
+  }
+}
+
+
+.image-carousel--indicator {
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 1.5vw;
+}
+@media (min-width: 768px) {
+  .image-carousel--indicator {
+    height: 12px;
+    width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .image-carousel--indicator {
+    height: 7px;
+    width: 30px;
+  }
+}
+
+.image-carousel--indicator.orange {
+  background-color: #faa21b;
+}
+
+.image-carousel--indicator.blue {
+  background-color: #14abe0;
+}
+
+.image-carousel--indicator.green {
+  background-color: #7ed321;
+  color: #7ed321;
+}
+
+
+@media (min-width: 768px) {
+  .image-carousel--inner-padding {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .image-carousel--inner-padding {
+    padding-bottom: 15px;
+  }
+}
+
+
+.image-carousel--image {
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .image-carousel--image {
+    padding: 0 30px;
+  }
+}

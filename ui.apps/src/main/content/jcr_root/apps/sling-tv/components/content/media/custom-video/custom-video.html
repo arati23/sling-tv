@@ -1,0 +1,15 @@
+<sly data-sly-test.author="${wcmmode.edit}"> Configure the custom video component</sly>
+
+<div data-sly-use.vid="com.sling.tv.core.models.CustomVideoModel" id="${vid.customVideoComponentId}" class="js-video-component" data-sling-auto-play="${vid.autoPlay}" data-sling-dam-video="${vid.damVideoLink}"
+     data-sling-you-tube="${vid.videoLink}"
+     style="padding-right:${vid.paddingRight @ context='styleToken'}%;padding-left:${vid.paddingLeft @ context='styleToken'}%;width:${vid.imageWidth @ context='styleToken'}%;margin:auto">
+    <sly data-sly-test="${vid.imageLink}">
+        <a class="js-video-play-button">
+            <img class="js-video-poster video--poster" src="${vid.imageLink}" alt="${vid.altText}"/>
+        </a>
+    </sly>
+    <sly data-sly-test="${vid.videoLink || vid.damVideoLink}">
+        <a class="js-video-close-button hidden-on-load video--close-button fa fa-times-circle"></a>
+        <div class="js-video-container video--container"></div>
+    </sly>
+</div>

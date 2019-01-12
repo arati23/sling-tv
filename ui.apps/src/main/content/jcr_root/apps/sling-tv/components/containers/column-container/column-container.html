@@ -1,0 +1,201 @@
+<div data-sly-use.columncontainer="com.sling.tv.core.models.ColumnContainerModel"  data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit && !columncontainer.setup}">Click here to configure Column Container</div>
+
+<div id="${columncontainer.flexColumnContainerId}" class="column-control column-carousel ${columncontainer.fixedContainerCheck ? 'flex-column--container' : ''}">
+  <div class="${columncontainer.fixedContainerCheck ? 'flex-column--container' : ''} ${columncontainer.carouselMode ? 'js-column-carousel' : ''}">
+    <sly data-sly-test="${columncontainer.carouselMode}">
+      <div class="js-column-carousel-fade column-carousel_fade column-carousel_fade-left"></div>
+      <div class="js-column-carousel-fade column-carousel_fade column-carousel_fade-right"></div>
+    </sly>
+    <div style="align-items:${columncontainer.alignment @context='html'};" class="flex-row ${columncontainer.fixedContainerCheck ? 'flex-column--container' : ''} ${columncontainer.carouselMode ? 'column-carousel_outer js-column-carousel-outer' : ''}">
+
+	<sly data-sly-test="${columncontainer.colOverride}">
+        <sly data-sly-test="${columncontainer.column1Val!=null}">
+	          <div style="width:${columncontainer.column1Val @context='html' }%;" class=" ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	            <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	          </div>
+        </sly>
+		<sly data-sly-test="${columncontainer.column2Val!=null}">
+	        <div style="width:${columncontainer.column2Val @context='html'}%;" class="${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	        </div>
+		</sly>
+		<sly data-sly-test="${columncontainer.column3Val!=null}">
+	        <div style="width:${columncontainer.column3Val @context='html'}%;" class="${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	        </div>
+		</sly>
+		<sly data-sly-test="${columncontainer.column4Val!=null}">
+	        <div style="width:${columncontainer.column4Val @context='html'}%;" class="${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	         <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	        </div>
+		</sly>
+		<sly data-sly-test="${columncontainer.column5Val!=null}">
+	        <div style="width:${columncontainer.column5Val @context='html'}%;" class="${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	          <div data-sly-resource="${ @path='parFive', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	        </div>
+		</sly>
+		<sly data-sly-test="${columncontainer.column6Val!=null}">
+	        <div style="width:${columncontainer.column6Val @context='html'}%;" class="${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+	          <div data-sly-resource="${ @path='parSix', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+	        </div>
+		</sly>
+    </sly>
+
+	<sly data-sly-test="${!columncontainer.colOverride}">
+	
+      <div data-sly-test="${columncontainer.setup == 'two-50-50'}" data-sly-unwrap>
+        <div class="flex-col-50 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-50 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'two-33-66'}" data-sly-unwrap>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-67 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'two-25-75'}" data-sly-unwrap>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-75 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'two-66-33'}" data-sly-unwrap>
+        <div class="flex-col-67 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'two-75-25'}" data-sly-unwrap>
+        <div class="flex-col-75 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'three'}" data-sly-unwrap>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'four'}" data-sly-unwrap>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-25 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'four-2-4-4-2'}" data-sly-unwrap>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+
+      <div data-sly-test="${columncontainer.setup == 'five-2-2-4-2-2'}" data-sly-unwrap>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-33 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFive', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'five-3-3-3-3-3'}" data-sly-unwrap>
+        <div class="flex-col-20 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-20 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-20 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-20 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-20 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFive', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+
+      <div data-sly-test="${columncontainer.setup == 'six-2-2-2-2-2-2'}" data-sly-unwrap>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parOne', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parTwo', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parThree', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFour', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parFive', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+        <div class="flex-col-16 ${columncontainer.colPadding && 'column-control-_-separated-flex'} column-carousel_inner js-column-carousel-column">
+          <div data-sly-resource="${ @path='parSix', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+        </div>
+      </div>
+</sly>
+    </div>
+    <sly data-sly-test="${columncontainer.carouselMode}">
+      <div class="visible-xs column-carousel_indicators">
+        <ol class="js-column-carousel-indicators carousel-indicators">
+          <li class="js-column-carousel-indicator carousel-indicator"></li>
+        </ol>
+      </div>
+    </sly>
+  </div>
+</div>

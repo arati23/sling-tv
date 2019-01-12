@@ -1,0 +1,12 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Dileep Muraleedharan",
+	"jcr:lastModifiedBy": "Dileep Muraleedharan",
+	"jcr:created": "Fri Jun 22 2018 08:10:08 GMT-0500",
+	"setup": "two-50-50",
+	"jcr:lastModified": "Fri Jun 22 2018 09:18:01 GMT-0500",
+	"sling:resourceType": "sling-tv/components/containers/column-container"
+}
+
+
+		

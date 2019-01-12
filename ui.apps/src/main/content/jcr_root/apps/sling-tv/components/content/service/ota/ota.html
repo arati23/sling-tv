@@ -1,0 +1,170 @@
+<div data-sly-use.ota="com.sling.tv.core.models.OTAModel" data-sly-unwrap/>
+<sly data-sly-test="${wcmmode.edit && !ota.otaTitle}">click here to configure OTA Component</sly>
+<div id="${ota.otaId}" class="js-ota">
+   <sly data-sly-test="${ota.otaTitle}">
+      <div id="ota-address-search" class="row row-spacing">
+         <div class="text-center">
+            <div id="ota-address-search-header" class="find-free-local-chan">${ota.otaTitle}</div>
+            <div class="ota-address-container">
+               <div class="ota-search-spacing">
+                  <div class="ota-input-box">
+                     <label for="ota-address-input" class="input-title">${ota.addressText}</label>
+                     <input id="ota-address-input" class="input-field" />
+                     <div id="ota-address-input-error" class="ota-input-error hidden-on-load">${ota.errorMsgAddressField}</div>
+                  </div>
+                  <sly data-sly-test="${!ota.hideCityField}">
+                     <div class="ota-input-box">
+                        <label for="ota-city-input" class="input-title">${ota.cityText}</label>
+                        <input id="ota-city-input" class="input-field" />
+                     </div>
+                  </sly>
+                  <sly data-sly-test="${!ota.hideStateField}">
+                     <div class="ota-input-box">
+                        <label for="ota-state-input" class="input-title">${ota.stateText}</label>
+                        <select id="ota-state-input" class="input-field">
+                           <option value="AL">Alabama</option>
+                           <option value="AK">Alaska</option>
+                           <option value="AZ">Arizona</option>
+                           <option value="AR">Arkansas</option>
+                           <option value="CA">California</option>
+                           <option value="CO">Colorado</option>
+                           <option value="CT">Connecticut</option>
+                           <option value="DE">Delaware</option>
+                           <option value="DC">District of Columbia</option>
+                           <option value="FL">Florida</option>
+                           <option value="GA">Georgia</option>
+                           <option value="HI">Hawaii</option>
+                           <option value="ID">Idaho</option>
+                           <option value="IL">Illinois</option>
+                           <option value="IN">Indiana</option>
+                           <option value="IA">Iowa</option>
+                           <option value="KS">Kansas</option>
+                           <option value="KY">Kentucky</option>
+                           <option value="LA">Louisiana</option>
+                           <option value="ME">Maine</option>
+                           <option value="MD">Maryland</option>
+                           <option value="MA">Massachusetts</option>
+                           <option value="MI">Michigan</option>
+                           <option value="MN">Minnesota</option>
+                           <option value="MS">Mississippi</option>
+                           <option value="MO">Missouri</option>
+                           <option value="MT">Montana</option>
+                           <option value="NE">Nebraska</option>
+                           <option value="NV">Nevada</option>
+                           <option value="NH">New Hampshire</option>
+                           <option value="NJ">New Jersey</option>
+                           <option value="NM">New Mexico</option>
+                           <option value="NY">New York</option>
+                           <option value="NC">North Carolina</option>
+                           <option value="ND">North Dakota</option>
+                           <option value="OH">Ohio</option>
+                           <option value="OK">Oklahoma</option>
+                           <option value="OR">Oregon</option>
+                           <option value="PA">Pennsylvania</option>
+                           <option value="RI">Rhode Island</option>
+                           <option value="SC">South Carolina</option>
+                           <option value="SD">South Dakota</option>
+                           <option value="TN">Tennessee</option>
+                           <option value="TX">Texas</option>
+                           <option value="UT">Utah</option>
+                           <option value="VT">Vermont</option>
+                           <option value="VA">Virginia</option>
+                           <option value="WA">Washington</option>
+                           <option value="WV">West Virginia</option>
+                           <option value="WI">Wisconsin</option>
+                           <option value="WY">Wyoming</option>
+                        </select>
+                     </div>
+                  </sly>
+                  <div class="ota-input-box">
+                     <label for="ota-zip-input" class="input-title">${ota.zipText}</label>
+                     <input id="ota-zip-input" type="number" class="input-field" />
+                     <div id="ota-zip-input-error" class="ota-input-error hidden-on-load">${ota.errorMsgZipField}</div>
+                  </div>
+                  <a tabindex="0" id="ota-address-search-btn" class="btn bold cta-btn disable-ota-search-btn">${ota.ctaText}</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="address-error-container" class="ota-error-container row text-center hidden-on-load">
+         <div id="address-400-error" class="ota-error hidden-on-load">${ota.address400Error @ context='html'}</div>
+         <div id="address-other-errors" class="ota-error hidden-on-load">${ota.addressOtherError @ context='html'}</div>
+      </div>
+      <div id="ota-search-results" class="row text-center hidden-on-load">
+         <h2 id="ota-search-results-header" class="local-channel-avail">
+            <span id="ota-search-results-header-text">${ota.resultsHeaderText}</span>
+            <span id="ota-search-results-header-address"></span>
+         </h2>
+         <div id="ota-results-icon-legend">
+            <div id="ota-results-icon-legend-box-sling" class="col-xs-4">
+               <div id="ota-results-icon-legend-icon-sling" class="ota-icon ota-icon-sling" style="background: url('${ota.legendImageSling @ context='uri'}');"></div>
+               <div id="ota-results-icon-legend-text-sling" class="antenna-legend-text">- ${ota.legendTextSling}</div>
+            </div>
+            <div id="ota-results-icon-legend-box-indoor" class="col-xs-4">
+               <div id="ota-results-icon-legend-icon-indoor" class="ota-icon ota-icon-indoor" style="background: url('${ota.legendImageIndoor @ context='uri'}');"></div>
+               <div id="ota-results-icon-legend-text-indoor" class="antenna-legend-text">- ${ota.legendTextIndoor}</div>
+            </div>
+            <div id="ota-results-icon-legend-box-outdoor" class="col-xs-4">
+               <div id="ota-results-icon-legend-icon-outdoor" class="ota-icon ota-icon-outdoor" style="background: url('${ota.legendImageOutdoor @ context='uri'}');"></div>
+               <div id="ota-results-icon-legend-text-outdoor" class="antenna-legend-text">- ${ota.legendTextOutdoor}</div>
+            </div>
+         </div>
+         <div id="ota-results-container">
+            <table id="ota-results-list">
+               <tr>
+                  <th id="ota-results-network-header">Network</th>
+                  <th id="ota-results-stations-header">No Of Station(s)</th>
+                  <th id="ota-results-icons-header">&nbsp;</th>
+               </tr>
+            </table>
+            <div id="ota-results-local-disclaimer">
+               ${ota.resultsDisclaimerText @ context='html'}
+            </div>
+            <a id="ota-results-more-btn" class="bold cta-btn">${ota.moreResultsCTAText}</a>
+            <a id="ota-results-less-btn" class="bold cta-btn">${ota.lessResultsCTAText}</a>
+         </div>
+      </div>
+         <div id="ota-offers" class="ota-offer-container hidden-on-load" data-sly-list="${ota.offerDeals}">
+         <div class="ota-offer-wrapper">
+            <div id="ota-offer-${itemList.count}" class="ota-offer-box">
+               <div class="ota-offer-ribbon">
+                  <img data-sling-src="${item.offerFlagImage}"
+                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                  <span>${item.offerRibbonText}</span>
+               </div>
+               <img data-sling-src="${item.offerImage}" id="ota-offer1-img" class="ota-offer-image"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+               <div id="ota-offer${itemList.count}-main" class="ota-offer-inner">
+
+                  <h4 id="ota-offer${itemList.count}-price" class="ota-offer-price">
+                     ${item.offerPrice}
+                  </h4>
+                  <h3 id="ota-offer${itemList.count}-header" class="ota-offer-header">
+                     ${item.offerHeader}
+                  </h3>
+                  <div id="ota-offer${itemList.count}-description" class="ota-offer-description">${item.offerDescription}</div>
+                  <div id="ota-offer${itemList.count}-caveat" class="ota-offer-caveat">${item.offerCaveat @ context='html'}</div>
+               </div>
+
+          </div>
+          <div id="cta-ota" class="ota-cta-wrapper">
+            <div data-sly-resource="${ 'cta{0}' @ format=itemList.count, resourceType='sling-tv/components/core/cta'}" ></div>
+          </div>
+
+
+         </div> 
+      </div>
+      <hr id="desktop-only-hrule" class="desktop-only-hrule hidden-on-load" />
+        <div id="ota-outdoor-info" class="ota-outdoor-info hidden-on-load">
+        ${ota.outDoorInfo @ context='html'}
+      </div>
+   </sly>
+   <div id="results-error-container" class="ota-error-container row text-center hidden-on-load">
+	 <div id="no-results" class="ota-error hidden-on-load">${ota.noResultsMessage @ context='html'}</div>
+     <div id="results-400-error" class="ota-error hidden-on-load">${ota.results400Error @ context='html'}</div>
+     <div id="results-other-errors" class="ota-error hidden-on-load">${ota.resultsOtherError @ context='html'}</div>
+   </div>
+   <div id="ota-address-scrub-url" class="hidden-on-load">${ota.addressScrubURL}</div>
+   <div id="ota-antenna-titan-service-url" class="hidden-on-load">${ota.antennaServiceURL}</div>
+</div>
+<div class="clear-both"></div>

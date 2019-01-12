@@ -1,0 +1,16 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Arati jena",
+	"jcr:lastModifiedBy": "Arati jena",
+	"jcr:created": "Thur June 28 2018 16:19:55 GMT-0500",
+	"heading": "Device Ribbon Path",
+	"description": "Shows all supported devices",
+	"jcr:lastModified": "Thur June 28 2018 16:19:55 GMT-0500",
+	"sling:resourceType": "sling-tv/components/page/device-ribbon-page",
+	"deviceRibbonSharedComponentId":"deviceRibbonID",
+	"deviceRibbonPath":"/content/sling-tv/en/deviceribbon/whpdeviceribbon/lg",
+	"oneRow":"true",
+	"jcr:title": "LG",
+	"deviceAlt": "lg",
+	"imagePath": "/content/dam/sling-tv/devices/Device-Logos -SVGs/LG_Black.svg"
+}

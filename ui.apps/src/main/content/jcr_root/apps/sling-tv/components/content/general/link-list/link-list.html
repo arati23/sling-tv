@@ -1,0 +1,29 @@
+<div data-sly-use.link="com.sling.tv.core.models.LinkListModel"  data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit}">Click here to configure Link List Component</div>
+<div id="${link.linkListId}">
+<div data-sly-test="${link.linkType == 'link'}" data-sly-unwrap>
+
+    <ul  class="js-link-list link-list" data-sly-list="${link.linkListItems}" data-sling-tablet-height="${link.tabletHeight}"
+        data-sling-mobile-height="${link.mobileHeight}" data-sling-desktop-height="${link.desktopHeight}">
+      <li class="link-list--list-item">
+        <a x-cq-linkchecker="skip" href="${item.link}">${item.title}</a>
+      </li>
+    </ul>
+
+</div>
+
+<div data-sly-test="${link.linkType == 'cta'}" data-sly-unwrap>
+
+    <ul class="js-link-list link-list" data-sly-list="${link.linkListItemsCTA}" data-sling-tablet-height="${link.tabletHeight}"
+        data-sling-mobile-height="${link.mobileHeight}" data-sling-desktop-height="${link.desktopHeight}">
+      <li class="link-list--list-item">
+        <a x-cq-linkchecker="skip" href="${item.linkCTA}" data-sling-classification="${item.classification}"
+           data-sling-cart-flow="${item.cartFlow}" data-sling-cart-step="${item.cartStep}"
+           data-sling-device-type="${item.deviceType}" data-sling-plan-id="${item.planId}"
+           data-sling-offer-id="${item.offerId}" data-sling-package-id="${item.packageId}"
+           data-sling-extra="${item.extra}">${item.titleCTA}</a>
+      </li>
+    </ul>
+
+</div>
+</div>

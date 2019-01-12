@@ -1,0 +1,70 @@
+<div data-sly-test="${wcmmode.edit}">
+  Edit/configure the Tabbed Category Carousel Component
+</div>
+<div data-sly-use.tbCarouselComp="com.sling.tv.core.models.TabbedCategoryCarouselModel" id="${tbCarouselComp.tabbedCategoryCarouselId}" class="js-tcc-outer">
+  <div class="container-fluid--narrow">
+    <div class="carousel-jam_navigation">
+      <a href="#right-carousel-jam_navigation-chevron" onClick="s_objectID='right-carousel-jam_navigation-chevron';" class="carousel-jam_navigation-chevron fa fa-chevron-right pull-right water sg-large js-tcc-chevron"></a>
+      <a href="#left-carousel-jam_navigation-chevron" onClick="s_objectID='left-carousel-jam_navigation-chevron';" class="carousel-jam_navigation-chevron fa fa-chevron-left pull-left water sg-large js-tcc-chevron"></a>
+      <div class="carousel-jam_navigation-inner">
+        <div class="carousel-jam_tab-list js-tcc-tab-list">
+          <a class="carousel-jam_tab-list-item js-tcc-tab"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-jam_inner" data-sly-list.tabbedPageItem="${tbCarouselComp.tabbedPages}">
+      <div class="carousel-jam_content js-tcc-tab-content hidden-on-load" data-sling-tab-name="${tabbedPageItem.tabbedPageCategoryTitle}">
+        <div data-sly-list.subCategoryPageItem="${tabbedPageItem.subCategoryPages}" data-sly-unwrap>
+          <div class="carousel-jam_right js-tcc-toggle-content js-tcc-${subCategoryPageItem.subCategoryPagePackageClass}">
+            <img class="carousel-jam_lockup" data-sling-src="${subCategoryPageItem.subCategoryPagePackageImage}" alt="${subCategoryPageItem.subCategoryPageAltImage}"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+          </div>
+        </div>
+        <div data-sly-list.subCategoryPageItem="${tabbedPageItem.subCategoryPages}" class="carousel-jam_left">
+          <div class="js-tcc-toggle-content js-tcc-${subCategoryPageItem.subCategoryPagePackageClass}">
+            <img class="carousel-jam_icon" data-sling-src="${subCategoryPageItem.subCategoryPackageLogo}"
+                 alt="${subCategoryPageItem.subCategoryPackageAltLogo}"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+            <div class="carousel-jam_heading"> ${subCategoryPageItem.subCategoryPackageHeading}</div>
+            <sly data-sly-test="${tabbedPageItem.subCategoryPages.size < 2}">
+              <div data-sly-list.subCategoryPageItemToggle="${tabbedPageItem.subCategoryPages}" data-sly-unwrap>
+              <div class="carousel-jam_sub_heading">${subCategoryPageItemToggle.subCategoryPagePackageName}</div>
+              </div>
+              </sly>
+
+            <div class="carousel-jam_toggles btn-group clear-both js-tcc-toggle-group">
+              <div data-sly-list.subCategoryPageItemToggle="${tabbedPageItem.subCategoryPages}" data-sly-unwrap>
+                <button class="carousel-jam_toggle btn js-tcc-toggle" data-sling-for="js-tcc-${subCategoryPageItemToggle.subCategoryPagePackageClass}">
+                  ${subCategoryPageItemToggle.subCategoryPagePackageName}
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-jam_blurb clear-both">
+              ${subCategoryPageItem.subCategoryPagePackageDescription @ context='html'}
+            </div>
+            <div class="carousel-jam_channel-carousel js-tcc-channel-carousel">
+              <a href="#carousel-jam-channel-chevron-right" onclick="s_objectID='carousel-jam-channel-chevron-right';" class="carousel-jam_channel-chevron fa fa-chevron-right pull-right water sg-large js-tcc-channel-chevron"></a>
+              <a href="#carousel-jam-channel-chevron-left" onclick="s_objectID='carousel-jam-channel-chevron-left';" class="carousel-jam_channel-chevron fa fa-chevron-left pull-left water sg-large js-tcc-channel-chevron"></a>
+              <div class="carousel-jam_channel-container">
+                <div data-sly-list.logoItem="${subCategoryPageItem.subCategoryPageLogos}"
+                     class="text-center carousel-jam_channel-group js-tcc-channel-group">
+                  <img class="carousel-jam_channel-logo js-tcc-channel-logo" data-sling-src="${logoItem['logoPath']}" alt="${logoItem['logoAlt']}"
+                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                </div>
+              </div>
+              <div class="carousel-jam_carousel-indicators js-tcc-carousel-indicators-wrapper">
+                <ol class="js-tcc-carousel-indicators carousel-indicators">
+                  <li class="js-tcc-carousel-indicator carousel-indicator"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear-both"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+/******************************************************************************
+
+atoms.css
+
+For styles that represent a single property (or set of properties)
+
+Please sort alphabetically
+
+******************************************************************************/
+
+
+
+.anti-row {
+  margin: 0;
+}
+
+
+.clear-both {
+  clear: both;
+  display: block;
+}
+
+
+.hidden-on-load.hidden-on-load {
+  display: none;
+}
+
+
+.no-transition {
+  transition: none !important;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* Overload bootstrap class */
+.text-justify {
+  display: inline-block;
+  text-align: justify;
+}

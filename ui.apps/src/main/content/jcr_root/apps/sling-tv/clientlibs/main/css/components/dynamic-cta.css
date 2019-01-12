@@ -1,0 +1,72 @@
+/* Dynamic CTA Dropdown */
+
+.dynamic-cta_outer {
+  display: inline-block;
+}
+
+
+.dynamic-cta_inner {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.dynamic-cta_dropdown {
+  background-color: #FFFFFF;
+  border: 1px solid #979797;
+  color: black;
+  width: 100%;
+}
+
+
+.dynamic-cta_icon {
+  float: left;
+  height: 27px;
+}
+
+
+.dynamic-cta_image {
+  height: 28px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.dynamic-cta_caret {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #000000;
+  float: right;
+  margin-left: 20px !important;
+  margin-top: 9px;
+}
+
+
+.dynamic-cta_menu {
+  background-color: #FFFFFF;
+  height: 300px;
+  margin-top: 0;
+  overflow-y: scroll;
+  padding: 0;
+  width: 100%;
+}
+
+
+.dynamic-cta_menu-item {
+  border: 0.25px solid #9B9B9B;
+  line-height: 3;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+.dynamic-cta_menu-image {
+  height: 28px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.dynamic-cta_menu-link:hover {
+  background-color: #14abe0;
+}

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Edit OTA Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="OTA Details"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <ota-details
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <otaTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="OTA Title"
+                                        name="./otaTitle"/>
+                                    <addressText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Address Text"
+                                        name="./addressText"/>
+                                    <errorMsgAddressField
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Error Validation Text For Address Field"
+                                        name="./errorMsgAddressField"/>
+                                    <cityText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="City Text"
+                                        name="./cityText"/>
+                                    <hideCityField
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        name="./hideCityField"
+                                        text="Hide City Field"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <stateText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="State Text"
+                                        name="./stateText"/>
+                                    <hideStateField
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        name="./hideStateField"
+                                        text="Hide State Field"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <zipText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="ZIP Text"
+                                        name="./zipText"/>
+                                    <errorMsgZipField
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Error Validation Text For ZIP Field"
+                                        name="./errorMsgZipField"/>
+                                    <ctaText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="CTA to fetch results"
+                                        fieldLabel="CTA Button Text"
+                                        name="./ctaText"/>
+                                    <address400Error
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Error Message for 400 Error in Address Scrub Service"
+                                        name="./address400Error"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                    <rtePlugins
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                    <uiSettings
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </address400Error>
+                                    <addressOtherError
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Error Message for all other Errors in Address Scrub Service"
+                                        name="./addressOtherError"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                        <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </addressOtherError>
+                                </items>
+                            </ota-details>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Result Section Details"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <ota-details
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <resultsHeaderText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Results Header Text"
+                                        name="./resultsHeaderText"/>
+                                    <legendTextSling
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Results Legend Text Sling"
+                                        name="./legendTextSling"/>
+                                    <legendImageSling
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Results Legend Sling Image"
+                                        name="./legendImageSling"
+                                        rootPath="/content/dam"/>
+                                    <legendTextIndoor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Results Legend Text Indoor"
+                                        name="./legendTextIndoor"/>
+                                    <legendImageIndoor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Results Legend Indoor Image"
+                                        name="./legendImageIndoor"
+                                        rootPath="/content/dam"/>
+                                    <legendTextOutdoor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Results Legend Text Outdoor"
+                                        name="./legendTextOutdoor"/>
+                                    <legendImageOutdoor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Results Legend Outdoor Image"
+                                        name="./legendImageOutdoor"
+                                        rootPath="/content/dam"/>
+                                    <resultsDisclaimerText
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Results Disclaimer Text"
+                                        name="./resultsDisclaimerText"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                        <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </resultsDisclaimerText>
+                                    <moreResultsCTAText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="CTA Text to show more results"
+                                        fieldLabel="More Results CTA Button Text"
+                                        name="./moreResultsCTAText"/>
+                                    <lessResultsCTAText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="CTA Text to show less results"
+                                        fieldLabel="Less Results CTA Button Text"
+                                        name="./lessResultsCTAText"/>
+                                    <results400Error
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Error Message for 400 Error in Titan Service"
+                                        name="./results400Error"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                        <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </results400Error>
+                                    <resultsOtherError
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Error Message for all other Errors in Titan Service"
+                                        name="./resultsOtherError"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                        <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </resultsOtherError>
+                                    <noResultsMessage
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="No Results Message"
+                                        name="./noResultsMessage"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                        <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                    </noResultsMessage>
+                                </items>
+                            </ota-details>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Offers and Deals"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <outDoorInfo
+                                cq:hideOnEdit="{Boolean}false"
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldLabel="Out Door Info"
+                                name="./outDoorInfo"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                <uiSettings
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                            </outDoorInfo>
+                            <offerDeals
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                class="foundation-layout-util-maximized-alt"
+                                composite="{Boolean}true"
+                                fieldLabel="Configure Offers and Deals">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./offerDeals">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <offerFlagImage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Offer Flag Image"
+                                                        name="./offerFlagImage"
+                                                        rootPath="/content/dam/sling-tv"/>
+                                                <offerRibbonText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Offer Ribbon Text"
+                                                    name="./offerRibbonText"/>
+                                                <offerImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Offer Image"
+                                                    name="./offerImage"
+                                                    rootPath="/content/dam/sling-tv"/>
+                                                <offerPrice
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Offer Price"
+                                                    name="./offerPrice"/>
+                                                <offerHeader
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Offer Header"
+                                                    name="./offerHeader"/>
+                                                <offerDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Offer Description"
+                                                    name="./offerDescription"/>
+                                                <offerCaveat
+                                                    cq:hideOnEdit="{Boolean}false"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Offer Caveat"
+                                                    name="./offerCaveat"
+                                                    removeSingleParagraphContainer="{Boolean}true"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                    <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/rtePlugins"/>
+                                                    <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/sling-tv/components/common/limitedRTE/uiSettings"/>
+                                                </offerCaveat>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </offerDeals>
+                        </items>
+                    </columns>
+                </items>
+            </tab3>
+            <tab4
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                    fieldLabel="Component ID"
+                                    name="./otaId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab4>
+        </items>
+    </content>
+</jcr:root>

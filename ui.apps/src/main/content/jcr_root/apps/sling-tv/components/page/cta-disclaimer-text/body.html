@@ -1,0 +1,36 @@
+
+<div data-sly-test="${wcmmode.edit}">
+  <script>
+    $(document).ready(function() {
+      var enButton = $('.js-en-button');
+      var esButton = $('.js-es-button');
+      var enDisclaimer = $('#disclaimer-en');
+      var esDisclaimer = $('#disclaimer-es');
+
+      function showEnglish() {
+        esDisclaimer.hide();
+        enButton.hide();
+        enDisclaimer.show();
+        esButton.show();
+      }
+
+      function showSpanish() {
+        enDisclaimer.hide();
+        esButton.hide();
+        esDisclaimer.show();
+        enButton.show();
+      }
+
+      enButton.click(showEnglish);
+      esButton.click(showSpanish);
+
+      showEnglish();
+    });
+  </script>
+  <button class="js-en-button cta-button">Show English</button>
+  <button class="js-es-button cta-button">Show Spanish</button>
+</div>
+<div id="disclaimer-text" style="background-color:#f2f3f2">
+  <div id="disclaimer-en" data-sly-resource="${@path='par/rich_text_en', resourceType='sling-tv/components/core/rich-text'}"></div>
+  <div id="disclaimer-es" data-sly-resource="${@path='par/rich_text_es', resourceType='sling-tv/components/core/rich-text'}"></div>
+</div>

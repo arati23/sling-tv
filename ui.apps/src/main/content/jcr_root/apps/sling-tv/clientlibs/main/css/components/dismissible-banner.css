@@ -1,0 +1,105 @@
+/* Dismissible Banner */
+
+
+.dismissible-banner-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.dismissible-banner-container.dismissible-banner-fixed {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+  .dismissible-banner-container.dismissible-banner-fixed {
+    top: 71px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dismissible-banner-container.dismissible-banner-fixed {
+    top: 59px;
+  }
+}
+
+
+
+.dismissible-banner_background {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+
+/* Used to size the banner to the image/video */
+.dismissible-banner-spacer {
+  width:100%;
+}
+
+
+.dismissible-banner-content {
+  height:100%;
+  left:0;
+  position: absolute;
+  top:0;
+  width:100%;
+}
+
+
+.dismissible-banner-close {
+  cursor: pointer;
+  display: inline;
+  left: 95%;
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .dismissible-banner-close {
+    height: 22px;
+    top: 14px;
+    width: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .dismissible-banner-close {
+    height: 14px;
+    top: 5px;
+    width: 14px;
+  }
+}
+
+.dismissible-banner-close::before,
+.dismissible-banner-close::after {
+  background: #FFFFFF;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 55%;
+  transform: rotate(45deg);
+  width: 100%;
+}
+
+.dismissible-banner-close::after {
+  transform: rotate(-45deg);
+}
+
+.dismissible-banner-close:hover::before,
+.dismissible-banner-close:hover::after {
+  background: #faa21b;
+}
+
+.dismissible-banner--bottom-rte {
+  position: absolute;
+  width:100%;
+  z-index:99999999;
+  bottom:0;
+}
+.dismissible-banner--bottom-rte p {
+  margin: 0;
+}

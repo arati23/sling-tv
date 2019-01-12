@@ -1,0 +1,28 @@
+{
+"jcr:primaryType": "nt:unstructured",
+"jcr:createdBy": "Joshua.Grochala@sling.com",
+"registerTime": "2",
+"errorPasswordText": "Passwords must be at least 4 characters",
+"bfpEmail": "Email",
+"bfpDefaultError": "It Broke!",
+"bfpMessage": "15 minutes Free",
+"ctaUrl": "/signup?locale=en&classification=us&flow=alacartetv&step=0&device=roku-express&plan=two-month-pre-pay&sp=roku&cvosrc=affiliate.roku.devicepage&affiliate=roku&utm_source=roku&utm_medium=referral&utm_campaign=rokudevice",
+"jcr:lastModifiedBy": "VENKATAKRISHNA.GUNTU@dish.com",
+"previewId": "7DFDOM001",
+"jcr:created": "Mon Jun 04 2018 11:37:28 GMT-0400",
+"cartTime": "5",
+"bfpId": "BFPTest",
+"email": "EMAIL",
+"errorEmailText": "Invalid Email",
+"overlayImage": "/content/dam/sling-tv/misc/BFP_Overlay.png",
+"buttonText": "SIGN UP NOW",
+"jcr:lastModified": "Fri Jun 22 2018 13:03:33 GMT-0400",
+"password": "Password",
+"sling:resourceType": "sling-tv/components/content/general/bfp",
+"channelId": "2081",
+"posterImage": "/content/dam/sling-tv/marquees/domestic/campaign-assets/Marquee_Cut the Cord_Mobile.jpg",
+"bfpPassword": "Password"
+}
+
+
+		

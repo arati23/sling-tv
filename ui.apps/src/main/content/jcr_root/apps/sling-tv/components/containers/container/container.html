@@ -1,0 +1,17 @@
+<div data-sly-use.containerModel="com.sling.tv.core.models.ContainerModel" data-sly-unwrap />
+
+<sly data-sly-test="${wcmmode.edit && !containerModel.containerTheme}"><p>click here to configure Container Component</p></sly>
+
+<div id="${containerModel.containerCmpId}" class="container--anchor-hack-parent ${containerModel.containerTheme} ${containerModel.fullWidthOptions} ${containerModel.border ? 'banded-section' : ''}">
+  <a id="${containerModel.anchorTag}" class="container--anchor-hack-child"></a>
+  <div class="${containerModel.mobileContent ? 'hidden-xs' : '' }" style="padding-right:${containerModel.paddingRight @ context='styleToken'}%;padding-left:${containerModel.paddingLeft @ context='styleToken'}%;" >
+    <div data-sly-resource="${'content' @ resourceType='wcm/foundation/components/responsivegrid'}"
+         class="${containerModel.maxWidthOptions}"></div>
+  </div>
+  <sly data-sly-test="${containerModel.mobileContent}">
+  <div class="visible-xs" style="padding-left:${containerModel.paddingLeftMobile @ context='styleToken'}%;padding-right:${containerModel.paddingRightMobile @ context='styleToken'}%;" >
+    <div data-sly-resource="${'contentMobile' @ resourceType='wcm/foundation/components/responsivegrid'}"
+         class="${containerModel.maxWidthOptions}"></div>
+  </div>
+  </sly>
+</div>

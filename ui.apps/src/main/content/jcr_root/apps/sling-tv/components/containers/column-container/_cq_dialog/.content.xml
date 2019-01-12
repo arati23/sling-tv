@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Column Container"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    js-comp-identifier="columncontainer">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Columns"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column-control
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Configure Columns"
+                                name="./setup"
+                                required="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <two-50-50
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Two Columns (50:50)"
+                                        value="two-50-50"/>
+                                    <two-33-66
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Two Columns (33:67)"
+                                        value="two-33-66"/>
+                                    <two-25-75
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Two Columns (25:75)"
+                                        value="two-25-75"/>
+                                    <two-66-33
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Two Columns (67:33)"
+                                        value="two-66-33"/>
+                                    <two-75-25
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Two Columns (75:25)"
+                                        value="two-75-25"/>
+                                    <three
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Three Columns (33:33:33)"
+                                        value="three"/>
+                                    <four
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Four Columns (25:25:25:25)"
+                                        value="four"/>
+                                    <four-2-4-4-2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Four Columns (17:33:33:17)"
+                                        value="four-2-4-4-2"/>
+                                    <five-2-2-4-2-2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Five Columns (17:17:32:17:17)"
+                                        value="five-2-2-4-2-2"/>
+                                    <five-3-3-3-3-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Five Columns (20:20:20:20:20)"
+                                        value="five-3-3-3-3-3"/>
+                                    <six-2-2-2-2-2-2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Six Columns (16:16:16:16:16:16)"
+                                        value="six-2-2-2-2-2-2"/>
+                                </items>
+                            </column-control>
+                            <overridecolumoption
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="false"
+                                name="./colOverride"
+                                text="Custom Width"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <column1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column1 Width"
+                                name="./column1Val"/>
+                            <column2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column2 Width"
+                                name="./column2Val"/>
+                            <column3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column3 Width"
+                                name="./column3Val"/>
+                            <column4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column4 Width"
+                                name="./column4Val"/>
+                            <column5
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column5 Width"
+                                name="./column5Val"/>
+                            <column6
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Provide numeric value between 0-100"
+                                fieldLabel="Column6 Width"
+                                name="./column6Val"/>
+                            <col-vertical-alignment
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Column Alignment"
+                                name="./alignment">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Top"
+                                        value="flex-start"/>
+                                    <center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center"
+                                        value="center"/>
+                                    <bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Bottom"
+                                        value="flex-end"/>
+                                </items>
+                            </col-vertical-alignment>
+                            <columnSeparationPadding
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="false"
+                                name="./colPadding"
+                                text="Column Separator"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <fixedContainerCheck
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="false"
+                                name="./fixedContainerCheck"
+                                text="Full Height"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <carouselMode
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="false"
+                                fieldDescription="When nesting column containers, carousel option can only be used on one layer.  (Parent or child)"
+                                name="./carouselMode"
+                                text="Carousel In Mobile"
+                                uncheckedValue="false"
+                                value="true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tracking
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tracking"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                allowBlank="false"
+                                fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                fieldLabel="Component ID"
+                                name="./flexColumnContainerId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tracking>
+        </items>
+    </content>
+</jcr:root>

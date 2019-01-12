@@ -1,0 +1,19 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Dileep Muraleedharan",
+	"jcr:lastModifiedBy": "Dileep Muraleedharan",
+	"jcr:created": "Tue Mar 26 2018 04:13:01 GMT-0500",
+	"jcr:lastModified": "Tue Mar 26 2018 04:13:01 GMT-0500",
+	"sling:resourceType": "sling-tv/components/embedded/sub-navigation",
+	"subNavItems": {
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"subNavTitle": "Channels",
+			"targetId": "channelid"
+	    	},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+			
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Mon Jul 23 2018 16:23:58 GMT-0600",
+  "jcr:lastModified": "Mon Jul 23 2018 16:29:02 GMT-0600",
+  "bonusChannelsId": "ABCD123",
+  "sling:resourceType": "sling-tv/components/content/general/bonuschannels",
+  "allChannels": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "channelAlt": "AAJ TAK",
+      "channelLogo": "/content/dam/sling-tv/channels/AllLOBLogos/Color/AAJTK.svg",
+      "channelName": "AAJTK"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "channelAlt": "ESPN",
+      "channelLogo": "/content/dam/sling-tv/channels/AllLOBLogos/Color/ESPN.svg"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "channelAlt": "test3",
+      "channelLogo": "/content/dam/sling-tv/channels/AllLOBLogos/Color/SONY.svg",
+      "channelName": "SONY"
+    }
+  }
+}

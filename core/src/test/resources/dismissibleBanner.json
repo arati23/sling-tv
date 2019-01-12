@@ -1,0 +1,18 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"damVideoLinkP": "/content/dam/sling-tv/marquees/domestic/campaign-assets/desktop_love_video_new.mp4",
+	"bottomRte": "true",
+	"dismissible": "true",
+	"jcr:lastModifiedBy": "admin",
+	"bannerType": "video",
+	"sticky": "true",
+	"imageURLP": "/content/dam/sling-tv/marquees/international/malayalam/Sling_Malayalam_AsiaNet_Marquee_1500x400_030718.jpg",
+	"imageURL": "/content/dam/sling-tv/marquees/international/malayalam/Sling_Malayalam_AsiaNet_Marquee_1500x400_030718.jpg",
+	"jcr:created": "Thu Jun 21 2018 14:29:10 GMT-0600",
+	"damVideoLink": "/content/dam/sling-tv/marquees/domestic/campaign-assets/desktop_love_video_new.mp4",
+	"jcr:lastModified": "Fri Jun 22 2018 14:57:17 GMT-0600",
+	"sling:resourceType": "sling-tv/components/content/media/dismissible-banner",
+	"bottomRteMobile": "true",
+	"dismissibleBannerId": "gvk"
+}

@@ -1,0 +1,213 @@
+/* Tabbed Category Carousel */
+
+@media (max-width: 1199px) {
+  .tabbed-category-carousel .container-fluid--narrow {
+    padding: 0;
+  }
+}
+
+
+.carousel-jam_navigation {
+  margin-bottom: 35px;
+}
+
+
+.carousel-jam_navigation-chevron {
+  padding-top: 3px;
+}
+
+
+.carousel-jam_navigation-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.carousel-jam_tab-list {
+  color: #14ABE0;
+  font-size: 20px;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  transition: transform 1s ease;
+  white-space: nowrap;
+}
+
+.carousel-jam_tab-list-item {
+  line-height: 25px;
+  margin: 0 2em;
+  position: absolute;
+}
+
+.carousel-jam_tab-list-item--selected {
+  border-bottom: 4px solid #14ABE0;
+  font-weight: 900;
+  color: #14ABE0;
+  text-decoration: none;
+}
+
+.carousel-jam_tab-list-item--selected:focus, .carousel-jam_navigation-chevron:focus {
+  color: #14ABE0;
+  text-decoration: none;
+}
+
+.carousel-jam_inner {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.carousel-jam_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 1s ease;
+}
+
+
+.carousel-jam_right {
+  float: right;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .carousel-jam_right {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-jam_right {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+
+.carousel-jam_lockup {
+  width: 100%;
+}
+
+
+.carousel-jam_left {
+  color: #353535;
+  float: left;
+}
+@media (min-width: 768px) {
+  .carousel-jam_left {
+    width: 35%;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-jam_left {
+    width: 100%;
+  }
+}
+
+
+.carousel-jam_heading {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 12px;
+  margin-bottom: 5px;
+}
+
+.carousel-jam_sub_heading {
+  color: #363636;	
+  font-size: 14px;	
+  font-weight: bold;	
+  line-height: 20px;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .carousel-jam_heading {
+    font-size: 18px;
+  }
+}
+
+
+.carousel-jam_icon {
+  float: left;
+  height: 48px;
+  margin: 0 10px 15px 0;
+}
+
+
+.carousel-jam_toggle {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E9E9E9 100%);
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  box-shadow: 1px 0 3px 0 rgba(0,0,0,0.3);
+  color: #8b8b8b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carousel-jam_toggle--active {
+  background: none;
+  background-color: white;
+  border: 1px solid #E9E9E9;
+  box-shadow: inset 0 0 5px 4px rgba(0,0,0,0.05), inset 0 1px 2px 0 rgba(0,0,0,0.35);
+  color: #353535;
+}
+
+
+.carousel-jam_blurb {
+  padding: 10px 0;
+}
+
+
+.carousel-jam_channel-chevron {
+  margin-top: 50px;
+}
+
+.carousel-jam_channel-chevron:focus {
+  text-decoration: none;
+  color: #14ABE0;
+}
+
+.carousel-jam_channel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.carousel-jam_channel-group {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 1s ease;
+}
+
+
+
+
+.carousel-jam_channel-logo {
+  margin: 2px 5px;
+  width: 20%;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  .carousel-jam_channel-logo {
+    margin: 2px;
+  }
+}
+
+
+.carousel-jam_carousel-indicators {
+  height: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-jam_carousel-indicators > .carousel-indicators {
+  bottom: -25px;
+}
+
+.carousel-jam_carousel-indicators > .carousel-indicators > .carousel-indicator {
+  background-color: #cfcfcf;
+  border: none;
+}
+
+.carousel-jam_carousel-indicators > .carousel-indicators > .carousel-indicator.active {
+  background-color: #14ABE0;
+  height: 10px;
+  width: 10px;
+}

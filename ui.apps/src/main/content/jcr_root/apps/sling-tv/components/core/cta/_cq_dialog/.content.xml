@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="CTA"
+          js-comp-identifier="cta"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Style"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="CTA Label"
+                                    name="./buttonText"
+                                    maxlength="22"
+                                    required="{Boolean}true" />
+                            <alignment
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    defaultValue="text-left"
+                                    fieldLabel="CTA Button Alignment"
+                                    name="./alignment">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Left"
+                                            value="text-left"/>
+                                    <right
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Right"
+                                            value="text-right"/>
+                                    <center
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Center"
+                                            value="text-center"/>
+                                </items>
+                            </alignment>
+                            <ctaBorder
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    defaultValue="cta-button--solid"
+                                    fieldLabel="CTA Style"
+                                    name="./ctaBorder">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <solid
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Solid"
+                                            value="cta-button--solid"/>
+                                    <bordered
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Bordered"
+                                            value="cta-button--bordered"/>
+                                    <borderless
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Borderless"
+                                            value="cta-button--borderless"/>
+                                </items>
+                            </ctaBorder>
+                            <ctaOptions
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    defaultValue="cta-button--large"
+                                    fieldLabel="CTA Size"
+                                    name="./ctaOptions">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <extraLargeCTA
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Extra Large"
+                                            value="cta-button--extra-large"/>
+                                    <largeCTA
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Large"
+                                            value="cta-button--large"/>
+                                    <smallCTA
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Small"
+                                            value="cta-button--small"/>
+                                    <oldXLCTA
+                                            jcr:primaryType="nt:unstructured"
+                                            disabled="true"
+                                            text="Extra Large (OLD)"
+                                            value="cta-button--extraLarge"/>
+                                </items>
+                            </ctaOptions>
+                            <caret
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    defaultValue="fa fa-chevron-right extra-bold"
+                                    fieldLabel="Caret Options"
+                                    name="./caretOptions">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <normal
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Normal"
+                                            value="fa fa-chevron-right extra-bold"/>
+                                    <solid
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Solid"
+                                            value="cta-button_caret--solid"/>
+                                    <small
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Small"
+                                            value="fa fa-chevron-right cta-button_caret--small"/>
+                                </items>
+                            </caret>
+                            <ctaHeaderOptions
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="CTA Header Options"
+                                    name="./ctaHeaderOptions">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <select
+                                            jcr:primaryType="nt:unstructured"
+                                            text="None"
+                                            value=""/>
+                                    <scrollUp
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Scroll Up into Header"
+                                            value="js-cta-header"/>
+                                    <stickHeader
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Always Stick to Header"
+                                            value="js-cta-in-header"/>
+                                </items>
+                            </ctaHeaderOptions>
+                            <stickyMobile
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    checked="false"
+                                    name="./stickyMobile"
+                                    text="CTA Sticky in Mobile View"
+                                    uncheckedValue="false"
+                                    value="true"/>
+                            <hideCta
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    checked="false"
+                                    name="./hideCta"
+                                    text="Hide CTA in Mobile ?"
+                                    uncheckedValue="false"
+                                    value="true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Link"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                        
+                         <destination
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    class="js-link-select"
+                                    defaultValue="link"
+                                    fieldLabel="Destination"
+                                    name="./destination">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <oldcart
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Old Cart"
+                                            value="old-cart"/>
+                                    <newcart
+                                            jcr:primaryType="nt:unstructured"
+                                            text="New Cart"
+                                            value="new-cart"/>
+                                    <link
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Link"
+                                            value="link"/>
+                                </items>
+                            </destination>
+                            <targetUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="CTA Target URL"
+                                name="./targetURL"
+                                required="{Boolean}true"/>
+
+                             <ctaWindowoption
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    defaultValue="_blank"
+                                    fieldLabel="Open Link in"
+                                    name="./ctaWindowSelection">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <samewindow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Same Window"
+                                            value="_self"/>
+                                    <newwindow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="New Window"
+                                            value="_blank"/>
+                                </items>
+                            </ctaWindowoption>
+                            <classification
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Classification"
+                                    name="./classification"/>
+                            <cartFlow
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Cart Flow"
+                                    name="./cartFlow"/>
+                            <cartStep
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Cart Step"
+                                    name="./cartStep"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+            <tab3
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Preselect"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <deviceType
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Device Type"
+                                    name="./deviceType"/>
+                            <planId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Plan Id"
+                                    value="one-week-promo"
+                                    name="./planId"/>
+                            <offerId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Offer Id"
+                                    name="./offerId"/>
+                            <sb
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Package Id"
+                                    name="./sb"/>
+                            <ats
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="It can accept more than one ats but it should be delimited by comma (,)"
+                                    fieldLabel="Extras"
+                                    name="./ats"/>
+                            <sp
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="If this field is empty then it will take the value as page name and If needed you can override this field"
+                                    fieldLabel="SP Param"
+                                    name="./sp"/>
+                           
+					       <raf
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                  checked="false"
+                                  name="./raf"
+                                  text="Enable RAF?"
+                                  uncheckedValue="false"
+                                  value="true"/>
+
+                        </items>
+                    </columns>
+                </items>
+            </tab3>
+            <tab4
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Offer Details"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/container"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <override-offer-option
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./overrideOffer">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <override-offer
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    class="cq-dialog-dropdown-showhide"
+                                    cq-dialog-dropdown-showhide-target=".offer-details-hide-show"
+                                    fieldLabel="Override Global Offer Details Content? "
+                                    name="./overrideOffer">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <yes
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Yes"
+                                            value="yes"/>
+                                    <no
+                                            jcr:primaryType="nt:unstructured"
+                                            text="No"
+                                            value="no"/>
+                                </items>
+                            </override-offer>
+                        </items>
+                    </override-offer-option>
+                    <overrideOffers
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide offer-details-hide-show"
+                            showhidetargetvalue="yes">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <offerDetailsLabel
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Please Enter the description of Offer Details to show Offer Details Link"
+                                    fieldLabel="Offer Details Label"
+                                    name="./offerDetailsLabel"/>
+                            <publishedDate
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    defaultValue="Updated Monday 20 , 2017"
+                                    fieldLabel="Published Date "
+                                    name="./offerPublishedDate"/>
+                            <offerDetailsHeadline
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Offer Details Heading"
+                                    name="./offerDetailsHeading"/>
+                            <offerDetailsDateAttr
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Configure the date attribute For ex: 7"
+                                    fieldLabel="Offer Details Date Attr"
+                                    name="./offerDetailsDateAttr"/>
+                        </items>
+                    </overrideOffers>
+                    <offer-details
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="hide offer-details-hide-show"
+                        showhidetargetvalue="yes">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <offerDetailsText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldLabel="Offer Details Description"
+                                name="./text"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/sling-tv/components/common/fullRTE/rtePlugins"/>
+                                <uiSettings
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/sling-tv/components/common/fullRTE/uiSettings"/>
+                            </offerDetailsText>
+                        </items>
+                    </offer-details>
+                    <override-offer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide offer-details-hide-show"
+                            showhidetargetvalue="no">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <overrideCTA
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Offer Details Description Path"
+                                    name="./overrideCTAPath"/>
+                        </items>
+                    </override-offer>
+                </items>
+            </tab4>
+            <tab5
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Disclaimer Details"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/container"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <override-disclaimer-option
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./overrideDisclaimer">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <override-offer
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    class="cq-dialog-dropdown-showhide"
+                                    cq-dialog-dropdown-showhide-target=".disclaimer-details-hide-show"
+                                    fieldLabel="Disclaimer Options"
+                                    name="./overrideDisclaimer">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Hide Disclaimer Text"
+                                            value="no"/>
+                                    <yes
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Show Disclaimer Text"
+                                            value="yes"/>
+                                </items>
+                            </override-offer>
+                        </items>
+                    </override-disclaimer-option>
+                    <override-disclaimer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide disclaimer-details-hide-show"
+                            showhidetargetvalue="yes">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <disclaimer
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    rootPath="/content/sling-tv/shared/disclaimer"
+                                    fieldLabel="Disclaimer Text Path"
+                                    name="./dsc"/>
+                        </items>
+                    </override-disclaimer>
+                </items>
+            </tab5>
+            <tab6
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                    fieldLabel="Component ID"
+                                    name="./ctaId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab6>
+        </items>
+    </content>
+</jcr:root>

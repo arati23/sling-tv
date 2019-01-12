@@ -1,0 +1,23 @@
+<div data-sly-use.deals="com.sling.tv.core.models.VanillaIceModel" data-sly-unwrap />
+
+<div data-sly-test="${wcmmode.edit}">Configure Offers and Deals</div>
+
+<div id="${deals.offersDealsId}" class="js-deals deals container-fluid">
+  <div class="flex-row offers-slick" data-sly-list="${deals.offerDeals}">
+    <div class="col-md-6 col-sm-6 col-xs-12 deals--item">
+      <div class="deals--box">
+        <div class="deals--ribbon" data-sly-test="${item.offerFlag}">
+          <img data-sling-src="${item.offerFlagImage}" alt="${item.offerFlagImageAlt}"
+               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          />
+          <span>${item.offerFlag}</span>
+        </div>
+        <div class="deals--inner">
+          <div class="col-sm-12 col-xs-12">
+            <div data-sly-resource="${ @path=item['uniqueId'], resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

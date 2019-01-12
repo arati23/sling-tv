@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/******************************************************************************
+
+charset.css
+
+From the doc:
+It [the CSS @charset at-rule] must be the first element in the style sheet
+ and not be preceded by any character...
+
+The separation ensures this rule will be placed first in the combined stylesheet.
+
+This file should never need to be modified.
+
+******************************************************************************/

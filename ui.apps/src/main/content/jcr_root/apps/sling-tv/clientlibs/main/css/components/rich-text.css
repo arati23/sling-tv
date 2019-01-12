@@ -1,0 +1,78 @@
+/* Rich Text */
+
+.rich-text ul li {
+  list-style: disc;
+  margin: 0 0 0 3em;
+}
+.rich-text ol li {
+  list-style: decimal;
+  margin: 0 0 0 3em;
+}
+.rich-text--hero {
+  display: inline;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .rich-text--hero {
+    font-size: 135px;
+    line-height: 85px;
+    top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .rich-text--hero {
+    font-size: 120px;
+    line-height: 85px;
+    top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .rich-text--hero {
+    font-size: 70px;
+    line-height: 65px;
+    top: 0;
+  }
+}
+
+.rich-text--hero-pre,
+.rich-text--hero-post {
+  display: inline;
+  position: relative;
+  left: 18px;
+}
+
+@media (min-width: 768px) {
+  .rich-text--hero-pre {
+    font-size: 50px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rich-text--hero-pre {
+    font-size: 32px;
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rich-text--hero-pre-post {
+    font-size: 32px;
+    bottom: -15px;
+    left: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rich-text--hero-post {
+    font-size: 24px;
+    left: 8px;
+    bottom: -4px;
+  }
+}
+
+.rich-text .rich-text--hero {
+  position: relative;
+  left: 18px;
+}

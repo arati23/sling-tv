@@ -1,0 +1,44 @@
+/* Link List */
+
+.link-list {
+  font-size: 20px;
+  line-height: 36px;
+  outline: none;
+  overflow: auto;
+  text-align: left;
+}
+
+.link-list--fade-both {
+  -webkit-mask-image: -webkit-gradient(linear, center bottom, center top, from(rgba(0,0,0,0)), color-stop(20%,rgba(0,0,0,1)), color-stop(80%,rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to top, transparent 0%, black 20%, black 80%, transparent 100%) ;
+}
+.link-list--fade-bottom {
+  -webkit-mask-image: -webkit-gradient(linear, center bottom, center top, from(rgba(0,0,0,0)), color-stop(20%,rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+  mask-image: linear-gradient(to top, transparent 0%, black 20%, black 100%);
+
+}
+.link-list--fade-top {
+  -webkit-mask-image: -webkit-gradient(linear, center bottom, center top, from(rgba(0,0,0,1)), color-stop(80%,rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to top, black 0%, black 80%, transparent 100%);
+}
+
+.link-list--list-item {
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .link-list--list-item {
+    padding: 0;
+  }
+
+  .jspVerticalBar {
+    display: none;
+  }
+
+  .jspPane {
+    margin-left: 0px !important;
+  }
+
+  .link-list {
+    text-align: center;
+  }
+}

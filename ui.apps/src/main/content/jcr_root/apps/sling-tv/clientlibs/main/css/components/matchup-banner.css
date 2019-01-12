@@ -1,0 +1,172 @@
+.matchup-banner-container {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+@media (min-width: 1024px) {
+  .matchup-banner-container {
+    height: 325px;
+  }
+}
+
+.matchup-info {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .matchup-info {
+    float: left;
+    width: 33%;
+    max-width: calc((100% - 445px)/2);
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-title {
+    font-size: 32px;
+  }
+}
+
+
+.matchup-title {
+  color: #faa21b;
+  margin-top: 0;
+  font-weight: 900;
+}
+
+@media (min-width: 1024px) {
+  .matchup-title {
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.matchup-matchup {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.matchup-team {
+  clear: both;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+  .matchup-team {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 30px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-team {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+
+.matchup-team-divider {
+  color: #FAA31E;
+}
+
+.matchup-team-divider hr {
+  color: #faa21b; /* IE */
+  background-color: #faa21b; /* Firefox */
+  border-color: #faa21b; /* Chrome */
+}
+
+@media (min-width: 1024px) {
+  .matchup-team-divider hr {
+    width: 39%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-team-divider hr {
+    border-width: 2px;
+    width: 35%;
+  }
+}
+
+.matchup-separator {
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  .matchup-separator {
+    vertical-align: -10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-separator {
+    vertical-align: -13px;
+  }
+}
+
+.matchup-team-divider-left {
+  float: left;
+  margin-left: 5%;
+}
+
+.matchup-team-divider-right {
+  float: right;
+  margin-right: 5%;
+}
+
+
+@media (min-width: 1024px) {
+  .matchup-banner_countdown {
+    float: left;
+    min-width: 445px;
+    padding-top: 20px;
+    text-align: center;
+    width: 33%;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 1023px) {
+  .matchup-banner_countdown {
+    padding-top: 31px;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .matchup-text {
+    max-width: calc((100% - 445px)/2);
+    float: right;
+    width: 33%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .matchup-text {
+    margin-top: 30px;
+  }
+}
+
+.matchup-rte {
+  margin-bottom: 10px;
+}
+
+/* This Selector is super greedy, replace w/ an RTE class.  (Tight?) */
+.matchup-rte p, .matchup-rte h1, .matchup-rte h2, .matchup-rte h3, .matchup-rte h4, .matchup-rte h5, .matchup-rte h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+

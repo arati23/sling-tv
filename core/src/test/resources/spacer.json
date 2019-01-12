@@ -1,0 +1,12 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Arati",
+	"jcr:lastModifiedBy": "Arati",
+	"jcr:created": "Wed Mar 27 2018 10:17:05 GMT-0500",
+	"heading": "Spacer Component",
+	"description": "Spacer component upgradation",
+	"jcr:lastModified": "Wed Mar 27 2018 16:19:55 GMT-0500",
+	"sling:resourceType": "sling-tv/en/domestic/jcr:content/par/container_component__478259074/par/dismissible_banner_c/content/spacer",
+	"lineStyle":"small",
+	"spacerId":"ABCD123"
+}

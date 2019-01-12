@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:actions="[edit,delete,insert,copymove,-]"
+    jcr:primaryType="cq:EditConfig">
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afterdelete="REFRESH_PAGE"
+        afteredit="REFRESH_PAGE"
+        afterinsert="REFRESH_PAGE"
+        afterMove="REFRESH_PAGE"/>
+    <cq:inplaceEditing
+        jcr:primaryType="cq:InplaceEditingConfig"
+        active="{Boolean}true"
+        editorType="text">
+        <config jcr:primaryType="nt:unstructured">
+            <rtePlugins
+                jcr:primaryType="nt:unstructured"
+                sling:resourceSuperType="/apps/sling-tv/components/common/fullRTE/rtePlugins"/>
+            <uiSettings
+                jcr:primaryType="nt:unstructured"
+                sling:resourceSuperType="/apps/sling-tv/components/common/fullRTE/uiSettings"/>
+        </config>
+    </cq:inplaceEditing>
+</jcr:root>

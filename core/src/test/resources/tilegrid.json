@@ -1,0 +1,24 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "brumoon",
+	"jcr:lastModifiedBy": "brumoon",
+	"jcr:created": "Fri Mar 16 2018 10:17:05 GMT-0500",
+	"heading": "heading1",
+	"description": "description1",
+	"jcr:lastModified": "Fri Mar 16 2018 16:19:55 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/general/tcg-grid",
+	"hideBreakout":"true",
+	"tcgGridId":"ABCD123",
+	"tiles": {
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"tabTitle": "tab title",
+			"tabUrl": "/some_url",
+			"tabIcon": "/content/dam/sling-tv/icons/extras/news_icon.svg",
+			"uniqueId": "12345"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	}
+}

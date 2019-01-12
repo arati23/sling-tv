@@ -1,0 +1,147 @@
+{
+	"en": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:title": "English",
+			"showReferFriend": "true",
+			"cq:template": "/apps/sample/templates/homepage",
+			"sling:resourceType": "sample/components/homepage",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+		},
+		"enone": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:title": "English-one",
+				"showReferFriend": "true",
+				"cq:template": "/apps/sample/templates/homepage",
+				"sling:resourceType": "sample/components/homepage",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+			},
+			"enoneone": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "English-one",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+			}
+		},
+		"entwo": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:title": "English-two",
+				"showReferFriend": "true",
+				"cq:template": "/apps/sample/templates/homepage",
+				"sling:resourceType": "sample/components/homepage",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+			},
+			"entwoone": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "English-two-one",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+			}
+		},
+		"footer": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:title": "Footer-nav-root",
+				"showReferFriend": "true",
+				"cq:template": "/apps/sample/templates/homepage",
+				"sling:resourceType": "sample/components/homepage",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+			},
+			
+			"ftone" : {
+			"jcr:primaryType": "cq:Page",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:title": "Footer-one",
+				"showReferFriend": "true",
+				"cq:template": "/apps/sample/templates/homepage",
+				"sling:resourceType": "sample/components/homepage",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+			},
+			"ftone-one": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "Footer-one-one",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+				},
+			"ftone-two": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "Footer-one-two",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+			}
+		},
+		"fttwo": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:title": "Footer-Two",
+				"showReferFriend": "true",
+				"cq:template": "/apps/sample/templates/homepage",
+				"sling:resourceType": "sample/components/homepage",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+			},
+			"fttwo-one": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "Footer-Two-One",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+			},
+			"fttwo-two": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:title": "Footer-Two-Two",
+					"showReferFriend": "true",
+					"cq:template": "/apps/sample/templates/homepage",
+					"sling:resourceType": "sample/components/homepage",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Thu Aug 07 2014 16:32:59 GMT+0200"
+				}
+			}
+		}
+	}
+}
+}

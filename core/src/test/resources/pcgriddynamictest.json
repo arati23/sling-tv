@@ -1,0 +1,446 @@
+[  
+   {  
+      "planId":"two-day-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"two-month-pre-pay-promo",
+      "packages":{  
+         "":"Select",
+         "zvod":"ZeeVOD"
+      }
+   },
+   {  
+      "planId":"twelve-month-prepay-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"monthly",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"three-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi"
+      }
+   },
+   {  
+      "planId":"one-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"two-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "malayalam-pack-2":"Malayalam",
+         "zvod":"ZeeVOD",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi"
+      }
+   },
+   {  
+      "planId":"six-month-prepay-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"one-week-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"one-day-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"seventy-five-day-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"ninety-day-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"one-week-promo-test",
+      "packages":{  
+         "":"Select",
+         "zvod":"ZeeVOD"
+      }
+   },
+   {  
+      "planId":"ForTesting1",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "zvod":"ZeeVOD"
+      }
+   },
+   {  
+      "planId":"one-month-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"six-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "zvod":"ZeeVOD"
+      }
+   },
+   {  
+      "planId":"sling-four-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"one-dollar-retention",
+      "packages":{  
+         "":"Select",
+         "malayalam-pack-2":"Malayalam",
+         "zvod":"ZeeVOD",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"three-month-pre-pay-retail",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"six-month-pre-pay-retail",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"twelve-month-pre-pay-retail",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"twelve-month-pre-pay",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"two-week-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"two-month-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"two-month-promo-paid",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"ten-day-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"three-week-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"three-month-promo-paid",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue"
+      }
+   },
+   {  
+      "planId":"six-week-promo",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"twelve-month-promo-paid",
+      "packages":{  
+         "":"Select",
+         "malayalam-pack-2":"Malayalam"
+      }
+   },
+   {  
+      "planId":"stair-step",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"slingscriber-promo",
+      "packages":{  
+         "":"Select",
+         "malayalam-pack-2":"Malayalam",
+         "zvod":"ZeeVOD",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"one-month-promo-paid",
+      "packages":{  
+         "":"Select",
+         "domestic":"Sling Orange",
+         "sling-mss":"Sling Blue",
+         "sling-combo":"Orange + Blue",
+         "zvod":"ZeeVOD",
+         "malayalam-pack-2":"Malayalam",
+         "asianet-pack":"Asianet",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi",
+         "tamil-pack-2":"Tamil"
+      }
+   },
+   {  
+      "planId":"three-month-pre-pay-promo",
+      "packages":{  
+         "":"Select",
+         "malayalam-mega":"Malayalam Gold",
+         "hindi-pack":"Hindi"
+      }
+   }
+]

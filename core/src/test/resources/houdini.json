@@ -1,0 +1,12 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Nithya",
+	"jcr:lastModifiedBy": "Nithya",
+	"jcr:created": "Mon Jun 18 2018 11:10:08 GMT-0500",
+	"showText": "Show More",
+	"hideText": "Show Less",
+	"jcr:lastModified": "Tue Jun 20 2018 17:11:55 GMT-0500",
+	"sling:resourceType": "sling-tv/components/containers/houdini",
+	"houdiniCompId":"12345"
+	
+}

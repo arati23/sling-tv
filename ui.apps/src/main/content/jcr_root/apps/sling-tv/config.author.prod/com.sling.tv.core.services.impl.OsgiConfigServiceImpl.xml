@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          slingAddressScrubURL="https://ms.p.sling.com/sling-api/alpha/address-scrub"
+          slingAntennaServiceURL="https://ms.p.sling.com/sling-api/alpha/ota/antenna-recommendation"
+          slingPCServiceURL="https://webapi.p.sling.com/"
+          slingTealiumEnvironment="prod"
+          slingCDNPurgeURIProtocol="cloudfront"
+          slingRootPagePath="/content/sling-tv/home"
+                   />

@@ -1,0 +1,16 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Dileep Muraleedharan",
+	"jcr:lastModifiedBy": "Dileep Muraleedharan",
+	"jcr:created": "Thu Jul 05 2018 05:11:08 GMT-0500",
+	"matchupTitle":"Match Title",
+	"matchupBannerId":"12345",
+	"matchupTeam1":"TeamA",
+	"matchupTeam2":"TeamB",
+	"matchupSeparator":"to",
+	"jcr:lastModified": "Thu Jul 05 2018 05:11:08 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/general/matchup-banner"
+}
+
+
+		

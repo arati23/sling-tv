@@ -1,0 +1,7 @@
+/* Program Ribbon */
+
+.program-ribbon .prg-car .slick-slide {
+  height: auto;
+  min-height: 120px;
+  margin: 0;
+}

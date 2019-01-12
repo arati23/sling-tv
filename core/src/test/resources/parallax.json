@@ -1,0 +1,35 @@
+{
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "jcr:created":"Wed Jul 25 2018 14:58:07 GMT-0500",
+   "desktopHeight":"600",
+   "parallaxId":"p3",
+   "jcr:lastModified":"Wed Jul 25 2018 15:49:38 GMT-0500",
+   "sling:resourceType":"sling-tv/components/content/media/parallax",
+   "mobileHeight":"300",
+   "parallaxItems":{
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{
+         "jcr:primaryType":"nt:unstructured",
+         "imageWidth":"22.5",
+         "startX":"-20",
+         "startY":"50",
+         "imagePath":"/content/dam/sling-tv/misc/new-home-page-videos/parllax/TV.png",
+         "endX":"10",
+         "endY":"50"
+      }
+   },
+   "parallaxItemsMobile":{
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{
+         "jcr:primaryType":"nt:unstructured",
+         "startYMobile":"50",
+         "endYMobile":"50",
+         "imagePathMobile":"/content/dam/sling-tv/misc/new-home-page-videos/parllax/TV.png",
+         "imageWidthMobile":"22.5",
+         "startXMobile":"-20",
+         "endXMobile":"10"
+      }
+   }
+}

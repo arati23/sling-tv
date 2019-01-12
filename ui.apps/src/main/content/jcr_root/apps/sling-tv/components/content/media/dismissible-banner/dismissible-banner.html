@@ -1,0 +1,88 @@
+<div data-sly-use.banner="com.sling.tv.core.models.DismissibleBannerModel" data-sly-unwrap />
+<sly data-sly-test="${wcmmode.edit && !banner.bannerType}">Click here to configure Dismissible Banner</sly>
+
+<div id="${banner.dismissibleBannerId}">
+<!-- Landscape -->
+
+<div class="hidden-xs">
+  <!-- Hidden div for fixed padding -->
+  <sly data-sly-test="${banner.sticky}">
+    <sly data-sly-test="${banner.bannerType == 'image'}">
+      <img class="dismissible-banner-spacer" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURL @ context='uri'}"/>
+    </sly>
+    <sly data-sly-test="${banner.bannerType == 'video'}">
+      <video class="js-dismissible-spacer dismissible-banner-spacer" muted playsinline poster="${banner.fallbackImageUrl}" src=""></video>
+    </sly>
+  </sly>
+
+  <div class="dismissible-banner-container ${banner.sticky ? 'dismissible-banner-fixed' : ''}">
+    <sly data-sly-test="${banner.bannerType == 'image'}">
+      <img class="dismissible-banner_background" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURL @ context='uri'}"/>
+      <img class="js-dismissible-spacer dismissible-banner-spacer" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURL @ context='uri'}"/>
+    </sly>
+    <sly data-sly-test="${banner.bannerType == 'video'}">
+      <video class="dismissible-banner_background" autoplay loop muted playsinline
+             poster="${banner.fallbackImageUrl}" data-sling-src="${banner.damVideoLink}" src="">
+        <source data-sling-src="${banner.damVideoLink}" src="" type="video/mp4"/>
+      </video>
+      <video class="js-dismissible-spacer dismissible-banner-spacer" muted playsinline poster="${banner.fallbackImageUrl}" src="${banner.damVideoLink}"></video>
+    </sly>
+    <div class="dismissible-banner-content" data-sly-test="${banner.bannerType}">
+      <div data-sly-test="${banner.dismissible}" class="dismissible-banner-close"></div>
+
+      <div data-sly-resource="${'content' @ resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+      <sly data-sly-test="${banner.bottomRte && !wcmmode.edit}" >
+        <div class="dismissible-banner--bottom-rte" data-sly-resource="${ 'bottomRteDesktop' @ resourceType='sling-tv/components/core/rich-text'}"> </div>
+      </sly>
+
+    </div>
+  </div>
+   <sly data-sly-test="${banner.bottomRte && wcmmode.edit}" >
+    Hey this is authoring place and It will move up in publish
+    <div  data-sly-resource="${ 'bottomRteDesktop' @ resourceType='sling-tv/components/core/rich-text'}"> </div>
+   </sly>
+</div>
+
+
+<!-- Portrait Mode -->
+<div class="visible-xs">
+  <!-- Hidden div for fixed padding -->
+  <sly data-sly-test="${banner.sticky}">
+    <sly data-sly-test="${banner.bannerType == 'image'}">
+      <img class="js-dismissible-spacer dismissible-banner-spacer" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURLP @ context='uri'}"/>
+    </sly>
+    <sly data-sly-test="${banner.bannerType == 'video'}">
+      <video class="js-dismissible-spacer dismissible-banner-spacer" muted playsinline poster="${banner.fallbackImageUrlP}" src=""></video>
+    </sly>
+  </sly>
+
+  <div class="dismissible-banner-container ${banner.sticky ? 'dismissible-banner-fixed' : ''}">
+    <sly data-sly-test="${banner.bannerType == 'image'}">
+      <img class="dismissible-banner_background" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURLP @ context='uri'}"/>
+      <img class="js-dismissible-spacer dismissible-banner-spacer" alt="${banner.imageAltText}" title="${banner.imageAltText}" src="${banner.imageURLP @ context='uri'}"/>
+    </sly>
+    <sly data-sly-test="${banner.bannerType == 'video'}">
+      <video class="dismissible-banner_background" autoplay loop muted playsinline
+             poster="${banner.fallbackImageUrlP}" data-sling-src="${banner.damVideoLinkP}" src="">
+        <source data-sling-src="${banner.damVideoLinkP}" src="" type="video/mp4"/>
+      </video>
+      <video class="js-dismissible-spacer dismissible-banner-spacer" muted playsinline poster="${banner.fallbackImageUrlP}" src="${banner.damVideoLinkP}"></video>
+    </sly>
+    <div class="dismissible-banner-content">
+      <div data-sly-test="${banner.dismissible}" class="dismissible-banner-close"></div>
+
+        <div data-sly-resource="${'contentMobile' @ resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+
+      <sly data-sly-test="${banner.bottomRteMobile && !wcmmode.edit}" >
+        <div class="dismissible-banner--bottom-rte" data-sly-resource="${ 'bottomRteMob' @ resourceType='sling-tv/components/core/rich-text'}"> </div>
+      </sly>
+
+    </div>
+   </div>
+    <sly data-sly-test="${banner.bottomRteMobile && wcmmode.edit}" >
+    Hey this is authoring place and It will move up in publish
+    <div  data-sly-resource="${ 'bottomRteMob' @ resourceType='sling-tv/components/core/rich-text'}"> </div>
+   </sly>
+</div>
+
+</div>

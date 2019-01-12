@@ -1,0 +1,23 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Krishna Gunturu",
+	"jcr:created": "Mon Jul 23 2018 04:13:01 GMT-0500",
+	"jcr:lastModified": "Mon Jul 23 2018 10:46:28 GMT-0600",
+	"sling:resourceType": "sling-tv/components/content/general/channel-logos",
+	"offersDealsId": "component Id",
+	"offerDeals": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"deviceImage": "/content/dam/sling-tv/devices/device-hardware/roku/Roku Premiere+.png",
+			"offerFlagImage": "/content/dam/sling-tv/devices/device-hardware/free-ribbon.png",
+			"deviceImageAlt": "deviceTest",
+			"offerFlagImageAlt": "flagTest",
+			"uniqueId": "183860",
+			"offerFlag": "FREE"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured"
+		}
+	}
+}

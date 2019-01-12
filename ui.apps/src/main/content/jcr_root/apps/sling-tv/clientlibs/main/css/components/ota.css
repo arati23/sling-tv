@@ -1,0 +1,542 @@
+/* OTA Component CSS */
+
+.find-free-local-chan {
+  display: inline;
+  color: #FCB932;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.local-channel-avail {
+  height: 52px;
+  max-width: 355px;
+  color: #FCB932;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.input-title {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 19px;
+  display: block;
+  text-align: left;
+}
+
+.input-field {
+  height: 50px;
+  width: 100px;
+  border: 1px solid #CFCFCF;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 10px;
+}
+
+.antenna-legend-text {
+  height: 16px;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+@media (min-width: 450px) {
+  .antenna-legend-text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 349px) {
+  .antenna-legend-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 449px) {
+  .antenna-legend-text {
+    margin-top: 10px;
+  }
+}
+
+#ota-results-details-text {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  display: none;
+}
+
+select.input-field {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.ota-input-box {
+  min-height: 91px;
+  float: left;
+}
+
+.input-field:focus {
+  outline-color: #14ABE0;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.input-field.ota-input-error {
+  outline-color: #FF2100;
+  outline-style: solid;
+  outline-width: 2px;
+  color: #FF2100;
+  padding-left: 10px;
+}
+
+.ota-input-error {
+  color: #FF2100;
+  text-align: left;
+  text-transform: none;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.ota-search-spacing {
+  margin-top: 17px;
+}
+
+
+.ota-address-container {
+  max-width: 375px;
+  margin: auto;
+}
+
+#ota-address-search {
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 399px) {
+  #ota-address-search {
+    width: 100%;
+  }
+
+  .ota-input-box {
+    width: 100%;
+    display: inline-block;
+    float: none;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
+
+@media (min-width:400px) {
+  #ota-address-input {
+    width: 355px;
+  }
+
+  #ota-city-input {
+    width: 225px;
+    margin-right: 15px;
+  }
+
+  #ota-state-input {
+    width: 114px;
+  }
+
+  #ota-zip-input {
+    width: 99px;
+    -moz-appearance: textfield;
+  }
+  #ota-zip-input::-webkit-outer-spin-button,
+  #ota-zip-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #ota-zip-input-error {
+    width: 99px;
+    white-space: nowrap;
+  }
+
+  #ota-address-search-btn {
+    margin-top: 24px;
+    margin-left: 16px;
+    width: 240px;
+    height: 50px;
+    float: left;
+    font-size: 16px;
+  }
+}
+#ota-search-results {
+  width : 95%;
+  margin : auto;
+}
+
+#ota-search-results-header-address {
+  color: #FFFFFF;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+#ota-results-container {
+  max-width: 435px;
+  margin: auto;
+}
+
+#ota-results-icon-legend {
+  max-width: 450px;
+  margin: auto;
+  height: 48px;
+}
+
+.ota-icon {
+  width: 28px;
+  height: 47px;
+  display: inline-block;
+  float: left;
+}
+
+.ota-icon-sling {
+
+}
+
+.ota-icon-indoor {
+
+
+}
+
+.ota-icon-outdoor {
+
+}
+
+#ota-results-list {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#ota-results-list th {
+  height: 48px;
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33%;
+  font-weight: normal;
+  background-color: #000000;
+}
+
+#ota-results-list tr {
+  height: 48px;
+  background-color: #2B2B2B;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+#ota-results-list tr:nth-child(odd) {
+  background-color: #1F1F1F;
+}
+
+#ota-results-list td {
+  border: 1px solid #000000;
+}
+
+#ota-results-list td.ota-icon-cell {
+  background-color: #000000;
+}
+
+#ota-results-local-disclaimer {
+  margin-left: 17px;
+  margin-right: 17px;
+  margin-top: 4px;
+  margin-bottom: 34px;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.ota-all-access {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+.ota-offer-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .ota-offer-container {
+    display: flex;
+    justify-content: center;
+  }
+  .ota-offer-box {
+    height: calc(100% - 25px);
+  }
+}
+
+@media (max-width:767px) {
+  .ota-offer-container {
+    margin-top: 0;
+  }
+
+  .ota-offer-wrapper {
+    margin-top: 20px;
+  }
+}
+
+.ota-offer-wrapper {
+  display: inline-block;
+  margin-top: 45px;
+}
+
+.ota-offer-box {
+  width: 345px;
+  background-color: #FFFFFF;
+  margin: 10px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.ota-offer-inner {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 767px) {
+  .ota-offer-inner {
+    padding-bottom: 10px;
+  }
+}
+
+.ota-offer-header {
+  color: #4A4A4A;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.ota-offer-image {
+  width: 100%;
+  margin: 5px 0 -10px 0;
+}
+
+.ota-offer-ribbon {
+  position: relative;
+  top: -4px;
+  left: 235px;
+}
+
+.ota-offer-ribbon > img {
+  height: 34px;
+  width: 75px;
+}
+
+.ota-offer-ribbon > span {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-left: 10px;
+
+}
+
+.ota-offer-price {
+  color: #FAA21B;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 30px;
+  height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.ota-offer-description {
+  color: #4B4B4B;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.ota-offer-caveat {
+  color: #9B9B9B;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.ota-cta-wrapper {
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .ota-offer-box {
+    margin-top: -40px;
+  }
+}
+
+.ota-offer-wrapper .cta-container {
+  padding: 0;
+  text-align: left;
+
+  width: 100%;
+}
+
+.ota-offer-wrapper .cta-button {
+  color: #FFFFFF;
+  height: 40px;
+  padding-top: 12px;
+  line-height: 1;
+  font-size: 1em;
+  width: 100%
+}
+
+.ota-offer-wrapper .cta-button .fa-chevron-right {
+  vertical-align: -2px;
+}
+
+.ota-offer-wrapper .cta-button:hover,
+.ota-offer-wrapper .cta-button:active,
+.ota-offer-wrapper .cta-button:hover .fa-chevron-right,
+.ota-offer-wrapper .cta-button:active .fa-chevron-right {
+  color: #FFFFFF;
+}
+
+.ota-offer-wrapper .sublink {
+  text-align: center;
+}
+.ota-offer-wrapper .sublink a {
+  text-decoration: underline;
+}
+.desktop-only-hrule {
+  color: #FFFFFF;
+  margin: 25px 0;
+}
+
+@media (max-width: 767px) {
+  .desktop-only-hrule {
+    display: none;
+  }
+}
+
+.ota-outdoor-info {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 25px 10px;
+}
+
+.ota-outdoor-info a {
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .ota-outdoor-info {
+    text-align: center;
+  }
+}
+.ota-error {
+  display: inline-block;
+  max-width: 675px;
+  border: 1px solid #CFCFCF;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ota-error-container {
+  text-align: center;
+}
+
+#ota-ribbon {
+  border: 1px solid white;
+  margin-top: 10px;
+  height: 106px;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+#ota-alacarte-header {
+  height: 47px;
+  color: #FCBF38;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 47px;
+  text-align: center;
+}
+
+#ota-alacarte-container {
+  max-width: 585px;
+  display: inline-block;
+}
+
+#ota-alacarte-rule {
+  height: 2px;
+  background-color: #979797;
+  border: none;
+}
+
+#ota-alacarte-text {
+  color: #676767;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#ota-alacarte-text p {
+  margin-bottom: 0;
+}
+
+#ota-alacarte-cta {
+  margin-top: 45px;
+}
+
+#ota-alacarte-cta-rule {
+  height: 0.75px;
+  width: 91px;
+  background-color: #14ABE0;
+  border: none;
+}
+.disable-ota-search-btn{
+  background-color: #4A4A4A;
+  cursor: default !important;
+}
+.hide-result{
+  display: none;
+}

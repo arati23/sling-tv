@@ -1,0 +1,17 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Casey.Temanson@sling.com",
+	"paddingLeft": "5",
+	"imageWidth": "80",
+	"jcr:lastModifiedBy": "casey.temanson",
+	"imageLink": "/content/dam/sling-tv/misc/Desi Video Image.png",
+	"jcr:created": "Fri Jan 19 2018 13:55:36 GMT-0500",
+	"paddingRight": "3",
+	"damVideoLink": "/content/dam/sling-tv/BannerVideos/Sling - Reality Daily Cricket Bollywood_300118_A.mp4",
+	"jcr:lastModified": "Wed Feb 07 2018 17:47:54 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/general/customvideocomponent",
+	"autoPlay": "false",
+	"videoLink" : "https://youtube.com/abcd",
+	"customVideoComponentId": "CustomID",
+	"altText" : "gvk"
+}

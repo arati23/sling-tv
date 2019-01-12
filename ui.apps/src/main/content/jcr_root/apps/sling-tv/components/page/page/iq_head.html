@@ -1,0 +1,129 @@
+<sly data-sly-use.environmentModel="com.sling.tv.core.models.EnvironmentModel">
+    <script>
+        var utag_data = {
+            "a": {
+                "event": [],
+                "page": {
+                    url: window.location.href,
+                    pageName: "",
+                    navigatorLanguage: navigator.language,
+                    appLocale: document.documentElement.lang
+                },
+                "customer_info": {
+                    ums_user_guid: "",
+                    ums_uuid: "",
+                    ums_invoiced: "",
+                    ums_account_status: "",	//
+                    ums_payment_type: "",
+                    ums_plan: "",
+                    prodCat_subscription_add_on: "",
+                    prodCat_plan_identifier: "",
+                    prodCat_lob: "",
+                    prodCat_classification: "",
+                    prodCat_has_device_package: "",
+                    prodCat_current_period_ends: ""
+
+
+                },
+
+                "product_view": {
+                    id: "",
+                    name: ""
+                },
+
+
+                "cart_view": {
+                    products: [{
+                        id: "",
+                        name: "",
+                        type: "",
+                        cost: "",
+                        units: ""
+                    }]
+                },
+                "cart_confirmation": {
+                    "cart_confirmation_id": "",
+                    "total_purchase_price": "",
+                    products: [{
+                        id: "",
+                        name: "",
+                        type: "",
+                        cost: "",
+                        units: ""
+                    }]
+                },
+
+                "edit_modal": {
+                    modal_id: ""
+                },
+                "edit_view": {
+                    ums_plan_start: "",
+                    ums_plan_end: "",
+                    promoCode: "",
+                    offer: [{
+                        id: "",
+                        prod_offer: "",
+                        type: "",
+                        plan: "",
+                        details: "",
+                        originalCost: "",
+                        offerCost: "",
+                        units: ""
+                    }]
+                },
+                "edit_confirmation": {
+                    edit_confirmation_id: "",
+                    total_purchase_price: "",
+                    offer: [{
+                        id: "",
+                        prod_offer: "",
+                        type: "",
+                        plan: "",
+                        details: "",
+                        originalCost: "",
+                        offerCost: "",
+                        units: ""
+                    }]
+                },
+
+                "cancel_view": {
+                    products: [{
+                        id: "",
+                        name: "",
+                        type: "",
+                        cost: "",
+                        units: ""
+                    }]
+                },
+                "cancel_confirmation": {
+                    edit_confirmation_id: "",
+                    total_purchase_price: "",
+                    products: [{
+                        id: "",
+                        name: "",
+                        type: "",
+                        cost: "",
+                        units: ""
+                    }]
+                },
+                "content_search": {
+                    contentType: "",
+                    contentId: "",
+                    contentName: "",
+                    query: "",
+                    searchType: ""
+                },
+                "media_tracking": {
+
+                }
+
+
+            }
+        };
+        utag_data.a.event.push({
+            name : "screen_load",
+
+        });
+    </script>
+    <script type="text/javascript" src="${environmentModel.TealiumSyncScriptUrl}"></script>
+</sly>

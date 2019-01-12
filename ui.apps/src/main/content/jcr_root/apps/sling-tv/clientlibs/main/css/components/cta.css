@@ -1,0 +1,288 @@
+/* CTA Component */
+
+.cta--configure {
+  min-height: 35px;
+}
+
+.js-cta-in-header .btn {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+  .cta-_-fixed-mobile {
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    position: fixed;
+    text-align: center;
+    top: auto !important; /* Override inline styles set by header scroll JS (DE14954) */
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .cta-_-padded {
+    padding: 0 15px;
+  }
+}
+
+
+.cta-button {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 22px 30px;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .cta-button--extraLarge, .cta-button--extra-large {
+    min-width: 400px;
+    height: 90px;
+    font-size: 1.5em;
+    padding: 31px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-button {
+    display: block;
+  }
+}
+
+.cta-button > .fa-chevron-right {
+  padding-left: 10px;
+}
+
+
+/* Inaccurate class names have to stay until all CTAs have been updated */
+.cta-button-without-border, .cta-button--solid {
+  background-color: #14abe0;
+}
+
+.cta-button-without-border:hover, .cta-button-without-border:active,
+.cta-button--solid:hover, .cta-button--solid:active {
+  background-color: #3abfed;
+  color: #1f1f1f;
+}
+
+.cta-button-with-border, .cta-button--bordered {
+  border: 1px solid #14abe0;
+  color: #14abe0;
+  background: none;
+}
+
+.cta-button-white-border {
+	border: 1px solid #ffffff;
+	color: #1f1f1f;
+	background-color: #14abe0;
+}
+
+.cta-button-with-border:hover, .cta-button-with-border:active,
+.cta-button--bordered:hover, .cta-button--bordered:active {
+  color: #9fdbed;
+  border-color: #9fdbed;
+}
+
+.cta-button-white-border:hover, .cta-button-white-border:active{
+	color:#9fdbed;
+}
+
+.cta-button--borderless {
+  background: none;
+  color: #14ABE0;
+  line-height: 1;
+}
+.cta-button--borderless.cta-button--extraLarge, .cta-button--borderless.cta-button--extra-large, .cta-button--borderless.cta-button--large, .cta-button--borderless.cta-button--small {
+  padding: 0;
+}
+.cta-button--borderless:hover, .cta-button--borderless:active {
+  background: none;
+  color: #9fdbed;
+}
+
+
+.cta-secondarybtn, .cta-button--small {
+  padding: 15px 20px;
+}
+
+
+.caret.classification-dropdown-caret, .cta-button--caret, .cta-button_caret--solid {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid;
+  display: inline-block;
+  height: 0;
+  margin: -3px 0 0 10px;
+  -webkit-transition: -webkit-transform, 200ms, ease-in-out;
+  -moz-transition: -moz-transform, 200ms, ease-in-out;
+  transition: transform, 200ms, ease-in-out;
+  transform: rotate(-90deg);
+  vertical-align: middle;
+  width: 0;
+}
+
+
+.cta-button_caret--small {
+  font-size: 65%;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .cta-button_caret--small {
+    margin-top: -3px;
+  }
+}
+@media (max-width: 767px) {
+  .cta-button_caret--small {
+    margin-top: -2px;
+  }
+}
+.cta-button > .cta-button_caret--small {
+  padding-left: 5px;
+}
+
+
+.offer-details-modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+
+.offer-details-modal--container {
+  background-color: #F0F1F3;
+  color: black;
+  position: absolute;
+}
+
+@media (min-width: 1200px) {
+  .offer-details-modal--container {
+    left: 50%;
+    top: 5%;
+    -webkit-transform: translate(-50%, 14%);
+    -moz-transform: translate(-50%, 14%);
+    -ms-transform: translate(-50%, 14%);
+    -o-transform: translate(-50%, 14%);
+    transform: translate(-50%, 14%);
+    width: 85%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .offer-details-modal--container {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
+    -ms-transform: translate(-50%, -47%);
+    -o-transform: translate(-50%, -47%);
+    transform: translate(-50%, -47%);
+    width: 97%;
+  }
+}
+
+
+.offer-details-modal--header {
+  background-color: #cfcfcf;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+
+.offer-details-modal--header-date {
+  margin: 0;
+}
+
+
+.offer-details-modal--close {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+
+.offer-details-modal--body {
+  overflow-y: scroll;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .offer-details-modal--body {
+    height: 440px;
+    padding: 15px 50px 35px 50px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: portrait)  {
+  .offer-details-modal--body {
+    height: 400px;
+    padding: 10px 20px 15px 30px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .offer-details-modal--body {
+    height: 65vh;
+    padding: 0 20px 15px 30px;
+  }
+}
+
+@media (min-width: 767px) {
+  .cta_float {
+    margin-top: 40px;
+    padding-right: calc(5% + 15px);
+    position: fixed;
+    right: 0;
+    z-index: 1132;
+  }
+  
+  .cta_float .cta-button--large, .cta_float .cta-button--extraLarge, .cta_float .cta-button--extra-large  {
+  	height: 52px;
+    font-size: 1.3em;
+    min-width: 0;
+    padding: 15px 20px;
+  }
+
+  .cta_float > .cta-button {
+    font-size: 16px;
+  }
+
+  .cta_float > .sublink {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1280px) {
+  .cta_float .cta-button--large, .cta_float .cta-button--extraLarge, .cta_float .cta-button--extra-large  {
+    min-width: 306px;
+  }
+}
+
+
+.light-theme .cta-button--solid,
+.gray-theme .cta-button--solid,
+.lg-theme .cta-button--solid,
+.ng-theme .cta-button--solid {
+  color: white;
+}
+
+
+@media (max-width: 767px) {
+  .light-theme .cta-_-fixed-mobile,
+  .gray-theme .cta-_-fixed-mobile,
+  .lg-theme .cta-_-fixed-mobile,
+  .ng-theme .cta-_-fixed-mobile {
+    padding: 0;
+  }
+}

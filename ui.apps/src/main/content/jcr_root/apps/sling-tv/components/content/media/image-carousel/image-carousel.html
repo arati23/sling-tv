@@ -1,0 +1,26 @@
+<div data-sly-use.imageCarouselModel="com.sling.tv.core.models.ImageCarouselModel" data-sly-unwrap/>
+
+<div data-sly-test="${wcmmode.edit && !imageCarouselModel.imageCarousel}">Click here to configure Image/Carousel</div>
+
+<div id="${imageCarouselModel.imageCarouselId}" class="js-image-carousel image-carousel slide" data-ride="carousel">
+      <ol data-sly-test="${imageCarouselModel.imageCarousel.size != 1}" class="image-carousel--indicators">
+          <sly data-sly-list="${imageCarouselModel.imageCarousel}">
+          <li data-slide-to="${itemList.index}" class="${item.carouselColorBar} js-image-carousel-indicator image-carousel--indicator"></li>
+          </sly>
+      </ol>
+  <div class="${imageCarouselModel.imageCarousel.size != 1 ? 'image-carousel--inner-padding' : ''} carousel-inner" role="listbox">
+      <sly data-sly-list="${imageCarouselModel.imageCarousel}">
+      <div class="item text-center ${itemList.index==0 && 'active'}">
+        <a data-sly-test="${item.imageUrl}" x-cq-linkchecker="skip" href="${item.imageUrl}">
+        <img class="image-carousel--image" data-sling-src="${item.imagePath}" alt="${item.alt}"
+             style="width: ${imageCarouselModel.width==null ? '100' : imageCarouselModel.width @ context='styleString'}%;padding:${imageCarouselModel.width==null || imageCarouselModel.width=='100' ? '' : '0' @ context='styleString'};"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+        </a>
+        <img data-sly-test="${!item.imageUrl}" class="image-carousel--image"
+             data-sling-src="${item.imagePath}" alt="${item.alt}"
+             style="width: ${imageCarouselModel.width==null ? '100' : imageCarouselModel.width @ context='styleString'}%;padding:${imageCarouselModel.width==null || imageCarouselModel.width=='100' ? '' : '0' @ context='styleString'};"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+      </div>
+      </sly>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div data-sly-use.grid="com.sling.tv.core.models.TileGridModel"  data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit && !properties.tiles}" class="editor-info"> Please edit the Grid  component </div>
+
+<ul id="${grid.tcgGridId}" data-sly-list="${grid.tiles}" class="tgc-body"  data-sling-tiles-link="${grid.hideBreakout}">
+
+    <li class="tgc-tile">
+      
+      <sly data-sly-test="${grid.hideBreakout}">
+        <a x-cq-linkchecker="skip" class="tgc_link" href="${item.tabUrl}">
+       		<sly data-sly-use.module="tgc-common.html" data-sly-call="${module.temp @imagePath=item.tabIcon}" />
+		</a>
+      </sly>
+
+      <sly data-sly-test="${!grid.hideBreakout}">
+       		<sly data-sly-use.module="tgc-common.html" data-sly-call="${module.temp @imagePath=item.tabIcon}" />
+
+        <div class="tgc-tile-breakout">
+          <div class="tgc-close"><span class="tgc-close-text">Close</span><div class="tgc-close-x"></div></div>
+          <h1>${item.tabTitle}</h1>
+
+          <sly data-sly-test.rtePath="${'container-items-{0}/richText' @format=item.uniqueId}">
+              <div data-sly-resource="${ @path=rtePath, resourceType='sling-tv/components/core/rich-text'}"></div>
+          </sly>
+
+          <sly data-sly-test.ctaPath="${'container-items-{0}/ctaItem' @format=item.uniqueId}">
+              <div data-sly-resource="${ @path=ctaPath, resourceType='sling-tv/components/core/cta'}"></div>
+          </sly>
+
+          <sly data-sly-test.rteSecondPath="${'container-items-{0}/richTextDownItem' @format=item.uniqueId}">
+             <div class="tgc-help-note" data-sly-resource="${ @path=rteSecondPath, resourceType='sling-tv/components/core/rich-text'}"></div>
+          </sly>
+
+
+        </div>
+      </sly>
+
+    </li>
+</ul>

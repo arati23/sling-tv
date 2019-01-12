@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Spacer Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+        <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Desktop"
+                sling:resourceType="granite/ui/components/foundation/section">
+
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <spacer-new
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <line-Style
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    class="cq-dialog-dropdown-showhide"
+                                    cq-dialog-dropdown-showhide-target=".small-medium-large-line-hide-show"
+                                    fieldLabel="Style"
+                                    name="./lineStyle">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <small
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Small"
+                                            value="small"/>
+                                    <medium
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Medium"
+                                            value="medium"/>
+                                    <large
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Large"
+                                            value="large"/>
+                                    <extralarge
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Extra large"
+                                            value="extralarge"/>
+                                    <line
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Line"
+                                            value="line"/>
+                                    <pixel
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Pixels"
+                                            value="pixel"/>
+                                    <percentage
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Percentage"
+                                            value="percentage"/>
+                                </items>
+                            </line-Style>
+                        </items>
+                    </spacer-new>
+                    <line-pixel-height
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide small-medium-large-line-hide-show"
+                            showhidetargetvalue="pixel">
+                        <items jcr:primaryType="nt:unstructured">
+                            <PixelHeight
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <height
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Please enter value in numbers or decimals only."
+                                            fieldLabel="Height In Pixels"
+                                            name="./heightInPixel"/>
+                                </items>
+                            </PixelHeight>
+                        </items>
+                    </line-pixel-height>
+                    <line-percentage-height
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide small-medium-large-line-hide-show"
+                            showhidetargetvalue="percentage">
+                        <items jcr:primaryType="nt:unstructured">
+                            <PercentageHeight
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heightInPercentages
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Please enter the value in numbers or decimals only."
+                                            fieldLabel="Height In Percentage"
+                                            name="./heightInPercentage"/>
+                                </items>
+                            </PercentageHeight>
+                        </items>
+                    </line-percentage-height>
+                </items>
+            </column>
+        </items>
+        </tab1>
+            <tracking
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tracking"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    allowBlank="false"
+                                    fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                    fieldLabel="Component ID"
+                                    name="./spacerId"/>
+                        </items>
+                    </columns>
+                </items>
+            </tracking>
+        </items>
+    </content>
+</jcr:root>

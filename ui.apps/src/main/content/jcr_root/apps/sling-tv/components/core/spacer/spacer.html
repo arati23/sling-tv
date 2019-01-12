@@ -1,0 +1,16 @@
+<div data-sly-use.spacer="com.sling.tv.core.models.SpacerModel"  data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit}">Click to set space</div>
+<sly data-sly-test="${spacer.lineStyle == 'pixel'}">
+    <p id="${spacer.spacerId}" data-sly-test="${spacer.heightInPixel}" class="spacer"
+       style="height: ${spacer.heightInPixel  @ context='styleString'}px;">
+    </p>
+</sly>
+<sly data-sly-test="${spacer.lineStyle == 'percentage'}">
+    <p  id="${spacer.spacerId}" data-sly-test="${spacer.heightInPercentage}" class="spacer js-spacer"
+        style="height: ${spacer.heightInPercentage  @ context='styleString'}%;">
+    </p>
+</sly>
+<sly data-sly-test="${spacer.lineStyle != 'pixel' && spacer.lineStyle != 'percentage'}">
+    <p  id="${spacer.spacerId}" class="spacer spacer-_-${spacer.lineStyle}">
+    </p>
+</sly>

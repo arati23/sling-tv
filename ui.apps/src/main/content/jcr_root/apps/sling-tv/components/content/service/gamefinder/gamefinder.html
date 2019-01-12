@@ -1,0 +1,34 @@
+<div data-sly-use.gf="com.sling.tv.core.models.GameFinderComponentModel" data-sly-test="${wcmmode.edit && !gf.dateName }">Click Here to Author Gamefinder</div>
+
+
+<div id="${gf.gameFinderId}">
+    <div data-sly-list="${gf.sports}" data-sly-unwrap>
+        <div data-sly-test="${item.showHide}" class="js-gamefinder-data-affiliation"
+             data-sling-gamefinder-affiliation-key="${item.keyName}" data-sling-gamefinder-affiliation-display="${item.sportName}">
+        </div>
+    </div>
+    <div id="gamefinder--discovery-edition" data-sling-gamefinder-sheet-url="${gf.sheetUrl}"
+         data-sling-gamefinder-search-text="${gf.searchText}" data-sling-gamefinder-zip-text="${gf.zipText}"
+         data-sling-gamefinder-rows-per-page="${gf.rowsPerPage}" data-sling-gamefinder-pagination-text="${gf.paginationText}"
+         data-sling-gamefinder-collapsed="${gf.collapsed}" data-sling-gamefinder-package-prefix="${gf.packagePrefix}"
+         data-sling-gamefinder-zip-mismatch-text="${gf.zipMismatchText}" data-sling-gamefinder-disclaimer-text="${gf.disclaimerText}"
+         data-sling-gamefinder-preselection="${gf.preselection}" data-sling-gamefinder-match-separator="${gf.matchSeparator}"
+         data-sling-gamefinder-espanol="${gf.espanol}" data-sling-gamefinder-error-headline="${gf.errorHeadline}"
+         data-sling-gamefinder-error-no-results="${gf.errorNoResults}"
+         data-sling-gamefinder-error-no-games="${gf.errorNoGames}" data-sling-gamefinder-error-clear="${gf.errorClear}"
+         data-sling-gamefinder-error-server="${gf.errorServer}" data-sling-gamefinder-initial-rows="${gf.initialRows}"
+         data-sling-gamefinder-calendar-button="${gf.calendarButton}" data-sling-gamefinder-calendar-sunday="${gf.calendarSunday}"
+         data-sling-gamefinder-calendar-monday="${gf.calendarMonday}" data-sling-gamefinder-calendar-tuesday="${gf.calendarTuesday}"
+         data-sling-gamefinder-calendar-wednesday="${gf.calendarWednesday}" data-sling-gamefinder-calendar-thursday="${gf.calendarThursday}"
+         data-sling-gamefinder-calendar-friday="${gf.calendarFriday}" data-sling-gamefinder-calendar-saturday="${gf.calendarSaturday}"
+         data-sling-gamefinder-calendar-january="${gf.calendarJanuary}" data-sling-gamefinder-calendar-february="${gf.calendarFebruary}"
+         data-sling-gamefinder-calendar-march="${gf.calendarMarch}" data-sling-gamefinder-calendar-april="${gf.calendarApril}"
+         data-sling-gamefinder-calendar-may="${gf.calendarMay}" data-sling-gamefinder-calendar-june="${gf.calendarJune}"
+         data-sling-gamefinder-calendar-july="${gf.calendarJuly}" data-sling-gamefinder-calendar-august="${gf.calendarAugust}"
+         data-sling-gamefinder-calendar-september="${gf.calendarSeptember}" data-sling-gamefinder-calendar-october="${gf.calendarOctober}"
+         data-sling-gamefinder-calendar-november="${gf.calendarNovember}" data-sling-gamefinder-calendar-december="${gf.calendarDecember}"
+         data-sling-gamefinder-logos-folder="${gf.logosFolder}" data-sling-gamefinder-fallback-image="${gf.fallbackImage}"
+    >
+
+    </div>
+</div>

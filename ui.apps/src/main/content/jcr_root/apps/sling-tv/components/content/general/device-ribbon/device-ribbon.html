@@ -1,0 +1,30 @@
+<div data-sly-use.deviceRibbonModel="com.sling.tv.core.models.DeviceRibbonModel" data-sly-unwrap>
+<div data-sly-test="${wcmmode.edit}">
+  Edit/configure the Device Ribbon Shared Component(Provide a path in the dialog)
+</div>
+
+<!-- Shared Device Ribbon Start -->
+<div id="${deviceRibbonModel.deviceRibbonSharedComponentId}" class="d-ribbon dg-theme js-device-ribbon" data-sly-use.deviceRibbon="com.sling.tv.core.models.DeviceRibbonPath">
+  <div class="js-device-carousel-large" data-sly-list.DeviceList="${deviceRibbon.deviceList.children}">
+    <img class="d-ribbon__image d-ribbon--image" data-sling-src="${DeviceList.imagePath}" alt="${DeviceList.deviceAlt}"
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    />
+  </div>
+  <div data-sling-one-row="${deviceRibbonModel.oneRow}"  class="device-carousel js-device-carousel-container">
+    <div class="slideshow-container">
+      <div class="js-device-ribbon-all-devices all-devices-ribbon-hidden" data-sly-list.DeviceList="${deviceRibbon.deviceList.children}">
+        <img class="d-ribbon__image d-ribbon--image" alt="${DeviceList.deviceAlt}" data-sling-src="${DeviceList.imagePath}"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        />
+      </div>
+      <div class="js-device-slideshow-container"></div>
+      <a onclick="s_objectID='previous-chevron-device-carousel';" class="fa fa-chevron-right pull-right water sg-large prev-device-chevron js-previous-device-carousel"></a>
+      <a onclick="s_objectID='next-chevron-device-carousel';" class="fa fa-chevron-left pull-left water sg-large next-device-chevron js-next-device-carousel"></a>
+    </div>
+    <br>
+    <div class="js-device-carousel-dots-container">
+    </div>
+  </div>
+</div>
+</div>
+<!-- Shared Device Ribbon End -->

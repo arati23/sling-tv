@@ -1,0 +1,64 @@
+<sly data-sly-test="${wcmmode.edit}">click here to configure/edit Rotating Marquee</sly>
+<div data-sly-use.rotatingMarquee="com.sling.tv.core.models.RotatingMarqueeModel" data-sly-unwrap>
+<input id="${rotatingMarquee.rotatatingMarqueeId}" type="hidden" class="image-count" value="${rotatingMarquee.assetsCount}" />
+<div id="rotating-marquee-actual" class="carousel slide">
+    <ol class="carousel-indicators">
+         <div data-sly-test="${rotatingMarquee.carouselImages.size && rotatingMarquee.carouselImages.size > 1}" data-sly-list="${rotatingMarquee.imagesCount}" data-sly-unwrap>
+            <li data-target="#rotating-marquee-actual" data-slide-to="${item}" class="carousel-indicator ${item == 0 ? 'active' : ''}"> </li>
+         </div>
+    </ol>
+	<div class="carousel-inner">
+        <div data-sly-list.carouselImagesItem="${rotatingMarquee.carouselImages}" data-sly-unwrap>
+        <sly data-sly-test="${carouselImagesItem.mediaType != 'video'}">
+          <div data-sly-test="${carouselImagesItem.imageURL}" data-sly-unwrap>
+            <div class="item ${carouselImagesItem.info == 'true' ? 'active' : ''} carousel-${carouselImagesItem.id}" data-sling-image-url="${carouselImagesItem.imageURL}">
+              <a href="#">
+                <div data-sly-test="${carouselImagesItem.info}" data-sly-unwrap>
+                  <img src="${carouselImagesItem.carousalImage}" alt="${carouselImagesItem.altName}" />
+                </div>
+                <div data-sly-test="${!carouselImagesItem.info}" data-sly-unwrap>
+                  <img data-sling-src="${carouselImagesItem.carousalImage}" alt="${carouselImagesItem.altName}"
+                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div data-sly-test="${!carouselImagesItem.imageURL}" data-sly-unwrap>
+            <div class="item ${carouselImagesItem.info == 'true' ? 'active' : ''} carousel-${carouselImagesItem.id}" data-sling-image-url="${carouselImagesItem.imageURL}">
+              <div data-sly-test="${carouselImagesItem.info}" data-sly-unwrap>
+                <img src="${carouselImagesItem.carousalImage}" alt="${carouselImagesItem.altName}" />
+              </div>
+              <div data-sly-test="${!carouselImagesItem.info}" data-sly-unwrap>
+                <img data-sling-src="${carouselImagesItem.carousalImage}" alt="${carouselImagesItem.altName}"
+                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+              </div>
+            </div>
+          </div>
+        </sly>
+		<sly data-sly-test="${carouselImagesItem.mediaType == 'video'}">
+          <div class="item ${carouselImagesItem.info == 'true' ? 'active' : ''} carousel-${carouselImagesItem.id}">
+            <a x-cq-linkchecker="skip" href="${carouselImagesItem.videoURL}">
+            <video class="rotating-marquee-video" muted playsinline
+                   poster="${carouselImagesItem.fallBackImageUrl}" data-sling-src="${carouselImagesItem.videoPath}">
+              <source data-sling-src="${carouselImagesItem.videoPath}" type="video/mp4"/>
+            </video>
+            </a>
+          </div>
+        </sly>
+      
+        </div>
+    </div>
+	<div data-sly-test="${rotatingMarquee.carouselImages.size && rotatingMarquee.carouselImages.size > 1}">
+      <a class="left carousel-control" href="#rotating-marquee-actual" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left carousel-control-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#rotating-marquee-actual" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right carousel-control-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+	
+</div>
+</div>
+

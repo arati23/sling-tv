@@ -1,0 +1,22 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Nithya Nair",
+	"jcr:lastModifiedBy": "Nithya Nair",
+	"jcr:created": "Thu Jun 29 2018 11:10:08 GMT-0500",
+	"jcr:lastModified": "Thu Jun 29 2018 11:12:07 GMT-0500",
+	"sling:resourceType": "sling-tv/components/embedded/social-media",
+	"socialMediaLinksId":"12345",
+	"socialMediaLinks": {
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"socialMediaIcon": "fa fa-facebook-official",
+			"socialMediaLink": "https://www.facebook.com"
+	    	},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"socialMediaIcon": "fa fa-youtube",
+			"socialMediaLink": "www.youtube.com"
+			
+		}
+	}
+}

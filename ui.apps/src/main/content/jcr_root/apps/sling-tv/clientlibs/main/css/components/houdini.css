@@ -1,0 +1,18 @@
+/* Houdini Component */
+.houdini--see-text {
+	width: 100%;
+	margin: 0 auto;
+	color: #14abe0;
+	font-size: 1.1em;
+	font-weight: 700;
+	margin-top: 10px;
+	padding-right: 30px;
+	text-align: right;
+}
+
+@media ( max-width : 767px) {
+	.houdini--see-text {
+		text-align: center;
+		margin-top: 20px;
+	}
+}

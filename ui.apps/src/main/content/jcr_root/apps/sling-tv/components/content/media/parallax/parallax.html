@@ -1,0 +1,28 @@
+<div data-sly-use.parallax="com.sling.tv.core.models.ParallaxModel">
+<div data-sly-test="${wcmmode.edit}">
+  Configure the Parallax Component
+</div>
+<div id="${parallax.parallaxId}" class="parallax_container" data-sling-desktop-height="${parallax.desktopHeight}" data-sling-mobile-height="${parallax.mobileHeight}">
+  
+  <div data-sly-list="${parallax.parallaxItems}">
+    <img class="parallax_image hidden-xs" data-sling-src="${item.imagePath}" data-sling-width="${item.imageWidth}"
+         data-sling-start-x="${item.startX}" data-sling-start-y="${item.startY}"
+         data-sling-end-x="${item.endX}" data-sling-end-y="${item.endY}"
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    />
+  </div>
+
+  <div data-sly-list="${parallax.parallaxListItemsMobile}">
+    <img class="parallax_image visible-xs" data-sling-src="${item.imagePathMobile}" data-sling-width="${item.imageWidthMobile}"
+         data-sling-start-x="${item.startXMobile}" data-sling-start-y="${item.startYMobile}"
+         data-sling-end-x="${item.endXMobile}" data-sling-end-y="${item.endYMobile}"
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    />
+  </div>
+
+
+  <div data-sly-resource="${ @path='par', resourceType='wcm/foundation/components/responsivegrid'}"></div>
+</div>
+
+<div class="clear-both"></div>
+</div>

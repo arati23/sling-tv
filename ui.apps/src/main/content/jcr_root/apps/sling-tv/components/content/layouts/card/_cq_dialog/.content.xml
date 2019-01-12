@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Edit Card Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/section"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <selection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Select the type of Card"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <cardType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-tab-showhide"
+                                        cq-dialog-tab-showhide-target=".card-option-tab-showhide-target"
+                                        name="./cardType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <textCard
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text card"
+                                                value="textCard"/>
+                                            <logoCard
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Logo Card"
+                                                value="logoCard"/>
+                                        </items>
+                                    </cardType>
+                                </items>
+                            </columns>
+                        </items>
+                    </selection>
+                    <text-card
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text Card"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <text-card-container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        class="full-width"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add field' to add a new Text Card fields"
+                                        fieldLabel="Text Card Items">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            name="./textCardItems">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <textCardTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./textCardTitle"/>
+                                                        <textCardPackage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Package"
+                                                                name="./textCardPackage"/>
+                                                        <textCardDesc
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Description"
+                                                                name="./textCardDesc"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </text-card-container>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide card-option-tab-showhide-target textCard"/>
+                    </text-card>
+                    <logo-card
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Logo Card"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logo-card-container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        class="full-width"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add field' to add a new Logo Card Items"
+                                        fieldLabel="Logo Card Items">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            acs-commons-nested="NODE_STORE"
+                                            name="./logoCardItems">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <logoCardTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./logoCardTitle"/>
+                                                        <logoCardPackage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Package"
+                                                                name="./logoCardPackage"/>
+                                                        <referencePath
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                rootPath="/content"
+                                                                predicate="nosystem"
+                                                                fieldLabel="Channel Logos Path"
+                                                                name="./referencePath"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </logo-card-container>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide card-option-tab-showhide-target logoCard"/>
+                    </logo-card>
+                    <cardTracking
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Tracking"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <layoutConfig
+                                jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <componentId
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            allowBlank="false"
+                                            fieldDescription="Must be Unique (per page).  Cannot contain special characters (except '-')"
+                                            fieldLabel="Component ID"
+                                            name="./cardId"/>
+                                </items>
+                            </columns>
+                        </items>
+                    </cardTracking>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

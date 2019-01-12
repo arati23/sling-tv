@@ -1,0 +1,52 @@
+/******************************************************************************
+
+base.css
+
+For styling applied directly to tags (body/a/ul)
+
+This should generally be avoided except in cases of site-wide changes
+(Even then, probably don't)
+
+******************************************************************************/
+
+
+html,
+body {
+  -webkit-font-smoothing: antialiased !important;
+  height: auto;
+  overflow-x: hidden;
+}
+
+
+a:hover {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+label {
+  font-size: small;
+  font-weight: 300;
+}
+
+ol, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+video,
+iframe,
+object,
+embed {
+  max-width: 100%;
+}

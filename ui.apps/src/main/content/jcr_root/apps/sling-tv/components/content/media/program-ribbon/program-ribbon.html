@@ -1,0 +1,13 @@
+<div data-sly-use.pgmribbon="com.sling.tv.core.models.ProgramRibbonModel" data-sly-unwrap />
+<div data-sly-test="${wcmmode.edit}">
+ Click Here To Configure Program Ribbon
+</div>
+
+<div id="${pgmribbon.programRibbonId}" class="js-program-ribbon prg-car">
+  <section class="center slider">
+    <sly data-sly-list="${pgmribbon.PgmRibbonLinks}" data-sly-unwrap>
+       <img data-sling-src="${item.imagePath}"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+      </sly>
+  </section>
+</div>

@@ -1,0 +1,54 @@
+<div data-sly-use.countdownClock="com.sling.tv.core.models.CountdownClockModel"  data-sly-unwrap />
+<div data-sly-test.clockConfigured="${wcmmode.edit && !countdownClock.countdownStartDate}">
+   Click here to configure Countdown Clock
+</div>
+<sly data-sly-test="${!clockConfigured}">
+  
+      <div id="${countdownClock.countdownClockId}" class="js-countdown-container countdown-clock--container countdown-clock-_-not-started"
+	     
+         data-sling-countdown-start="${countdownClock.countdownStartDate}"
+         data-sling-countdown-temp-length="${countdownClock.timeDuration}"
+         data-sling-countdown-days-switch="${countdownClock.daysCountLimit}"
+         data-sling-countdown-days="${countdownClock.countdownDays ? 'false' : 'true'}"
+         data-sling-countdown-time="${countdownClock.countdownTime ? 'false' : 'true'}"
+    >
+      <div data-sly-test="${countdownClock.gameDesc || countdownClock.imagePath}" class="countdown-clock--header">
+        <img class="countdown-clock--header-logo" data-sling-src="${countdownClock.imagePath}"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+        <div class="countdown-clock--header-message">${countdownClock.gameDesc}</div>
+      </div>
+
+       <div class="countdown-clock--clock">
+          <div class="js-countdown-days countdown-clock--inner">
+             <div class="js-countdown-counter countdown-clock--counter">0</div>
+             <div class="countdown-clock--units">${countdownClock.countdownDayText}</div>
+          </div>
+          <div class="js-countdown-days-separator countdown-clock--inner">:</div>
+          <div class="js-countdown-hours countdown-clock--inner">
+             <div class="js-countdown-counter countdown-clock--counter">00</div>
+             <div class="countdown-clock--units">${countdownClock.countdownHourText}</div>
+          </div>
+          <div class="countdown-clock--inner">:</div>
+          <div class="js-countdown-minutes countdown-clock--inner">
+             <div class="js-countdown-counter countdown-clock--counter">00</div>
+             <div class="countdown-clock--units">${countdownClock.countdownMinutesText}</div>
+          </div>
+          <div class="countdown-clock--inner">:</div>
+          <div class="js-countdown-seconds countdown-clock--inner">
+             <div class="js-countdown-counter countdown-clock--counter">00</div>
+             <div class="countdown-clock--units">${countdownClock.countdownSecondsText}</div>
+          </div>
+       </div>
+       <div class="countdown-clock--start ${!countdownClock.showTextVersion && 'countdown-clock--start-_-no'}">
+          <span class="countdown-clock--start-date">${countdownClock.dayMonthText}</span>
+          <span class="countdown-clock--start-at">${countdownClock.textSeparator}</span><br class="countdown-clock--start-br"/>
+          <span class="countdown-clock--start-time">${countdownClock.timeZoneText}</span>
+       </div>
+       <div class="js-countdown-end countdown-clock--end">
+          ${countdownClock.countdownEndText}
+       </div>
+      <img class="countdown-clock--lower-logo" data-sling-src="${countdownClock.imagePath}"
+           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+    </div>
+  </sly>
+</sly>

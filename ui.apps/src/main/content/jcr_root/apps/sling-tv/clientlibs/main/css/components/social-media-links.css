@@ -1,0 +1,35 @@
+/* Social Media Links */
+
+
+.social {
+  font-size: 28px
+}
+
+
+@media (max-width: 1199px) {
+  .social-list-item {
+    width: 40px;
+  }
+}
+
+
+.social_icon {
+  letter-spacing: 0;
+}
+
+.social_icon {
+  color: #cfcfcf;
+  opacity: 0.6;
+}
+
+.social_icon:hover {
+  color: #cfcfcf;
+  opacity: 1;
+}
+
+
+
+
+.light-theme .social_icon, .light-theme .social_icon:hover {
+  color: #353535;
+}

@@ -1,0 +1,138 @@
+{
+	"headerText": "Header Text",
+	"myAccountLabelTextNew": "My Account Label New",
+	"headerType": "newHeader",
+	"headerId": "HeaderID",
+	"newHeaderId": "HeaderIDNew",
+	"hideHeaderNav": "true",
+	"headerNavPath": "/content/navPages/en",
+	"footerNavPath": "/content/navPages/en/footer",
+	"languageTitle": "Language Title",
+	"hideLanguageSel": "false",
+	"includeSubNavComponent": "true",
+	"logoAltText": "Sling",
+	"logoAltTextNew": "sling logo",
+	"logoImage": "/content/dam/sling-tv/sling-logos/domestic_logo (NEW).png",
+	"logoImageNew": "/content/dam/sling-tv/sling-logos/domestic_logo_stroke.png",
+	"logoLinkNew": "/linknew",
+	"logoLink": "/link",
+	"memberText": "Member",
+	"myAccountLinkNew": "/account",
+	"footerId": "theFooterId",
+	"themeType": "dark",
+	"socialLinkComponent": "true",
+	"jcr:content" : {
+		"jcr:title": "JCR Title"
+	},
+	
+	"regionTextLinks": {
+		"link1": {
+			"regionName": "Sling Latino",
+			"regionLink": "/latino"
+		},
+		"link2": {
+			"regionName": "Sling International",
+			"regionLink": "/international"
+		}
+	},
+	"regionTextLinksNew": {
+		"link1": {
+			"regionNameNew": "Sling Latino New",
+			"regionLinkNew": "/latino-new"
+		},
+		"link2": {
+			"regionNameNew": "Sling International New",
+			"regionLinkNew": "/international-new"
+		}
+	},
+	"regionLogoLinks": {
+		"item1": {
+			"regionLogo": "/content/dam/sling-tv/misc/Icon - Al Jazeera.svg",
+			"regionLink": "https://www.sling.com/Arabic/Al_Jazeera"
+		},
+		"item2": {
+			"regionLogo": "/content/dam/sling-tv/misc/2.svg",
+			"regionLink": "https://www.sling.com/2/Al_Jazeera"
+		}
+	},
+	"signInLinkNew": "/sing-in-link-new",
+	"signInText": "Sign In",
+	"signInTextNew": "Sign In",
+	"signOutLinkNew": "/",
+	"signOutText": "Sign Out",
+	"signOutTextNew": "Sign Out",
+	"subNav": {
+		"jcr:lastModified": "{Date}2017-12-28T15:37:26.572-05:00",
+		"jcr:lastModifiedBy": "VENKATAKRISHNA.GUNTU@dish.com",
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "sling-tv/components/content/general/sub-navigation",
+		"subNavItems": {
+			"jcr:primaryType": "nt:unstructured",
+			"_x0031_": {
+				"jcr:primaryType": "nt:unstructured",
+				"subNavTitle": "CHANNELS",
+				"targetId": "channels"
+			},
+			"_x0032_": {
+				"jcr:primaryType": "nt:unstructured",
+				"subNavTitle": "EXTRAS",
+				"targetId": "extras"
+			},
+			"_x0033_": {
+				"jcr:primaryType": "nt:u,nstructured",
+				"subNavTitle": "DEVICES",
+				"targetId": "devices"
+			},
+			"_x0034_": {
+				"jcr:primaryType": "nt:unstructured",
+				"subNavTitle": "OFFERS",
+				"targetId": "offers"
+			},
+			"_x0035_": {
+				"jcr:primaryType": "nt:unstructured",
+				"subNavTitle": "WHY SLING TV",
+				"targetId": "whyslingtv"
+			}
+		}
+	},
+	"link-tests": {
+		"scenario1": {
+			"signInLink": "/sign-in",
+			"signInLinkNew": "/sign-in-new",
+			"signOutLink": "/sign-out",
+			"signOutLinkNew": "/sign-out-link-new",
+			"myAccountLink": "/my-account",
+			"logoLinkNew": "/logo-link-new"
+		},
+		"scenario2": {
+			"signInLink": "/sign-in|field2|field3",
+			"signInLinkNew": "/sign-in-new|field2|field3",
+			"signOutLink": "/sign-out|field2|field3",
+			"signOutLinkNew": "/sign-out-new|field2|field3",
+			"myAccountLink": "/my-account|field2|field3",
+			"logoLinkNew": "/logo-link-new|field2|field3"
+		},
+		"scenario3": {
+			"signInLink": "/content/something/signInLink",
+			"signInLinkNew": "/content/something/signInLinkNew",
+			"signOutLink": "/content/something/signOutLink",
+			"signOutLinkNew": "/content/something/signOutLinkNew",
+			"myAccountLink": "/content/something/myAccountLink",
+			"logoLinkNew": "/content/something/logoLink"
+		}
+	},
+	"languages": {
+		"item0": {
+			"languageName": "Arabic",
+			"languageLink": "/arabic-ar"
+		},
+		"item1": {
+			"languageName": "Sinhala",
+			"languageLink": "/sinhala"
+		}
+	},
+	"nav-test": {
+		"headerNavPath" : "/content/navPages/en",
+		"footerNavPath" : "/footer-path"
+	}
+}

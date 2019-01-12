@@ -1,0 +1,26 @@
+/* Spacer */
+
+.spacer {
+  display: block;
+  clear: both;
+}
+
+.spacer-_-small {
+  height: 10px;
+}
+
+.spacer-_-medium {
+  height: 20px;
+}
+
+.spacer-_-large {
+  height: 35px;
+}
+.spacer-_-extralarge {
+  height: 50px;
+}
+
+.spacer-_-line {
+  background-color: #979797;
+  height: 1px
+}

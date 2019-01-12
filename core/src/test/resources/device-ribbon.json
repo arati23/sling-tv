@@ -1,0 +1,13 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "Arati",
+	"jcr:lastModifiedBy": "Arati",
+	"jcr:created": "Thur June 28 2018 16:19:55 GMT-0500",
+	"heading": "Device Ribbon",
+	"description": "Shows all supported devices",
+	"jcr:lastModified": "Thur June 28 2018 16:19:55 GMT-0500",
+	"sling:resourceType": "sling-tv/components/content/general/device-ribbon",
+	"deviceRibbonSharedComponentId":"deviceRibbonID",
+	"deviceRibbonPath":"/content/sling-tv/en/deviceribbon/whpdeviceribbon",
+	"oneRow":"true"
+}

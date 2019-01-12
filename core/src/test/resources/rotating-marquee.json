@@ -1,0 +1,31 @@
+{  
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "jcr:created":"Tue Jul 17 2018 13:20:23 GMT-0500",
+   "jcr:lastModified":"Wed Jul 18 2018 12:35:03 GMT-0500",
+   "sling:resourceType":"sling-tv/components/content/media/rotating-marquee",
+   "images":{  
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{  
+         "jcr:primaryType":"nt:unstructured",
+         "carousalImage":"/content/dam/sling-tv/marquees/domestic/device-lps/slingers_xbox_desktop.jpg",
+         "altName":"Image Alt Text",
+         "imageURL":"/content/we-retail/ca",
+         "mediaType":"image"
+      },
+      "item1":{  
+         "jcr:primaryType":"nt:unstructured",
+         "carousalImage":"/content/dam/sling-tv/marquees/domestic/device-lps/BRA0175_GetPicky_DeviceMarquees_1500x400_apple_V3.jpg",
+         "altName":"Image Alt Text",
+         "mediaType":"image"
+      },
+      "item2":{  
+         "jcr:primaryType":"nt:unstructured",
+         "videoPath":"/content/dam/sling-tv/marquees/domestic/campaign-assets/desktop_love_video_new.mp4",
+         "videoURL":"/content/sling-tv/es/latinoes",
+         "fallBackImageUrl":"/content/dam/sling-tv/device-lockups/international/device_lockup_Mixed_V2.jpg",
+         "mediaType":"video"
+      }
+   }
+}

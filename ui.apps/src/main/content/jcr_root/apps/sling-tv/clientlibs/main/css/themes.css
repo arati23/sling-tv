@@ -1,0 +1,105 @@
+/******************************************************************************
+
+themes.css
+
+For styles that affect the appearance only and are not capable of
+ breaking the layout of the site (e.g colors and non-critical indents)
+
+******************************************************************************/
+
+
+/* Body */
+body {
+  background-color: black;
+  color: white;
+}
+
+body ::selection, body ::-moz-selection {
+  background: #14abe0;
+}
+
+
+/* Tags */
+a {
+  color: #14abe0;
+}
+
+a:hover {
+  color: #3abfed;
+  text-decoration: none;
+}
+
+a[disabled] {
+  color: #4a4a4a;
+  opacity: 0.7;
+}
+
+
+/* Objects */
+.btn {
+  background-color: #14abe0;
+  border: none;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary:disabled {
+  background-color: #cfcfcf;
+  color: black;
+  opacity: 1 !important;
+}
+
+.sublink:hover {
+  color: #3abfed;
+}
+
+
+
+/* Actual themes */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.gray-theme {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAABQxJREFUWAmV1uFxVkcMheFLJj8ow64E0wl0YioxnVCK6cS57+LnRl4+k4lnFq2ko6Mj7c03OV5eXj6+d378+PEm9/T0dPkPDw8fHx8f19nrJ04u/HEcq766iXl+fv6oV7nu8sfd3d1VWCK/gg7ywMjFEObXXByf2KybNfDZicmPQ/wAJGpuBRBm2kn65cuXRZgV707krHOH42f3WP4SOBMJ3X3F4mybbSu2bfsGa9iJhYsPRn4KlS93NOUEdW9625jPu+OQJsS9Ovdb1lZX89dvMtx8foOs3goC+UABZoPA+YTLRTw5xNlbuTimoLAJ1oP4MEfBObVtILC1LFz3W09UDD7eDt/QxE0+AhtGTfnXT+R48yQ1iYxAm5h2b8qfGIMSBmOwGS9n091h1gYnKRIx0+R3R5ofthgsu3NUU8z21da8XGIIUpu9BFfQtB1kmv1fG3Gi5/YTNgfDOYcjjNAw5dcTewqFEaZ+Tpw/cQiLr2c4hamfVn412jAJmD1wVh++2u7XD3XBKaLkJFjg1yaRdZDIzSbV2ki8c6uJ81riauPEH+4SWBONptjAkWiGEN5Q5WHLiXc3KBE4+DDiifdZnJhf20itprtFhKB8AqoRC9Md8eQo1gB7j2rmK6htINhrg0RkndkkQTCTdGK6h7GxmlQ3/fJzu9XsPs7ql8AampKIQE1tQzvRxJUzcc1mjbim1TnFutenIcSz6q4NIkhoDQKZPGvKNdWZg99twyJXk/WN7nii9jh/CUSEeBZ1D5zdxSXc5i/CExc2QWL4+Q0hP3vNhcCe+d+30QYTg/gWJgJNkGUntjufjXNuuZr5SeT7jyXs9cQVFVjBTTRyhdmmFa82XyPxbLG5mbBzoPrtovIbvj7r/2ZmQaSeeo9HXmGYTvdi/IlPWHExGEOKZ+enY0j5a4OAtwj2Rk3tefetTyEws15jL2W7xeHYNbyC/7Jzq7aDSK3n03w2nTn4aafQ2et4L2F6JIlxxFhxz0NMHOXY7tXMAXBUQ1i2lyz298+fP8+64/j+/ftxBo4PHz707CvWvb/8Dn8FX/+Bz37+/LlvemVgcc2aT58+XXzy53BXnV4rd/5z/dfXvdMEqe/+p2/yZHyTD9uLtCHbxMl6MduyXfk4O5ffZQYkpq0xDGJ+uFtD4IXHN+tmrLgjvjg4s7CpxGtgarFssWpgZ31535mXmPk/DVRtnPjPun/XWTJ/xroHTqh4zzd9AySKsLhuHRzZhBIrvtec8V+CAgKJ7eCai9kMP4sj62nVGKLt+D7h4tpfgoYDKcLZsHuFhE+MhuVsTePq1BBYH3x6JAxOLB/P0kagCRApzE5hiLLFy6spNu+Tw93m+ezknfe/7u/v12/SSbx+506hZ81xZP3GdQ/X37dv3978Hp4bWtiVPP8J25/fwX5nz4brFD+3k7n86mGzX79+Xfl+l9dfaq3URjzfnGTebUHMM/JP4t+erlxxmKw++u75xUNcTd1L9FRTyALfaOz5J1bz+PamhBYncIp2v7TMb6Z7RyELE2nb2psiC1cuKzYFac5OzOxR3qv0Lbz5sPPP72g9BSGKEROOiLB8G1VbrO1WU2zWTsxed2lQcOuJIkey58vNPJ81VPzdbevazCkWNos/oYYpvjbYpWAkBBdrCk+qAVu+oyG/gWpiq/mGzMbfsTF1WVg2zBEYwQTvd5jwcsUSuIjOu/h7toE1nxjPGfdcQNh/AP6Tvftp+ublAAAAAElFTkSuQmCC');
+  background-color: white;
+  color: #353535;
+}
+
+.lg-theme {
+  background: linear-gradient(to bottom, white 0%, #e9e9e9 100%);
+  background-color: white;
+  color: #353535;
+}
+
+.ng-theme {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAABQxJREFUWAmV1uFxVkcMheFLJj8ow64E0wl0YioxnVCK6cS57+LnRl4+k4lnFq2ko6Mj7c03OV5eXj6+d378+PEm9/T0dPkPDw8fHx8f19nrJ04u/HEcq766iXl+fv6oV7nu8sfd3d1VWCK/gg7ywMjFEObXXByf2KybNfDZicmPQ/wAJGpuBRBm2kn65cuXRZgV707krHOH42f3WP4SOBMJ3X3F4mybbSu2bfsGa9iJhYsPRn4KlS93NOUEdW9625jPu+OQJsS9Ovdb1lZX89dvMtx8foOs3goC+UABZoPA+YTLRTw5xNlbuTimoLAJ1oP4MEfBObVtILC1LFz3W09UDD7eDt/QxE0+AhtGTfnXT+R48yQ1iYxAm5h2b8qfGIMSBmOwGS9n091h1gYnKRIx0+R3R5ofthgsu3NUU8z21da8XGIIUpu9BFfQtB1kmv1fG3Gi5/YTNgfDOYcjjNAw5dcTewqFEaZ+Tpw/cQiLr2c4hamfVn412jAJmD1wVh++2u7XD3XBKaLkJFjg1yaRdZDIzSbV2ki8c6uJ81riauPEH+4SWBONptjAkWiGEN5Q5WHLiXc3KBE4+DDiifdZnJhf20itprtFhKB8AqoRC9Md8eQo1gB7j2rmK6htINhrg0RkndkkQTCTdGK6h7GxmlQ3/fJzu9XsPs7ql8AampKIQE1tQzvRxJUzcc1mjbim1TnFutenIcSz6q4NIkhoDQKZPGvKNdWZg99twyJXk/WN7nii9jh/CUSEeBZ1D5zdxSXc5i/CExc2QWL4+Q0hP3vNhcCe+d+30QYTg/gWJgJNkGUntjufjXNuuZr5SeT7jyXs9cQVFVjBTTRyhdmmFa82XyPxbLG5mbBzoPrtovIbvj7r/2ZmQaSeeo9HXmGYTvdi/IlPWHExGEOKZ+enY0j5a4OAtwj2Rk3tefetTyEws15jL2W7xeHYNbyC/7Jzq7aDSK3n03w2nTn4aafQ2et4L2F6JIlxxFhxz0NMHOXY7tXMAXBUQ1i2lyz298+fP8+64/j+/ftxBo4PHz707CvWvb/8Dn8FX/+Bz37+/LlvemVgcc2aT58+XXzy53BXnV4rd/5z/dfXvdMEqe/+p2/yZHyTD9uLtCHbxMl6MduyXfk4O5ffZQYkpq0xDGJ+uFtD4IXHN+tmrLgjvjg4s7CpxGtgarFssWpgZ31535mXmPk/DVRtnPjPun/XWTJ/xroHTqh4zzd9AySKsLhuHRzZhBIrvtec8V+CAgKJ7eCai9kMP4sj62nVGKLt+D7h4tpfgoYDKcLZsHuFhE+MhuVsTePq1BBYH3x6JAxOLB/P0kagCRApzE5hiLLFy6spNu+Tw93m+ezknfe/7u/v12/SSbx+506hZ81xZP3GdQ/X37dv3978Hp4bWtiVPP8J25/fwX5nz4brFD+3k7n86mGzX79+Xfl+l9dfaq3URjzfnGTebUHMM/JP4t+erlxxmKw++u75xUNcTd1L9FRTyALfaOz5J1bz+PamhBYncIp2v7TMb6Z7RyELE2nb2psiC1cuKzYFac5OzOxR3qv0Lbz5sPPP72g9BSGKEROOiLB8G1VbrO1WU2zWTsxed2lQcOuJIkey58vNPJ81VPzdbevazCkWNos/oYYpvjbYpWAkBBdrCk+qAVu+oyG/gWpiq/mGzMbfsTF1WVg2zBEYwQTvd5jwcsUSuIjOu/h7toE1nxjPGfdcQNh/AP6Tvftp+ublAAAAAElFTkSuQmCC'), linear-gradient(to bottom, white 0%, #e9e9e9 100%);
+  background-color: white;
+  color: #353535;
+}
+
+.mg-theme {
+  background: #252525;
+  background: -moz-linear-gradient(left, #000 0%, #252525 10%, #252525 90%, #000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000), color-stop(10%, #252525), color-stop(90%, #252525), color-stop(100%, #000));
+  background: -webkit-linear-gradient(left, #000 0%, #252525 10%, #252525 90%, #000 100%);
+  background: -o-linear-gradient(left, #000 0%, #252525 10%, #252525 90%, #000 100%);
+  background: -ms-linear-gradient(left, #000 0%, #252525 10%, #252525 90%, #000 100%);
+  background: linear-gradient(to right, black 0%, #252525 10%, #252525 90%, black 100%);
+}
+
+.dg-theme {
+  background: #1a1a1a;
+  background: -moz-linear-gradient(left, #000 0%, #1a1a1a 10%, #1a1a1a 90%, #000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000), color-stop(10%, #1a1a1a), color-stop(90%, #1a1a1a), color-stop(100%, #000));
+  background: -webkit-linear-gradient(left, #000 0%, #1a1a1a 10%, #1a1a1a 90%, #000 100%);
+  background: -o-linear-gradient(left, #000 0%, #1a1a1a 10%, #1a1a1a 90%, #000 100%);
+  background: -ms-linear-gradient(left, #000 0%, #1a1a1a 10%, #1a1a1a 90%, #000 100%);
+  background: linear-gradient(to right, black 0%, #1a1a1a 10%, #1a1a1a 90%, black 100%);
+}

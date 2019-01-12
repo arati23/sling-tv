@@ -1,0 +1,11 @@
+{  
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "sectionId":"2000",
+   "jcr:created":"Fri Jul 13 2018 00:39:01 GMT-0500",
+   "text":"<p>This is the <span class=\"water\">sample </span>RTE Text</p>",
+   "jcr:lastModified":"Fri Jul 13 2018 10:14:02 GMT-0500",
+   "sling:resourceType":"sling-tv/components/core/rich-text",
+   "textIsRich":"true"
+}

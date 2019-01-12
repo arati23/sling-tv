@@ -1,0 +1,72 @@
+/* Device Ribbon */
+
+.d-ribbon {
+  padding: 1.875em 0;
+  text-align: center;
+}
+
+
+.d-ribbon--image {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .d-ribbon--image {
+    height: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .d-ribbon--image {
+    height: 21px;
+  }
+}
+
+
+.light-theme .d-ribbon,
+.gray-theme .d-ribbon,
+.lg-theme .d-ribbon,
+.ng-theme .d-ribbon {
+  background: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.device-carousel-slides, .all-devices-ribbon-hidden {
+    display: none;
+}
+
+.js-current-carousel-dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2vw;
+  background-color: #cfcfcf;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.js-device-carousel-dots-container {
+  text-align: center;
+}
+
+.js-current-carousel-dot.active {
+  background-color: #14ABE0;
+}
+
+.device-carousel {
+  padding: 0 15px 0 15px;
+}
+
+.js-previous-device-carousel, .js-next-device-carousel {
+  position: relative;
+  bottom: 40px;
+}
+

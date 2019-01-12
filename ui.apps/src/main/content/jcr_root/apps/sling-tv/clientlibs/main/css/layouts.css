@@ -1,0 +1,47 @@
+/******************************************************************************
+
+layouts.css
+
+For styles that affect the layout of the site (containers, padding, margin)
+
+******************************************************************************/
+
+
+@media (max-width: 767px) {
+  #main {
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 0 5%;
+  }
+
+  .container-fluid--full {
+    padding: 0;
+  }
+
+  .container-fluid--narrow {
+    padding: 0 10%;
+  }
+}
+
+.container-fluid.banded-section, .container-fluid--narrow.banded-section, .container-fluid--full.banded-section {
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+}
+
+
+.max-width {
+  max-width: 1920px;
+  margin: auto;
+}
+
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

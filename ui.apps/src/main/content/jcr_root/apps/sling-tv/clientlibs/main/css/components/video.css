@@ -1,0 +1,24 @@
+/* Custom Video Component */
+
+.video--poster {
+  width: 100%;
+}
+
+
+.video--container iframe {
+  border: none;
+  height: calc(100% - 25px);
+  width: 100%;
+}
+
+.video--container video {
+  width: 100%;
+}
+
+
+.video--close-button {
+  float: right;
+  color: #14ABE0;
+  font-size: 20px;
+  line-height: 25px;
+}

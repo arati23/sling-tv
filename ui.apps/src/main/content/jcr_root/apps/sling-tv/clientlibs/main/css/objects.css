@@ -1,0 +1,193 @@
+/******************************************************************************
+
+objects.css
+
+For styles that affect a specific subcomponent (buttons, inputs)
+  Objects cannot contain other objects or components.
+  Objects are context independent.
+
+  (Colors for objects go in themes.css)
+
+******************************************************************************/
+
+
+/***************************** Button ****************************************/
+.btn {
+  border-radius: 0;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  padding: 0.75em 1.25em;
+  transition: all 0.35s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    display: block;
+    font-size: 13px;
+  }
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+
+/***************************** Carousel **************************************/
+/* Must be div.carousel to override foundation libs */
+div.carousel {
+  margin: 0;
+}
+
+
+.carousel-control {
+  cursor: pointer;
+  text-shadow: none;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .carousel-control {
+    display: none;
+  }
+}
+
+
+.carousel-control.left {
+  margin-left: 20px;
+}
+
+.carousel-control.right {
+  margin-right: 20px;
+}
+
+
+.carousel-control > .carousel-control-icon {
+  background-color: #333333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #000;
+  font-size: medium;
+  margin: -15px 0 0 0;
+  -webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+  -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+
+.carousel-control > .carousel-control-icon:hover {
+  background-color: #fcbf38;
+  opacity: 0.7;
+}
+
+
+.carousel-control-icon.glyphicon-chevron-left {
+  padding: 8px 2px 0 0;
+}
+
+.carousel-control-icon.glyphicon-chevron-right {
+  padding: 8px 0 0 0;
+}
+
+.carousel-indicators {
+  left: 0;
+  margin: 0;
+  opacity: 0.7;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: -31px;
+    height: 30px;
+    padding-top: 8px;
+  }
+}
+
+.carousel-indicators > .carousel-indicator {
+  background-color: black;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .carousel-indicators > .carousel-indicator {
+    border: none;
+    margin: 0 0.5vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators > .carousel-indicator {
+    border: solid white 2px;
+    margin: 0 2vw;
+  }
+}
+
+.carousel-indicator.active {
+  background-color: #fcbf38;
+}
+
+@media (max-width: 767px) {
+  .carousel-indicator.active {
+    background-color: white;
+  }
+}
+
+
+/***************************** Dropdown Menu *********************************/
+.dropdown-menu {
+  /* Bootstrap override? */
+  border: none;
+}
+
+
+/***************************** Sling Modal *********************************/
+.sling-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1031;
+  overflow-y: scroll;
+}
+
+.sling-modal-content {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 20px;
+  margin: 80px 0;
+}
+
+.close-modal {
+  font-size: 34px;
+  text-align: right;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  outline: none;
+}
+
+
+/***************************** Sublink *********************************/
+.sublink {
+  display: block;
+  font-size: small;
+  text-decoration: underline;
+}
+
+.sublink:hover {
+  text-decoration: underline;
+}

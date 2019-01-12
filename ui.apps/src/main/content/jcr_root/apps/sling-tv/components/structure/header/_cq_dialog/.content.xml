@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Custom Header Dialog"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header Main Tab"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Header"
+                sling:resourceType="granite/ui/components/foundation/section"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <selection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Select the type of Header"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <headerType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-tab-showhide"
+                                        cq-dialog-tab-showhide-target=".list-option-tab-showhide-target"
+                                        name="./headerType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <newHeader
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Light Theme Header"
+                                                value="newHeader"/>
+                                            <header
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Dark Theme Header"
+                                                    value="header"/>
+                                        </items>
+                                    </headerType>
+                                </items>
+                            </columns>
+                        </items>
+                    </selection>
+                    <header
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header Tab"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logoImage
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sling TV Logo Image"
+                                        name="./logoImage"
+                                        rootPath="/content/dam/sling-tv"/>
+                                    <logoLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sling TV Logo Link"
+                                        name="./logoLink"
+                                        rootPath="/"/>
+                                    <logoAltText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sling TV Logo Alt Label"
+                                        name="./logoAltText"/>
+                                    <headerText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sling TV Logo Text"
+                                        name="./headerText"/>
+                                    <signInLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sign In Link"
+                                        name="./signInLink"
+                                        rootPath="/"/>
+                                    <signInText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sign In Label"
+                                        name="./signInText"
+                                        value="Sign In"/>
+                                    <memberText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Member Label"
+                                        name="./memberText"
+                                        value="Member"/>
+                                    <myAccountLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="My Account Link"
+                                        name="./myAccountLink"/>
+                                    <signOutLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sign Out Link"
+                                        name="./signOutLink"
+                                        rootPath="/"/>
+                                    <signOutText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sign Out Label"
+                                        name="./signOutText"
+                                        value="Sign Out"/>
+                                    <headerNavPath
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Header Navigation Path"
+                                        name="./headerNavPath"
+                                        rootPath="/"/>
+                                    <hideLanguageSel
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        name="./hideLanguageSel"
+                                        text="Hide Language Selection ?"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <hideHeaderNav
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        name="./hideHeaderNav"
+                                        text="Hide Desktop Navigation in Header ?"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide list-option-tab-showhide-target header"/>
+                    </header>
+                    <languages
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Language Tab"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <languageTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Primary Language Title"
+                                        name="./languageTitle"/>
+                                    <languages
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        class="foundation-layout-util-maximized-alt"
+                                        fieldLabel="Languages">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            acs-commons-nested=""
+                                            name="./languages">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <languageName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Language Name"
+                                                            name="./languageName"/>
+                                                        <languageLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Language Link"
+                                                            name="./languageLink"
+                                                            rootPath="/"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </languages>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide list-option-tab-showhide-target header"/>
+                    </languages>
+                    <regiontab
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Region Tab"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <regions
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        class="foundation-layout-util-maximized-alt"
+                                        fieldLabel="Text Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            acs-commons-nested=""
+                                            name="./regionTextLinks">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <regionName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Region Name"
+                                                            name="./regionName"/>
+                                                        <regionLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Region Link"
+                                                            name="./regionLink"
+                                                            rootPath="/"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </regions>
+                                    <regionLogos
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        class="foundation-layout-util-maximized-alt"
+                                        fieldLabel="Image Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            acs-commons-nested=""
+                                            name="./regionLogoLinks">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <regionName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Region Logo"
+                                                            name="./regionLogo"
+                                                            rootPath="/content/dam"/>
+                                                        <regionLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Region Link"
+                                                            name="./regionLink"
+                                                            rootPath="/"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </regionLogos>
+
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide list-option-tab-showhide-target header"/>
+                    </regiontab>
+                    <headerTracking
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Header Tracking"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <componentId
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            allowBlank="false"
+                                            fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                            fieldLabel="Component ID"
+                                            name="./headerId"/>
+                                </items>
+                            </columns>
+                        </items>
+                        <layoutConfig
+                                jcr:primaryType="nt:unstructured"
+                                class="hide list-option-tab-showhide-target header"/>
+                    </headerTracking>
+                    <new-header
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="New Header Tab"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logoImage-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sling TV Logo Image"
+                                        name="./logoImageNew"
+                                        rootPath="/content/dam/sling-tv"/>
+                                    <logoLink-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sling TV  Logo Link"
+                                        name="./logoLinkNew"
+                                        rootPath="/"/>
+                                    <logoAltText-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sling TV Logo Alt Label"
+                                        name="./logoAltTextNew"/>
+                                    <signInLink-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sign In Link"
+                                        name="./signInLinkNew"
+                                        rootPath="/"/>
+                                    <signInText-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sign In Label"
+                                        name="./signInTextNew"
+                                        value="Sign In"/>
+                                    <myAccountLink-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="My Account Link"
+                                        name="./myAccountLinkNew"/>
+                                    <myAccountLabelText-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="My Account Label Text"
+                                        name="./myAccountLabelTextNew"/>
+                                    <signOutLink-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Sign Out Link"
+                                        name="./signOutLinkNew"
+                                        rootPath="/"/>
+                                    <signOutText-new
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Sign Out Label"
+                                        name="./signOutTextNew"
+                                        value="Sign Out"/>
+                                    <subNavigation
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        name="./includeSubNavComponent"
+                                        text="Include Sub Navigation Component"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                            jcr:primaryType="nt:unstructured"
+                            class="hide list-option-tab-showhide-target newHeader"/>
+                    </new-header>
+                    <new-regiontab
+                        cq:hideOnEdit="{Boolean}false"
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="New Region Tab"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <regions
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        class="foundation-layout-util-maximized-alt"
+                                        fieldLabel="Text Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            acs-commons-nested=""
+                                            name="./regionTextLinksNew">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <regionName-new
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Region Name"
+                                                            name="./regionNameNew"/>
+                                                        <regionLink-new
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Region Link"
+                                                            name="./regionLinkNew"
+                                                            rootPath="/"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </regions>
+                                </items>
+                            </column>
+                        </items>
+                        <layoutConfig
+                                jcr:primaryType="nt:unstructured"
+                                class="hide list-option-tab-showhide-target newHeader"/>
+                    </new-regiontab>
+                    <tracking
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="New Header Tracking"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <componentId
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            allowBlank="false"
+                                            fieldDescription="Please enter the component ID for tracking.Field value should contain alphabets and numbers"
+                                            fieldLabel="Component ID"
+                                            name="./newHeaderId"/>
+                                </items>
+                            </columns>
+                        </items>
+                        <layoutConfig
+                                jcr:primaryType="nt:unstructured"
+                                class="hide list-option-tab-showhide-target newHeader"/>
+                    </tracking>
+
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

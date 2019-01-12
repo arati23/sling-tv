@@ -1,0 +1,35 @@
+@media (max-width: 1023px) {
+  .browser-banner {
+    display: none !important;
+  }
+}
+
+.browser-banner {
+  height: 85px;
+  width: 100%;
+  background-color: #4a4a4a;
+  font-size: 1.70vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .browser-banner {
+    font-size: 1em;
+  }
+}
+
+.browser-banner img {
+  height: 45px;
+  margin: 20px;
+}
+
+.browser-banner--text {
+  vertical-align: middle;
+  height: 85px;
+  line-height: 85px;
+}
+
+.browser-banner--text > p {
+  display: inline;
+}

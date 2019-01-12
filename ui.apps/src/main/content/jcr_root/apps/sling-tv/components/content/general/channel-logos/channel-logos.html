@@ -1,0 +1,21 @@
+<div data-sly-test="${wcmmode.edit}">Click here to configure Channel Logos Component <h1>${currentNode.getName}</h1></div>
+
+
+<div data-sly-use.channelLogosModel="com.sling.tv.core.models.ChannelLogosModel" data-sly-unwrap>
+  <div id="${channelLogosModel.channelId}">
+    <div>
+      <div class="js-logos-container logos--container">
+        <div data-sly-list="${channelLogosModel.channelLogos}" data-sly-unwrap>
+          <img class="logos--image js-card-logo" alt="${item.altName}" data-sling-src="${item.channelImage}"
+               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          />
+        </div>
+      </div>
+      <div class="js-logos-slideshow-container text-center"></div>
+      <a class="fa fa-chevron-right pull-right water sg-large logos--prev-chevron js-logos-previous-carousel"></a>
+      <a class="fa fa-chevron-left pull-left water sg-large logos--next-chevron js-logos-next-carousel"></a>
+    </div>
+    <br/>
+    <div class="logos--dots-container js-logos-dots-container"></div>
+  </div>
+</div>

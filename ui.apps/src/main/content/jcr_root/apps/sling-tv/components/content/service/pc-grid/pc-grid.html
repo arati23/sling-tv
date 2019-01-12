@@ -1,0 +1,149 @@
+<div data-sly-test="${wcmmode.edit}">Click her to Configure PC-Grid Component</div>
+
+<!-- to the below div element a light theme class added it will always be light themed -->
+<div data-sly-use.pcGridModel="com.sling.tv.core.models.PCGridModel" id="${pcGridModel.pcGridID}"
+     class="container--anchor-hack-parent light-theme container-fluid--full"
+>
+
+
+  <input type="hidden" id="channelLogoPath" value="${pcGridModel.channelLogoPath}">
+
+  <input type="hidden" id="classificationOne" value="${pcGridModel.classificationOne}">
+  <input type="hidden" id="classificationTwo" value="${pcGridModel.classificationTwo}">
+  <input type="hidden" id="classificationThree" value="${pcGridModel.classificationThree}">
+
+  <input type="hidden" id="plan1" value="${pcGridModel.planOne}">
+  <input type="hidden" id="plan2" value="${pcGridModel.planTwo}">
+  <input type="hidden" id="plan3" value="${pcGridModel.planThree}">
+
+  <input type="hidden" id="planOnePackageOne" value="${pcGridModel.planOnePackageOne}">
+  <input type="hidden" id="planOnePackageTwo" value="${pcGridModel.planOnePackageTwo}">
+  <input type="hidden" id="planOnePackageThree" value="${pcGridModel.planOnePackageThree}">
+  <input type="hidden" id="planTwoPackageOne" value="${pcGridModel.planTwoPackageOne}">
+  <input type="hidden" id="planTwoPackageTwo" value="${pcGridModel.planTwoPackageTwo}">
+  <input type="hidden" id="planTwoPackageThree" value="${pcGridModel.planTwoPackageThree}">
+  <input type="hidden" id="planThreePackageOne" value="${pcGridModel.planThreePackageOne}">
+  <input type="hidden" id="planThreePackageTwo" value="${pcGridModel.planThreePackageTwo}">
+  <input type="hidden" id="planThreePackageThree" value="${pcGridModel.planThreePackageThree}">
+
+  <input type="hidden" id="planOnePackageOneTitle" value="${pcGridModel.planOnePackageOneTitle}">
+  <input type="hidden" id="planOnePackageTwoTitle" value="${pcGridModel.planOnePackageTwoTitle}">
+  <input type="hidden" id="planOnePackageThreeTitle" value="${pcGridModel.planOnePackageThreeTitle}">
+  <input type="hidden" id="planTwoPackageOneTitle" value="${pcGridModel.planTwoPackageOneTitle}">
+  <input type="hidden" id="planTwoPackageTwoTitle" value="${pcGridModel.planTwoPackageTwoTitle}">
+  <input type="hidden" id="planTwoPackageThreeTitle" value="${pcGridModel.planTwoPackageThreeTitle}">
+  <input type="hidden" id="planThreePackageOneTitle" value="${pcGridModel.planThreePackageOneTitle}">
+  <input type="hidden" id="planThreePackageTwoTitle" value="${pcGridModel.planThreePackageTwoTitle}">
+  <input type="hidden" id="planThreePackageThreeTitle" value="${pcGridModel.planThreePackageThreeTitle}">
+
+  <input type="hidden" id="planOnePackageOneSubTitle" value="${pcGridModel.planOnePackageOneSubTitle}">
+  <input type="hidden" id="planOnePackageTwoSubTitle" value="${pcGridModel.planOnePackageTwoSubTitle}">
+  <input type="hidden" id="planOnePackageThreeSubTitle" value="${pcGridModel.planOnePackageThreeSubTitle}">
+  <input type="hidden" id="planTwoPackageOneSubTitle" value="${pcGridModel.planTwoPackageOneSubTitle}">
+  <input type="hidden" id="planTwoPackageTwoSubTitle" value="${pcGridModel.planTwoPackageTwoSubTitle}">
+  <input type="hidden" id="planTwoPackageThreeSubTitle" value="${pcGridModel.planTwoPackageThreeSubTitle}">
+  <input type="hidden" id="planThreePackageOneSubTitle" value="${pcGridModel.planThreePackageOneSubTitle}">
+  <input type="hidden" id="planThreePackageTwoSubTitle" value="${pcGridModel.planThreePackageTwoSubTitle}">
+  <input type="hidden" id="planThreePackageThreeSubTitle" value="${pcGridModel.planThreePackageThreeSubTitle}">
+
+
+  <div data-sling-sticky-tab="${pcGridModel.stickyTabs ? 'dyn-sticky-header' : '' }"
+       data-sling-sticky-tab-mobile="${pcGridModel.stickyTabsMobile ? 'dyn-sticky-header-mobile' : '' }"
+       class="dyn-grid dyn-sticky-header">
+    <div class="pc-grid-header container-fluid--narrow">
+      <!-- add package grid plan row -->
+      <div class="flex-row pc-grid_plan-row js-dyn-grid-plan-row">
+        <sly data-sly-test=${pcGridModel.planOne}>
+          <a href="#dyn-grid-plan-tab-1-m-1"
+             class="dyn-grid_package-tab pull-left ${pcGridModel.defaultTab == 'defaultTab1' ? 'active-tab' : ''}"
+             id="planOne">
+            <h3 class="dyn-grid_package-title">${pcGridModel.planOneTitle}</h3>
+            <h6 class="dyn-grid_package-subtitle">${pcGridModel.planOneSubTitle}</h6>
+          </a>
+        </sly>
+        <sly data-sly-test=${pcGridModel.planTwo}>
+          <a href="#dyn-grid-plan-tab-2-s-2"
+             class="dyn-grid_package-tab pull-left ${pcGridModel.defaultTab == 'defaultTab2' ? 'active-tab' : ''}"
+             id="planTwo">
+            <h3 class="dyn-grid_package-title">${pcGridModel.planTwoTitle}</h3>
+            <h6 class="dyn-grid_package-subtitle">${pcGridModel.planTwoSubTitle}</h6>
+          </a>
+        </sly>
+        <sly data-sly-test=${pcGridModel.planThree}>
+          <a href="#dyn-grid-plan-tab-3-y-1"
+             class="dyn-grid_package-tab pull-left ${pcGridModel.defaultTab == 'defaultTab3' ? 'active-tab' : ''}"
+             id="planThree">
+            <h3 class="dyn-grid_package-title">${pcGridModel.planThreeTitle}</h3>
+            <h6 class="dyn-grid_package-subtitle">${pcGridModel.planThreeSubTitle}</h6>
+          </a>
+        </sly>
+      </div>
+      <!-- end of package grid plan row -->
+
+      <!-- gray line under plan tabs -->
+      <div class="dyn-grid_plain-package-row"></div>
+
+
+      <!-- packages mobile view carousel for packages -->
+      <div class="package-grid-mobile-carousel flex-row carousel-package_navigation" id="RowTwo">
+        <div class="package-grid-slide" data-sly-test="${pcGridModel.planOnePackageOne}">
+          <a href="#dyn-grid-package-tab-1-25m" class="package-grid-package pull-left active-tab" id="pc-grid-package-tab-1">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageOneTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageOneSubTitle}</h6>
+          </a>
+        </div>
+        <div class="package-grid-slide" data-sly-test="${pcGridModel.planOnePackageTwo}">
+          <a href="#dyn-grid-package-tab-2-30m" id="pc-grid-package-tab-2" class="package-grid-package pull-left">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageTwoTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageTwoSubTitle}</h6>
+          </a>
+        </div>
+        <div class="package-grid-slide" data-sly-test="${pcGridModel.planOnePakageThree}">
+          <a href="#dyn-grid-package-tab-3-60m" id="pc-grid-package-tab-3" class="package-grid-package pull-left">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageThreeTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageThreeSubTitle}</h6>
+          </a>
+        </div>
+      </div>
+      <!-- end of mobile view carousel -->
+
+      <!-- packages desktop view -->
+      <div class="flex-row dyn-grid_package-row js-dyn-grid-package-row js-pc-grid-package-row" id="RowTwo">
+        <sly data-sly-test="${pcGridModel.planOnePackageOne}">
+          <a href="#dyn-grid-package-tab-1-25m" class="dyn-grid_plain-package-tab pull-left active-tab"
+             id="pc-grid-package-tab-1">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageOneTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageOneSubTitle}</h6>
+          </a>
+        </sly>
+        <sly data-sly-test=$ {pcGridModel.planOnePackageTwo}>
+          <a href="#dyn-grid-package-tab-2-30m" class="dyn-grid_plain-package-tab pull-left" id="pc-grid-package-tab-2">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageTwoTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageTwoSubTitle}</h6>
+          </a>
+        </sly>
+        <sly data-sly-test=$ {pcGridModel.planOnePakageThree}>
+          <a href="#dyn-grid-package-tab-3-60m" class="dyn-grid_plain-package-tab pull-left" id="pc-grid-package-tab-3">
+            <h3 class="dyn-grid_plain-package-title">${pcGridModel.planOnePackageThreeTitle}</h3>
+            <h6 class="dyn-grid_plain-package-subtitle">${pcGridModel.planOnePackageThreeSubTitle}</h6>
+          </a>
+        </sly>
+      </div>
+      <!-- end of packages desktop view -->
+
+    </div>
+    <div class="dg-theme">
+      <div class="all-channels_container js-all-channels pc-all-channels--container container-fluid--narrow">
+        <ul>
+          <div data-sly-list="${pcGridModel.pcGridBeans}" id="channelList">
+            <li class="all-channels-list-item all-channels--list-item">
+              <img data-sly-test="${item.logo}" class="all-channels-image all-channels--image"
+                   data-sling-src="${item.logo}" alt="${item.alt}"
+                   title="${item.alt}"/>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

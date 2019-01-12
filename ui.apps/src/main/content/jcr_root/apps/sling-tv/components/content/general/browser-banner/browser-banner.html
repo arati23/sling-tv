@@ -1,0 +1,16 @@
+<div data-sly-use.browserBanner="com.sling.tv.core.models.BrowserBannerModel"  data-sly-unwrap />
+<sly data-sly-test="${wcmmode.edit && !browserBanner.bannerText}">Click here to configure Browser Banner</sly>
+
+<sly data-sly-test="${browserBanner.bannerText}">
+
+  <div id="${browserBanner.browserSpecificComponentId}" class="js-browser-banner browser-banner hidden-on-load">
+    <div class="browser-banner--text text-center">
+      <img data-sling-src="${browserBanner.imagePath}" alt="${browserBanner.alt}"
+           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+      ${browserBanner.bannerText @context='html'}
+    </div>
+  </div>
+  <div class="clear-both"></div>
+</sly>
+
+

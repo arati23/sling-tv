@@ -1,0 +1,16 @@
+<div data-sly-use.bonusChannels="com.sling.tv.core.models.BonusChannelsModel">
+  <div data-sly-test="${wcmmode.edit}">
+    Please Click here to Author the Bonus Channel component
+  </div>
+
+  <div class="all-channels_container js-all-channels all-channels--container container-fluid--narrow"
+       id="${bonusChannels.bonusChannelsId}">
+    <ul data-sly-list="${bonusChannels.allChannels}">
+      <li class="all-channels-list-item all-channels--list-item">
+        <img data-sly-test="${item.channelLogo}" class="all-channels-image all-channels--image active"
+             data-sling-src="${item.channelLogo}" alt="${item.channelAlt}" title="${item.channelAlt}"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+      </li>
+    </ul>
+  </div>
+</div>
