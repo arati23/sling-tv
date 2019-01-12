@@ -16,7 +16,7 @@ import java.io.IOException;
  *
  * Redirects Servlet: This servlet takes the filtered text String
  * and the offset from the request and gets the results in json format
- *
+ * arati-my first commit for test
  */
 @SlingServlet(description = "JSON response to fetch redirects", methods = { "GET" }, paths = "/bin/sling/redirects", extensions = { "json" }, metatype = true)
 public class RedirectsToolServlet extends SlingAllMethodsServlet {
