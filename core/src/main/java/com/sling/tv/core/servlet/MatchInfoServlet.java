@@ -29,7 +29,7 @@ public class MatchInfoServlet extends SlingSafeMethodsServlet {
 	
 
     /**
-     * comment statements are missing.hello Arati
+     * comment statements are missing.hello Arati jena
      */
     private static final long serialVersionUID = 1L;
     private final Logger log = LoggerFactory.getLogger(this.getClass());
