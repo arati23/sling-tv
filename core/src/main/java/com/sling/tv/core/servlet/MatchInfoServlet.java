@@ -6,7 +6,6 @@ import java.io.InputStream;
 import javax.jcr.Session;
 import javax.servlet.ServletException;
 
-import com.day.cq.commons.Console;
 import org.apache.felix.scr.annotations.sling.SlingServlet;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -57,8 +56,8 @@ public class MatchInfoServlet extends SlingSafeMethodsServlet {
             for (int i = 1; i < rowNum; i++) {
 
                 ObjectNode match = objMapper.createObjectNode();
-                Console.log(i + '--- this is the number');
 
+                log.info(i +"trrtrtr");
 
                 XSSFRow row = ws.getRow(i);
                 XSSFCell dateCell = row.getCell(0);
